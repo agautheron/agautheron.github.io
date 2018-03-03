@@ -81,10 +81,10 @@ author:
   name             : "Timothée Schmoderer"
   avatar           : "profil.jpg"
   bio              : "Master Student"
-  location         : "INSA Rouen Normandie (France)"
-  employer         :
+  location         : "INSA Rouen Normandie"
+  employer         : "ENS (Paris)"
   googlescholar    : "https://scholar.google.fr/citations?user=WxwKbngAAAAJ&hl=fr"
-  email            :
+  email            : "timothee.schmoderer@insa-rouen.fr"
   uri              :
   bitbucket        :
   codepen          :
@@ -97,14 +97,14 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/tschmoderer/"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
