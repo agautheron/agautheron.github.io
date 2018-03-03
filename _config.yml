@@ -80,10 +80,10 @@ analytics:
 author:
   name             : "Timothée Schmoderer"
   avatar           : "profil.jpg"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Master Student"
+  location         : "INSA Rouen Normandie (France)"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.fr/citations?user=WxwKbngAAAAJ&hl=fr"
   email            :
   uri              :
   bitbucket        :
