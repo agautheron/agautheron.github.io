@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Timothée Schmoderer"
 title_separator          : "-"
-name                     : &name "Timothée Schmoderer"
+name                     : &name "Your Name"
 description              : &description "personal description"
 url                      : https://tschmoderer.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -101,7 +101,7 @@ author:
   orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : 
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : 
