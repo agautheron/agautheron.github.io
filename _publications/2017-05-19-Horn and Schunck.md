@@ -1,8 +1,8 @@
 ---
-title: "Project "
+title: "Image Processing"
 collection: publications
 permalink: /publication/2017-05-19-Horn and Schunck
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'My fourth year image processing project. This project deal with the implementation of the Horn and schunck method to compute the optical flow (i.e. the relative mouvement of teh observer) between a pair of images.'
 date: 2017-05-19
 venue: 'Journal 1'
 paperurl: 'https://github.com/tschmoderer/image-prj'
