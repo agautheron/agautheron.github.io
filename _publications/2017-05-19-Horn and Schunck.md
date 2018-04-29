@@ -18,6 +18,7 @@ Initiées dès le début des années 1980 par Berthold K.P. Horn et Brian G. Sch
 Le flot optique (ou flux optique) est le mouvement apparent des objets, surfaces et contours d’une scène visuelle, causé par le mouvement relatif entre un observateur (l’oeil ou une caméra) et la scène. 
 
 ## Example 
+Un exemple calculé dans ce projet. Les flèches montrent le champ de déplacement apparent entre deux images (un ours en peluche) légèrement décalées. 
 <br/><img src='/images/publications/HS_example.jpg'>
 
 [Download paper here](http://tschmoderer.github.io/files/rapport_horn_schunk.pdf)
