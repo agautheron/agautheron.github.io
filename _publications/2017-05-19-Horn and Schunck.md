@@ -6,7 +6,7 @@ excerpt: 'My fourth year image processing project. This project deal with the im
 date: 2017-05-19
 venue: 'INSA Rouen Normandie'
 paperurl: 'https://github.com/tschmoderer/2017-horn-schunck-prj'
-citation: 'Schmoderer T., Quesnel E. (2017). &quot;Détection de Flot Optique&quot;.'
+citation: 'Schmoderer T., Quesnel E. (2017). &quot;Détection de Flot Optique&quot;, INSA Rouen Normandie.'
 ---
 Parmi les nombreux domaines de recherche en Traitement d’Images, une place importante est réservée à la détection de mouvements d’objets sur des images (sur une séquence vidéos par exemple). L’importance considérable que représente l’étude du comportement
 dynamique d’objets se justifie à travers la multitude d’applications reposant sur ces méthodes. Plus concrètement, les progrès de l’informatique ont ouvert de nouvelles thématiques de recherche qui exploitent pleinement les méthodes développées dans le cadre de
