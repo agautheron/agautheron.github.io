@@ -1,5 +1,5 @@
 ---
-title: "Image Processing"
+title: "Image Processing - Horn & Schunck Method"
 collection: publications
 permalink: /publication/2017-05-19-Horn and Schunck
 excerpt: 'My fourth year image processing project. This project deal with the implementation of the Horn and schunck method to compute the optical flow (i.e. the relative mouvement of the observer) between a pair of images.'
