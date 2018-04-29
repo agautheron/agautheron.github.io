@@ -14,8 +14,10 @@ l’analyse de mouvement des objets : citons le thème de la vision artificielle
 
 Initiées dès le début des années 1980 par Berthold K.P. Horn et Brian G. Schunck, l’analyse du mouvement entre 2 images, et plus précisément le calcul du flot optique entre ces images, s’est considérablement développée depuis. Pour le projet qui nous concernait, celui-ci consistait à implémenter en Matlab différentes méthodes d’estimation du flot optique entre 2 images données en partant de l’algorithme original des 2 auteurs. Avant de rentrer dans le vif du sujet, précisons sans plus attendre la signification de cette notion de flot optique qui nous a accompagnés tout au long de ce projet.
 
-# Définition 1.1 : Flot Optique ([17])
+## Définition 1.1 : Flot Optique ([17])
 Le flot optique (ou flux optique) est le mouvement apparent des objets, surfaces et contours d’une scène visuelle, causé par le mouvement relatif entre un observateur (l’oeil ou une caméra) et la scène. 
+
+<br/><img src='/images/HS_example.png'>"
 
 [Download paper here](http://academicpages.github.io/files/rapport_horn_schunk.pdf)
 
