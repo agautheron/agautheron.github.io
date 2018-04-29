@@ -19,10 +19,6 @@ Dans ce projet, les objets étudiés sont les suivants :
 	
 ## Exemple 
 Pour quelques exemples avec des densités 2D : https://www.youtube.com/playlist?list=PLJ92u2ph2rW-cRQQNv39aexr4nDht8Q_I
-Dans cette playlist, 
-	- Etoile vers Donut
-	- Plus court chemin dans un labyrinthe
-	- Morphing entre Mona Lisa et Marylin Moroe
 
 <br/><img src='/images/publications/OT_example.png'>
 
