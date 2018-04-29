@@ -20,6 +20,6 @@ Le flot optique (ou flux optique) est le mouvement apparent des objets, surfaces
 ## Example 
 <br/><img src='/images/publications/HS_example.jpg'>
 
-[Download paper here](http://academicpages.github.io/files/rapport_horn_schunk.pdf)
+[Download paper here](http://tschmoderer.github.io/files/rapport_horn_schunk.pdf)
 
 Recommended citation : Schmoderer T., Quesnel E. (2017). &quot;Détection de Flot Optique&quot;.
