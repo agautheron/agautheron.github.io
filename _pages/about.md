@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Welcome ! 
+Welcome on my web page
+
+# Interest
