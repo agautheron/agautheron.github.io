@@ -17,6 +17,6 @@ Initiées dès le début des années 1980 par Berthold K.P. Horn et Brian G. Sch
 #Définition 1.1 : Flot Optique ([17])
 Le flot optique (ou flux optique) est le mouvement apparent des objets, surfaces et contours d’une scène visuelle, causé par le mouvement relatif entre un observateur (l’oeil ou une caméra) et la scène. 
 
-[Download paper here](http://academicpages.github.io/files/rapport_horn_&_schunk.pdf)
+[Download paper here](http://academicpages.github.io/files/rapport_horn_schunk.pdf)
 
 Recommended citation : Schmoderer T., Quesnel E. (2017). &quot;Détection de Flot Optique&quot;.
