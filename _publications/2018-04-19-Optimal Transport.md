@@ -24,9 +24,8 @@ optimal obtient ses lettres de noblesse dans les années 2000 avec le papier de 
 Benamou et Yann Brenier [1]. En explorant un lien, étroit mais pas surprenant, entre la
 théorie du transport et la mécanique des fluides, ils remettent au gout du jour le problème
 de transport optimal.
-Gaspard Monge
-Leonid Kantorovitch
-Figure 1 – Les pères fondateurs de la théorie du transport optimal
+
+
 Dans ce projet, nous avons étudié, l’article fondateur de Benamou et Brenier, puis nous
 sommes assez rapidement passés sur l’article de Papadakis, Peyré, Oudet [8] pour la partie
 numérique. Le projet nous a également emmené voir du côté de l’article de Pesquet et
