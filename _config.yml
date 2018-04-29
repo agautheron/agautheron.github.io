@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : &name "Timothée Schmoderer"
 description              : &description "personal description"
 url                      : https://tschmoderer.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : /
 repository               : "tschmoderer/tschmoderer.github.io"
 teaser                   : "images/500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
