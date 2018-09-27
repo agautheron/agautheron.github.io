@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Download paper CV here](http://tschmoderer.github.io/files/CV_tschmoderer.pdf)
+[Télécharger le CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_fr.pdf)
+[Download CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_en.pdf)
 
 Education
 ======
