@@ -18,9 +18,10 @@ Dans ce projet, les objets étudiés sont les suivants :
 	- Etude théorique par le livre de Santambrogio
 	
 ## Exemple 
-Pour quelques exemples avec des densités 2D : https://www.youtube.com/playlist?list=PLJ92u2ph2rW-cRQQNv39aexr4nDht8Q_I
-
-<br/><img src='/images/publications/OT_example.png'>
+Voici un exemple animé où la densité de départ est une photo de la Joconde et la densité cible, une photo de Marylin Monroe. Deux autres exemples sont disponibles sur ma chaine [youtube](https://www.youtube.com/channel/UCWEaiI8pBIMfr0OoC_gnp5A?view_as=subscriber). <br/>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JD-q0DpmkbQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
 
 Exemple de transport d'une densité "étoile" vers une densité "donut". L'image montre la densité à la moitié du chemin. 
 
