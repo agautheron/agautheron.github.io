@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Télécharger le CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_fr.pdf)
+[Télécharger le CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_fr.pdf)<br/>
 [Download CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_en.pdf)
 
 Education
