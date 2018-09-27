@@ -2,7 +2,7 @@
 title: "Optimal Tansport"
 collection: publications
 permalink: /publication/2018-04-19-Optimal Transport
-excerpt: My master thesis about Optimal Transport problem. In this work we present the theoritical results of optimal transport theory. Then we focus on implementation of algorithm dedicated to compute the optimal path between 1D or 2D probabiblity density. Last example shows application to image morphing.
+excerpt: My master thesis (fr) about the Optimal Transport problem. In this work we present the theoritical results of optimal transport theory. Then we focus on implementation of algorithm dedicated to compute the optimal path between 1D or 2D probabiblity density. Last example shows application to image morphing.
 date: 2018-04-19
 venue: 'INSA Rouen Normandie'
 paperurl: 'https://github.com/tschmoderer/2018-optimal-transport-prj'
@@ -24,7 +24,4 @@ Voici un exemple animé où la densité de départ est une photo de la Joconde e
 </center>
 
 
-
-[Download paper here](http://tschmoderer.github.io/files/rapport_optimal_transport.pdf)
-
-Recommended citation : Schmoderer T., (2018). &quot;Transport Optimal, Théorie et Applications&quot;, INSA Rouen Normandie.
+<br/>[Download paper here](http://tschmoderer.github.io/files/rapport_optimal_transport.pdf)

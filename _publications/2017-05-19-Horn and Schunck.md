@@ -2,7 +2,7 @@
 title: "Image Processing - Horn & Schunck Method"
 collection: publications
 permalink: /publication/2017-05-19-Horn and Schunck
-excerpt: 'My fourth year image processing project. This project deal with the implementation of the Horn and schunck method to compute the optical flow (i.e. the relative mouvement of the observer) between a pair of images.'
+excerpt: 'My fourth year image processing project (fr). This project deal with the implementation of the Horn and schunck method to compute the optical flow (i.e. the relative mouvement of the observer) between a pair of images.'
 date: 2017-05-19
 venue: 'INSA Rouen Normandie'
 paperurl: 'https://github.com/tschmoderer/2017-horn-schunck-prj'
@@ -14,7 +14,7 @@ l’analyse de mouvement des objets : citons le thème de la vision artificielle
 
 Initiée dès le début des années 1980 par Berthold K.P. Horn et Brian G. Schunck, l’analyse du mouvement entre 2 images, et plus précisément le calcul du flot optique entre ces images, s’est considérablement développée depuis. Pour le projet qui nous concernait, celui-ci consistait à implémenter en Matlab différentes méthodes d’estimation du flot optique entre 2 images données en partant de l’algorithme original des 2 auteurs. Avant de rentrer dans le vif du sujet, précisons sans plus attendre la signification de cette notion de flot optique qui nous a accompagnés tout au long de ce projet.
 
-## Définition 1.1 : Flot Optique ([17])
+## Définition 1.1 : Flot Optique
 Le flot optique (ou flux optique) est le mouvement apparent des objets, surfaces et contours d’une scène visuelle, causé par le mouvement relatif entre un observateur (l’oeil ou une caméra) et la scène. 
 
 ## Exemple 
