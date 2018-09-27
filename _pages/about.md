@@ -15,9 +15,7 @@ Welcome on my web page. I am currently a Ph.D. student in nonlinear control theo
 
 # Hobby
 I am practicing chess [online](lichess.org/@/tschmoderer). I'm always up for a game, so if you see me online, drop a challenge! <br/>
-Solve a daily challenge: 
-<script src="https://lichess.org/training/embed?theme=auto&bg=auto"></script>
 
-Our watch [Lichess](lichess.org) TV: 
+Or watch [Lichess](lichess.org) TV: <br/>
 <script src="https://lichess.org/tv/embed?theme=auto&bg=auto"></script>
 
