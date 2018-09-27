@@ -4,8 +4,8 @@ Name Name:
   name        : "Timothée Schmoderer"
   uri         : "http://tschmoderer.github.io"
   email       : "timothee.schmoderer@insa-rouen.fr"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
+  bio         : 
+  avatar      : "profil.jpg"
   twitter     : 
   google_plus : 
 
