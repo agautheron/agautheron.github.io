@@ -83,7 +83,7 @@
         <li><a href="https://steamcommunity.com/id/{{ author.steam }}"><i class="fa fa-fw fa-steam-square" aria-hidden="true"></i> Steam</a></li>
       {% endif %}
       {% if author.youtube %}
-        <li><a href="https://www.youtube.com/user/{{ author.youtube }}"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+        <li><a href="https://www.youtube.com/channel/{{ author.youtube }}"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
       {% endif %}
       {% if author.soundcloud %}
         <li><a href="https://soundcloud.com/{{ author.soundcloud }}"><i class="fa fa-fw fa-soundcloud" aria-hidden="true"></i> Soundcloud</a></li>
@@ -108,6 +108,9 @@
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> Wikipedia</a></li>
+      {% endif %}
+      {% if author.lichess %}
+        <li><a href="https://lichess.org/@/{{ author.lichess }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> Lichess</a></li>
       {% endif %}
     </ul>
   </div>
