@@ -28,7 +28,7 @@ Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate 
 <img src="/images/scout/sgdf.gif" alt="SGDF Logo" style="width:128px;">
 </a>
 <a href="https://www.scoutisme-francais.fr/en">
-<img src="/images/scout/sf.png" alt="SF Logo">
+<img src="/images/scout/sf.png" alt="SF Logo" style="width:128px;">
 </a>
 </center>
 To me one of the most important scout event this last years is the meeting <b>You're Up</b> in 2015 in Strasbourg (France) where 15000 young (from 14 to 17) met and discuss about the place of young in Europe. During this meeting they wrote and signed a <a href="https://caravane.sgdf.fr/down/fichier-resolution-for-the-europe-of-tomorrow.pdf">Resolution for the Europe of tomorrow</a>.
