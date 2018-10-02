@@ -39,7 +39,6 @@ Always great games on [Lichess](https://lichess.org) TV: <br/>
     display: table;
 }
 </style>
-<div style="display:block;">
 Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate about 23 boys and girls (first 8-11 years old and latter 14-17 years old) to today's world issues. 
 <br/>
 <br/>
