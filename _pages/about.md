@@ -22,8 +22,9 @@ Always great games on [Lichess](https://lichess.org) TV: <br/>
 </center>
 
 <br/>
-Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate about 23 boys and girls (first 8-11 years old and latter 14-17 years old) to today's world issues. <br/>
 <div style="display:block;">
+Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate about 23 boys and girls (first 8-11 years old and latter 14-17 years old) to today's world issues. <br/>
+
 <center>
 <a href="https://www.scoutisme-francais.fr/en">
 <img src="/images/scout/sf.png" alt="SF Logo" style="width:128px;float:left;">
@@ -33,7 +34,8 @@ Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate 
 </a>
 </center>
 </div>
-<br/>
+<div>
 To me one of the most important scout event this last years is the meeting <b>You're Up</b> in 2015 in Strasbourg (France) where 15000 young (from 14 to 17) met and discuss about the place of young in Europe. During this meeting they wrote and signed a <a href="https://caravane.sgdf.fr/down/fichier-resolution-for-the-europe-of-tomorrow.pdf">Resolution for the Europe of tomorrow</a>.
+</div>
 
 <br/> Click [here](https://www.scoutisme-francais.fr/en) for informations about the scouting in France and [here](https://www.sgdf.fr/) the specific association I belong to. 
