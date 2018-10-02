@@ -25,7 +25,7 @@ Always great games on [Lichess](https://lichess.org) TV: <br/>
 Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate about 23 boys and girls (first 8-11 years old and latter 14-17 years old) to today's world issues. <br/>
 <center>
 <a href="https://www.sgdf.fr/">
-<img src="/images/scout/sgdf.gif" alt="SGDF Logo">
+<img src="/images/scout/sgdf.gif" alt="SGDF Logo" style="width:128px;">
 </a>
 <a href="https://www.scoutisme-francais.fr/en">
 <img src="/images/scout/sf.png" alt="SF Logo">
