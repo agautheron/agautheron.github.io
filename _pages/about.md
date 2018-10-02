@@ -13,11 +13,16 @@ Welcome on my web page. I am currently a Ph.D. student in nonlinear control theo
 
 # Interest
 
-
-# Hobby
+# Hobbies
 I am playing online chess on [Lichess](https://lichess.org/@/tschmoderer). I'm always up for a game, so if you see me online, drop a challenge! <br/>
 
 Always great games on [Lichess](https://lichess.org) TV: <br/>
 <center>
 <script src="https://lichess.org/tv/embed?theme=auto&bg=auto"></script>
 </center>
+
+<br/>
+Since 2014 I have been a leader of a scout troup. 
+To me one of the most important scout event this last years is the meeting <b>You're Up<b/> in 2015 in Strasbourg (France) where 15000 young (from 14 to 17) met and discuss about the place of young in Europe. During this meeting they wrote and signed a <a href="https://caravane.sgdf.fr/down/fichier-resolution-for-the-europe-of-tomorrow.pdf">Resolution for the Europe of tomorrow</a>.
+
+<br/> Click [here](https://www.scoutisme-francais.fr/en) for informations about the scouting in France and [here](https://www.sgdf.fr/) the specific association I belong to. 
