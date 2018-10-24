@@ -98,7 +98,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         : "tschmoderer"
-  orcid            : "0000-0003-1748-1763"
+  orcid            : "https://orcid.org/0000-0003-1748-1763"
   pinterest        :
   soundcloud       :
   stackoverflow    : 
@@ -111,8 +111,6 @@ author:
   youtube          : "UCWEaiI8pBIMfr0OoC_gnp5A"
   wikipedia        :
   lichess	   : "tschmoderer"
-
-
 
 # Reading Files
 include:
