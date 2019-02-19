@@ -8,13 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-Welcome on my web page. I am currently a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Paris). 
-
+Welcome on my web page. I am currently a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Paris). <br/>
 
 # Interest
+My PhD research are of two kind. First I want to deeply understand nonlinear dynamical control systems. Using the language of differential geometry my purpose is to classified quadratic nonlinear control systems. During his PhD [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) classified non linear dynamical system that are equivalent (up to a state diffeomorphism or up to feedback action) to a controllable linear system. We want to extand this results and found conditions for a system to be equivalent to a system with a prodcut of control. </br>
+On the other hand, I want to propose an improved version of the continuation method, developped first by Yacin Chitour. This method was developped to compute optimal control. However the method assume that we can avoid the singular set of the system. This is a practical strong assumptions. With  [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) we propose a modified algorithm giving an approximation of the optimal control but dealing with the singular set of the system. </br>
+
 
 # Hobbies
-I am playing online chess on [Lichess](https://lichess.org/@/tschmoderer). I'm always up for a game, so if you see me online, drop a challenge! <br/>
+I am really interested in game theory, I myself enjoy playing online chess on [Lichess](https://lichess.org/@/tschmoderer). I'm always up for a game, so if you see me online, drop a challenge! <br/>
+In my free time, I am developping a chess engine [iathena](https://github.com/tschmoderer/iathena) mixing alpha-beta search and Monte-Carlo search. 
 
 Always great games on [Lichess](https://lichess.org) TV: <br/>
 <center>
@@ -22,43 +25,4 @@ Always great games on [Lichess](https://lichess.org) TV: <br/>
 </center>
 
 <br/>
-<style>
-* {
-    box-sizing: border-box;
-}
 
-.img-container {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-</style>
-Since 2014 I have been a leader in a scout troup. With 1 or 2 friend we educate about 23 boys and girls (first 8-11 years old and latter 14-17 years old) to today's world issues. 
-<br/>
-<br/>
-<center>
-<div class="clearfix">
-  <div class="img-container">
-  	<a href="https://www.scoutisme-francais.fr/en">
-    <img src="/images/scout/sf.png" alt="SF Logo" style="width:70%">
-    </a>
-  </div>
-  <div class="img-container">
-  	<a href="https://www.sgdf.fr/">
-    <img src="/images/scout/sgdf.gif" alt="SGDF Logo" style="width:70%">
-    </a>
-  </div>
-</div>
-</center>
-<br/>
-
-To me one of the most important scout event this last years is the meeting <b>You're Up</b> in 2015 in Strasbourg (France) where 15000 young (from 14 to 17) met and discuss about the place of young in Europe. During this meeting they wrote and signed a <a href="https://caravane.sgdf.fr/down/fichier-resolution-for-the-europe-of-tomorrow.pdf">Resolution for the Europe of tomorrow</a>.
-
-
-<br/> Click [here](https://www.scoutisme-francais.fr/en) for informations about the scouting in France and [here](https://www.sgdf.fr/) the specific association I belong to. 
