@@ -20,10 +20,7 @@ I am really interested in game theory, I myself enjoy playing online chess on [L
 
 Always great games on [Lichess](https://lichess.org) TV: <br/>
 <center>
-<p float="left">
 <script src="https://lichess.org/tv/embed?theme=auto&bg=auto"></script>
-<a class="twitter-timeline" href="https://twitter.com/iathenaChess?ref_src=twsrc%5Etfw">Tweets by iathenaChess</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</p>
 </center>
 
 <br/>
