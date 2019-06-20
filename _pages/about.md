@@ -20,8 +20,12 @@ I am really interested in game theory, I myself enjoy playing online chess on [L
 
 Always great games on [Lichess](https://lichess.org) TV: <br/>
 <center>
+<div>
 <script src="https://lichess.org/tv/embed?theme=auto&bg=auto"></script>
+</div>
+<div>
 <a class="twitter-timeline" href="https://twitter.com/iathenaChess?ref_src=twsrc%5Etfw">Tweets by iathenaChess</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<div>
 </center>
 
 <br/>
