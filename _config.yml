@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : "tschmoderer"
 facebook:
   username               :
   app_id                 :
@@ -110,7 +110,7 @@ author:
   xing             :
   youtube          : "UCWEaiI8pBIMfr0OoC_gnp5A"
   wikipedia        :
-  lichess	   : "tschmoderer"
+  lichess	       : "tschmoderer"
 
 # Reading Files
 include:
