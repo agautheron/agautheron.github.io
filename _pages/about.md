@@ -28,6 +28,7 @@ On the other hand, I want to propose an improved version of the continuation met
 ## Publications 
 
 - **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb. [preprint](https://arxiv.org/abs/2004.10464). [code](https://github.com/tschmoderer/2019_mri_reconstruction). Submitted.
+- **Characterization and classification of control systems under a conic nonholonomic constraint**, <u>T. Schmoderer</u> and W. Respondek. [preprint](#). [blog post](https://tschmoderer.github.io/posts/2021/05/blog-post-4/). In preparation.
 
 ## Communications
 
