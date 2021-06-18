@@ -31,8 +31,9 @@ On the other hand, I want to propose an improved version of the continuation met
 
 ## Communications
 
-- **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb, SIAM Imaging Science 2020 - Mini-Symposium: The Power of Variational and Hybrid Multi-task Models for Image Analysis. [abstract](https://meetings.siam.org/sess/dsp_talk.cfm?p=104925).
-- **Introduction to the equivalence and classification of quadratic submanifolds in $\mathbf{\textrm{T}\mathbb{R}^2}$** , <u>T. Schmoderer</u> and W. Respondek, 12e journée Normandie-Mathématiques. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
+- *24/06/2020*: **Conic nonholonomic constraints on  surfaces and control systems** ,  <u>T. Schmoderer</u> and W. Respondek,13e journée de la fédération Normandie-Mathématiques. [abstract](https://tschmoderer.github.io/files/talks/20210624_13_fnm/abstract.pdf). [presentation](https://tschmoderer.github.io/files/talks/#).
+- *07/11/2020*: **Introduction to the equivalence and classification of quadratic submanifolds in $\mathbf{\textrm{T}\mathbb{R}^2}$** , <u>T. Schmoderer</u> and W. Respondek, 12e journée de la fédération Normandie-Mathématiques. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
+- *17/07/2020*: **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb, SIAM Imaging Science 2020 - Mini-Symposium: The Power of Variational and Hybrid Multi-task Models for Image Analysis. [abstract](https://meetings.siam.org/sess/dsp_talk.cfm?p=104925).
 
 ## Invitations
 
