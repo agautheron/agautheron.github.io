@@ -44,7 +44,8 @@ On the other hand, I want to propose an improved version of the continuation met
 
 ## Teaching
 
-- 2019 / 2021 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students.
+- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students.
+- 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students.
 
 ## Administrative functions
 
