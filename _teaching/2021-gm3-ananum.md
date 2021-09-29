@@ -37,7 +37,7 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
 
 ## Sujets TPs
 
-Quelques ressources: [introduction à Python](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_python.pdf) | [introduction à NumPy](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_numpy.pdf) | [introduction à Matplolib](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_matplotlib.pdf).
+Quelques ressources:| [introduction à Python](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_python.pdf) | [introduction à NumPy](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_numpy.pdf) | [introduction à Matplolib](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_matplotlib.pdf).
 
 - [TP 0](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Prise en main de Python. 
 - [TP 1](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
