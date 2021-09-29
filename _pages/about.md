@@ -27,14 +27,20 @@ On the other hand, I want to propose an improved version of the continuation met
 
 ## Publications 
 
-- **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb. [preprint](https://arxiv.org/abs/2004.10464). [code](https://github.com/tschmoderer/2019_mri_reconstruction). Submitted.
-- **Characterization and classification of control systems under a conic nonholonomic constraint**, <u>T. Schmoderer</u> and W. Respondek. [preprint](#). [blog post](https://tschmoderer.github.io/posts/2021/05/blog-post-4/). In preparation.
+---
+
+- **Conic nonholonomic constraints on surfaces and control systems** (2021), Submitted at *Journal of Dynamical and Control Systems*. <u>T. Schmoderer</u> and W. Respondek. [preprint](https://arxiv.org/abs/2106.08635). [blog post](https://tschmoderer.github.io/posts/2021/05/blog-post-4/). 
+
+---
+
+- **Learning Optical Flow for Fast MRI Reconstruction** (2021),  Accepted at *Inverse Problems*. <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb.  [paper](https://doi.org/10.1088/1361-6420/ac164a). [preprint](https://arxiv.org/abs/2004.10464). [code](https://github.com/tschmoderer/2019_mri_reconstruction). 
 
 ## Communications
 
-- *24/06/2020*: **Conic nonholonomic constraints on  surfaces and control systems** ,  <u>T. Schmoderer</u> and W. Respondek,13e journée de la fédération Normandie-Mathématiques. [abstract](https://tschmoderer.github.io/files/talks/20210624_13_fnm/abstract.pdf). [presentation](https://tschmoderer.github.io/files/talks/20210624_13_fnm/presentation_240621.pdf).
-- *07/11/2020*: **Introduction to the equivalence and classification of quadratic submanifolds in $\mathbf{\textrm{T}\mathbb{R}^2}$** , <u>T. Schmoderer</u> and W. Respondek, 12e journée de la fédération Normandie-Mathématiques. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
-- *17/07/2020*: **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb, SIAM Imaging Science 2020 - Mini-Symposium: The Power of Variational and Hybrid Multi-task Models for Image Analysis. [abstract](https://meetings.siam.org/sess/dsp_talk.cfm?p=104925). [presentation](https://tschmoderer.github.io/files/talks/20200717_siam_is_20/mri_presentation_17072020.pdf).
+- *27/10/2021*: **Motion Planning with a Regularized Continuation Method**, <u>T. Schmoderer</u> and E. Trélat, *Conférence des Jeunes Chercheurs en Mathématiques Appliquées* (CJC-MA-21). [abstract](https://tschmoderer.github.io/files/talks/20211027_cjc_ma/abstract_tschmoderer.pdf). [presentation](https://tschmoderer.github.io/files/talks/20211027_cjc_ma/#).
+- *24/06/2020*: **Conic nonholonomic constraints on  surfaces and control systems** ,  <u>T. Schmoderer</u> and W. Respondek, *13e journée de la fédération Normandie-Mathématiques*. [abstract](https://tschmoderer.github.io/files/talks/20210624_13_fnm/abstract.pdf). [presentation](https://tschmoderer.github.io/files/talks/20210624_13_fnm/presentation_240621.pdf).
+- *07/11/2020*: **Introduction to the equivalence and classification of quadratic submanifolds in $\mathbf{\textrm{T}\mathbb{R}^2}$** , <u>T. Schmoderer</u> and W. Respondek, *12e journée de la fédération Normandie-Mathématiques*. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
+- *17/07/2020*: **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb, *SIAM Imaging Science 2020 - Mini-Symposium: The Power of Variational and Hybrid Multi-task Models for Image Analysis*. [abstract](https://meetings.siam.org/sess/dsp_talk.cfm?p=104925). [presentation](https://tschmoderer.github.io/files/talks/20200717_siam_is_20/mri_presentation_17072020.pdf).
 
 ## Invitations
 
@@ -44,8 +50,8 @@ On the other hand, I want to propose an improved version of the continuation met
 
 ## Teaching
 
-- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students.
 - 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students.
+- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students.
 
 ## Administrative functions
 
