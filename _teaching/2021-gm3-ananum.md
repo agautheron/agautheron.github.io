@@ -37,10 +37,16 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
 
 ## Sujets TPs
 
-| Quelques ressource: 	| introduction à Python 	| introduction à NumPy 	| introduction à Matplolib 	|
-|:-------------------:	|:---------------------:	|:--------------------:	|:------------------------:	|
-
-Quelques ressources:| [introduction à Python](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_python.pdf) | [introduction à NumPy](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_numpy.pdf) | [introduction à Matplolib](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_matplotlib.pdf).
+<table style="text-align:center;vertical-align:center">
+    <thead>
+  <tr>
+    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">Quelques ressources:</span></td>
+    <td class="tg-c3ow"><a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_python.pdf" target="_blank" rel="noopener noreferrer">introduction à Python</a></td>
+    <td class="tg-c3ow"><a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_numpy.pdf" target="_blank" rel="noopener noreferrer">introduction à NumPy</a></td>
+    <td class="tg-c3ow"><a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp_intro_matplotlib.pdf" target="_blank" rel="noopener noreferrer">introduction à Matplolib</a></td>
+  </tr>
+</thead>
+</table>
 
 - [TP 0](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Prise en main de Python. 
 - [TP 1](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
