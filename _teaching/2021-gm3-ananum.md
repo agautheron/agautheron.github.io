@@ -69,7 +69,7 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
                 <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/2021_2022_is_sujet.pdf">Sujet IS 2021 / 2022</a>
             </td>
             <td style="text-align: center; vertical-align: middle;">
-                <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/2021_gm3_ananum/2021_2022_is_correction.pdf">Sujet & Correction IS 2021 / 2022</a>
+                <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/2021_2022_is_correction.pdf">Sujet & Correction IS 2021 / 2022</a>
             </td>
         </tr>
         <tr>
