@@ -49,7 +49,9 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
 </table>
 
 - [TP 0](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Prise en main de Python. 
-- [TP 1](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
+- [TP 1](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp1.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
+- [TP 2](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp2.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
+- [TP 3](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp3.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
 
 ## Sujets Projets
 
@@ -61,13 +63,13 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
     <table>
         <tr>
             <td style="text-align: center; vertical-align: middle;">
-        	 XX / XX / 2021   
+        	 18 / 11 / 2021   
         </td>
         	<td style="text-align: center; vertical-align: middle;">
-                <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/#">Sujet IS 2021 / 2022</a>
+                <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/2021_2022_is_sujet.pdf">Sujet IS 2021 / 2022</a>
             </td>
             <td style="text-align: center; vertical-align: middle;">
-                <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/#">Sujet & Correction IS 2021 / 2022</a>
+                <a href="https://tschmoderer.github.io/files/teaching/2021_gm3_ananum//home/tschmoderer/Documents/tschmoderer.github.io/files/teaching/2021_gm3_ananum/2021_2022_is_correction.pdf">Sujet & Correction IS 2021 / 2022</a>
             </td>
         </tr>
         <tr>
@@ -83,6 +85,7 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
         </tr>
     </table>
 </center>
+
 
 ## Ressources 
 
