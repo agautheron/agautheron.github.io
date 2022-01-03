@@ -50,8 +50,8 @@ Les fichiers sont dans leur première version, merci de remonter par mail toute 
 
 - [TP 0](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp0.zip) : Prise en main de Python. 
 - [TP 1](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp1.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
-- [TP 2](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp2.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
-- [TP 3](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp3.zip) : Implémentation algorithmes de descente, de remontée, et de Gauss.
+- [TP 2](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp2.zip) : Implémentation décomposition QR, application approximation de données.
+- [TP 3](https://tschmoderer.github.io/files/teaching/2021_gm3_ananum/tp3.zip) : Implémentation gradient conjugué, application à l'inpainting.
 
 ## Sujets Projets
 
