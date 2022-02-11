@@ -1,0 +1,36 @@
+# Project template
+- name: Radiative Transfer Equation 1D Solver
+  link: gitlab.in2p3.fr/agautheron/radiativetransferequation
+  gitlab: agautheron/radiativetransferequation
+  python: false
+  pyqt: false
+  matlab: true
+  c: false
+
+  quote: >
+  description: | # this will include new lines to allow paragraphs
+    Radiative transfer equation solver in 1D geometry based on the discrete coordinates method.
+
+- name: Laser Spectral Fluorescence IHM
+  link: gitlab.in2p3.fr/agautheron/laser-spectral-fluorescence
+  gitlab: agautheron/laser-spectral-fluorescence
+  python: true
+  pyqt: true
+  matlab: false
+  c: true
+
+  quote: >
+  description: | # this will include new lines to allow paragraphs
+    Software which interacts with an OceanInsight Spectrometer and an Arduino Board in order to control lasers Intensity, shutters and trigger of the acquisition process of Glioma Diffuse Fluorescence Spectroscopy
+
+- name: LED Spectral Fluorescence IHM
+  link: gitlab.in2p3.fr/agautheron/spectral-fluorescence-laure
+  gitlab: agautheron/spectral-fluorescence-laure
+  python: true
+  pyqt: true
+  matlab: false
+  c: true
+
+  quote: >
+  description: | # this will include new lines to allow paragraphs
+    Software which interacts with an OceanInsight Spectrometer and an National Instruments Board in order to control LEDs, shutter and triggers of the acquisition process of Glioma Diffuse Fluorescence Spectroscopy

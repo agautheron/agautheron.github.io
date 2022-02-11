@@ -1,0 +1,57 @@
+[
+  {
+    "name" : "Framespa",
+    "logo" : "https://framespa.univ-tlse2.fr/uas/framespa/LOGO/framespa-logo.png",
+    "url" : "https://framespa.univ-tlse2.fr/navigation/les-chercheurs/l-annuaire/",
+    "querySelector" : ".ligne_1 a.lien_interne[href^='https://framespa.univ-tlse2.fr']",
+    "struct_id": 620,
+    "norm": "EHESS"
+  },
+  {
+    "name": "CLLE",
+    "logo" : "http://clle.univ-tlse2.fr/uas/clle2/LOGO/logo_clle.jpg",
+    "url" : "https://clle.univ-tlse2.fr/accueil/annuaire/",
+    "querySelector" : ".ligne_1 a.lien_interne[href^='https://clle.univ-tlse2.fr']",
+    "struct_id": [
+      489956,
+      161396,
+      24497
+    ],
+    "norm": "APA"
+  },
+  {
+    "name" : "EFTS",
+    "logo" : "http://efts.univ-tlse2.fr/uas/efts/LOGO/logo-6.jpg",
+    "url" : "https://efts.univ-tlse2.fr/accueil/navigation/les-chercheurs/",
+    "querySelector" : ".ligne_1 a.lien_interne[href^='https://efts.univ-tlse2.fr']",
+    "struct_id" : 160779,
+    "norm" : "APA"
+  },
+  {
+    "name" : "LISST",
+    "logo" : "https://lisst.univ-tlse2.fr/uas/lisst/LOGO/logo_lisst.png",
+    "url" : "https://lisst.univ-tlse2.fr/annuaire-lisst/",
+    "querySelector" : ".ligne_1 a.lien_interne[href^='https://lisst.univ-tlse2.fr']",
+    "struct_id" : 44429,
+    "norm" : "APA"
+  },
+   {
+    "name" : "TRACES",
+    "logo" : "https://traces.univ-tlse2.fr//uas/traces/LOGO/logo-TRACES-pour-web-2018-roboto-v2.jpg",
+    "url" : "https://traces.univ-tlse2.fr/accueil/annuaire/",
+    "querySelector" : ".ligne_1 a.lien_interne[href^='https://traces.univ-tlse2.fr']",
+    "struct_id" : 44675,
+    "norm" : "APA"
+  },
+  {
+    "name": "CREATIS",
+    "logo" : "https://www.creatis.insa-lyon.fr/site7/sites/www.creatis.insa-lyon.fr/files/logo-creatis.png",
+    "url" : "https://www.creatis.insa-lyon.fr/site7/fr",
+    "querySelector" : ".ligne_1 a.lien_interne[href^='https://www.creatis.insa-lyon.fr/site7/fr']",
+    "struct_id": [
+      139739,
+      530749
+    ],
+    "norm": "APA"
+  }
+]

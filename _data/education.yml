@@ -1,0 +1,62 @@
+# Education Template
+- name: Université Paris-Saclay
+  logo : images/Universite-paris-saclay.jpg
+  dates: 2018 - 2019
+  qualification: Master's degree, Automatic & signal and images processing
+  quote: >
+    After a basic education in automatic, signal and image processing, students can choose between elective options that allow them to deepen the areas concerned, with a strong application opening towards robotics, the medical and the energy networks, target areas of major societal challenges.
+    
+    
+  description: | # this will include new lines to allow paragraphs
+    The internships offered come from public research laboratories and industrial organizations.
+    
+    The strengths of the Master are the novelty of the proposed methodologies, its societal relevance, the partnership of the project's leading institutions: the Paris-Saclay University institutions, the Toulouse ISAE, and public research laboratories and industrial organizations.
+    
+    Students will master the fundamentals of the course and the various in-depth studies provided by university specialists.    
+    
+# Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
+    
+- name: Institut d'Optique Graduate School
+  logo : images/iogs.png
+  dates: 2015 - 2019
+  qualification: Master of Engineering (MEng), Optic, Photonics, Physics
+  quote: >
+    The Institut d'Optique Graduate School is set at Palaiseau in the campus of ParisTech and Paris-Saclay, at the south of Paris. This school trains engineers with very different experiences: from the general engineer to the researcher in optics and photonics, and even engineers in finance and entrepreneurs.
+  description: | # this will include new lines to allow paragraphs
+    [<mark>Presentation Video</mark>](https://www.youtube.com/watch?v=kCykmN33m90)
+    
+    Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
+   
+- name: Université Paris-Saclay 
+  logo : images/ifsbm.png
+  dates: 2015 - 2019
+  qualification: University Degree, Biomedical/Medical Engineering
+  quote: >
+    It is mainly intended for engineers or for academics trained in exact sciences and preparing a thesis at the interface with biology.
+    
+    The goal is to train future executives in the biomedical industry, with a thorough knowledge of the hospital environment and bio-industries associated with research strategy skills.
+    
+    The challenge is to allow them to interact effectively with their physician, pharmacist or biologist colleagues in multidisciplinary science programs.
+  
+  description: | # this will include new lines to allow paragraphs
+    The degree offers engineering students the opportunity to follow a number of modules on different biomedical themes.
+    
+    Followed modules :
+    - Employment in the Life Sciences
+    - Medical innovation by Biotechs and Medtechs
+    - Initiation in physiology, biology and cell culture
+    - Pathological states of the human cell
+    - Cancer Care
+    - Immersion in a hospital environment
+    
+    Departments :
+    * Operating theater
+    * Dermatology
+    * Ophthalmology
+    * Anatomo-Pathology
+    * BMP Medical Imagery
+
+
+
+
+ 

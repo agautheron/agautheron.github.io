@@ -1,0 +1,53 @@
+<div class="container projects-container">
+  <h3>{{ site.projects_title | default: "Projects" }}</h3>
+  {% for project in site.data.projects %}
+    <div class="row clearfix project">
+      <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 left-column">
+        <h4>{{ project.name }}</h4>
+        {%- if project.link -%}
+          <a href="https://{{ project.link }}" target="_blank" class="project-link">{{ project.link }}</a>
+        {%- endif -%}
+        <p class="no-print">
+        {%- if project.github -%}
+          <a href="https://github.com/{{ project.github }}" target="_blank">
+            <i class="fa fa-github" title="{{ project.name }} Github link"></i>
+          </a>
+		{%- endif -%}
+		{%- if project.gitlab -%}
+          <a href="https://gitlab.in2p3.fr/{{ project.gitlab }}" target="_blank">
+            <i class="fa fa-gitlab" title="{{ project.name }} Gitlab link"></i>
+          </a>
+			{%- if project.pyqt -%}
+			<a href="#" style="pointer-events: none;cursor: default;text-decoration: none;color: black;" >
+				<!--<i class="fab fa-python" title="Python language"></i> 	-->
+				<img src="./{{site.projects_pyqt_icon}}" alt=" PyQt " class="scale-down" style="vertical-align: top;" width="32px"/>
+			</a> 
+			{%- endif -%}
+			{%- if project.python -%}
+			<a href="#" style="pointer-events: none;cursor: default;text-decoration: none;color: black;" >
+				<!--<i class="fab fa-python" title="Python language"></i> 	-->
+				<img src="./{{site.projects_python_icon}}" alt=" Python " class="scale-down" style="vertical-align: top;" width="32px"/>
+			</a> 
+			{%- endif -%}
+			{%- if project.matlab -%}
+			<a href="#" style="pointer-events: none;cursor: default;text-decoration: none;color: black;" >
+			<img src="./{{site.projects_matlab_icon}}" alt=" Matlab " class="scale-down" style="vertical-align: top;"  width="32px"/>
+			</a>
+			{%- endif -%}
+			{%- if project.c -%}
+			<a href="#" style="pointer-events: none;cursor: default;text-decoration: none;color: black;" >
+			<img src="./{{site.projects_c_icon}}" alt=" C " class="scale-down" style="vertical-align: top;"  width="32px"/>
+			</a>
+			{%- endif -%}
+		{%- endif -%} 
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+        {%- if project.quote -%}
+          <p class="quote">{{ project.quote }}</p>
+        {%- endif -%}
+        {{ project.description | strip | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
