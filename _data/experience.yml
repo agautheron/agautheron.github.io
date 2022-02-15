@@ -8,10 +8,15 @@
  #  Short description of the company (optional)
   description: | # this will include new lines to allow paragraphs
     <u>Funding:</u> Labex PRIMES
+    
     Spectral fluorescence analysis for glioma classification (development of multi-excitatory models).
+    
     Development of technical bricks based on radiative models for the estimation of optical properties.
+    
     Realization of a multi-excitation experimental system for the intraoperative quantification of glioma biomarkers. 
+    
     Fluorescence characterization of X-ray excited GdTbCl3 for photodynamic therapy treatment.
+    
     <u>Member of the Unit Council</u> (2020 to present).
   
 # Experience template
