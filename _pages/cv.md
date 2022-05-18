@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 [Download CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_en.pdf) <br/>
-[Télécharger le CV](http://tschmoderer.github.io/files/CV/CV_tschmoderer_fr.pdf)
+[Télécharger le CV](http://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)
 
 Education
 ======
@@ -40,19 +40,19 @@ Publications
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Service and leadership
 ======
 * 2014 - ****: Leader of a scout troup, [follow our adventures (fr)](https://sites.sgdf.fr/rives-de-seine-et-oise/)

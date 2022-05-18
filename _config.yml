@@ -79,7 +79,7 @@ analytics:
 # Site Author
 author:
   name             : "Timothée Schmoderer"
-  avatar           : "profil.jpg"
+  avatar           : "new_profil.jpg"
   bio              : "Phd. Student in Nonlinear Control Theory."
   location         : "INSA Rouen Normandie"
   employer         : 
@@ -253,7 +253,7 @@ timezone:  	Europe/Paris # http://en.wikipedia.org/wiki/List_of_tz_database_time
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

@@ -8,109 +8,29 @@ redirect_from:
   - /about.html
 ---
 
-Welcome on my professional web page. I am a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). My Ph.D defense is scheduled by the end of June 2022. [Link to the thesis](http://theses.fr/s221665) <br/>
+Welcome on my professional web page. I am a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). My Ph.D defense is scheduled by the end of June 2022. 
+
+[Link to the thesis](http://theses.fr/s221665) <br/>
 
 # Research interests
 My Ph.D thesis is composed of two parts. First, we are interested in characterizing and classifying control systems whose trajectories satisfies a quadratic nonholonmic constraint of the form 
+
+
 $$
 S_q(x,\dot{x})=\dot{x}^t\textsf{g}(x)\dot{x}+2\omega(x)\dot{x}+h(x)=0,
 $$
 
-where $x$ belongs to a smooth $n$-dimensional manifold, $\textsf{g}$ is a smooth $(0,2)$-tensor (possibly degenerated), $\omega$ is a smooth one-form, and $h$ is a smooth function. We proposed a novel class of control-affine systems whose trajectories satisfies $S_q(x(t),\dot{x}(t))=0$ for all $t$. We give a characterization of that class of control-affine systems and, next, we propose a classification (via feedback transformations) of the following nonlinear control systems 
-$$
-\begin{align*}
-\Xi_E\,:\,\dot{x} &= A(x)\cos(w) +B(x)\sin(w) +C(x),\\
-\Xi_H\,:\,\dot{x} &= A(x)\cosh(w)+B(x)\sinh(w)+C(x),\\
-\Xi_P\,:\,\dot{x} &= A(x)w^2     +B(x)w       +C(x),
-\end{align*}
-$$
-where $w$ plays the role of a scalar control that enters in a nonlinear way. In the case of a smooth manifold $\XXX$ of dimension $n\geq3$, we generalise the results obtained for parabolic systems to the class of paraboloid control systems, i.e. control systems whose trajectories satisfy 
-$$
-S_Q(x,\dot{x})= \dot{z}-\dot{y}^tQ(x)\dot{y}-b(x)\dot{y}-c(x)=0,
-$$
-where $x=(z,y)$, with $y=(y_1,\ldots,y_{n-1})$. 
+
+
+where $$x$$ belongs to a smooth $$n$$-dimensional manifold, $$\textsf{g}$$ is a smooth $$(0,2)$$-tensor (possibly degenerated), $$\omega$$ is a smooth one-form, and $$h$$ is a smooth function. We proposed a **novel class** of control-affine systems whose trajectories satisfies $$S_q(x(t),\dot{x}(t))=0$$ for all $$t$$. We give and explore a **characterization**  and a **classification** of that class of control-affine systems.
+
+In the second part of the manuscript we study the motion planning problem, that is, the problem of designing and studying algorithms that compute controls realizing a certain target trajectory.  We propose a regularisation of the **continuation method** introduced by Chitour and Sussmann  at the beginning of the century. We show that our method fixes the issues of the classical continuation method and we illustrate its potential through several numerical examples. 
 
 
 
-In the second part of the manuscript we study the motion planning problem, that is, the problem of designing and studying algorithms that compute controls realising a certain target trajectory. We consider a control-affine system of the form
-$$
-\begin{align*}
-\Sigma\,:\,\dot{x}(t) &= f(x(t))+\sum_{i=1}^{m}u_i(t)g_i(x(t)),\quad x\in\mathbb{R}^n,\quad\textrm{and}\quad u_i\in L^2([0,T],\mathbb{R}).
-\end{align*}
-$$
-We assume that a state $x(0)=x_0$ is fixed. An important notion of control theory is the endpoint mapping, which to a control $u(t)$ associates the terminal point $x_u(T)$ in time $T>0$ of the associated trajectory: 
-$$
-\begin{align*}
-E\,:\,L^2([0,T],\mathbb{R}^m)&\longrightarrow\mathbb{R}^n\\ 
-u&\longmapsto x_u(T).
-\end{align*}
-$$
-The study of that map and, particularly, of its singularities (i.e. the points $u$, where the differential $\mathrm{d}E(u)$ is not surjective) is the subject of many works, e.g. Lee and Markus \cite{lee1986FoundationsOptimalControl}, Bonnard and Chyba \cite{bonnard2003SingularTrajectoriestheir}. From the point of view of applications, there are two very natural questions. The first one consists in describing the set of reachable points from $x_0$ in time $T$ using prescribed controls. And, second, given a target point $x^{\star}\in\RR^n$, reachable from $x_0$ in time $T$, we look for a (non necessarily unique) control $u^{\star}$ realising $E(u^{\star})=x^{\star}$. This problem is called the motion planning problem in the literature and we dedicate the second part of the thesis to it. 
+*Keywords*: Nonlinear control system, quadratic nonholonomic constraints, Feedback equivalence, Normal forms, Lie algebra of infinitesimal symmetries, Motion planning, Continuation method, Tikhonov regularisation</br>
 
-
-
-
-```
-
-In the case of a smooth manifold $\XXX$ of dimension $n\geq3$, we give a characterisation of paraboloid submanifolds $\SM_Q$, i.e. those that are given by a map of the form
-\begin{align*}
-
-\end{align*}
-\noindent
-where $x=(z,y)$, with $y=(y_1,\ldots,y_{n-1})$. That class of submanifolds generalises the class of parabolic submanifolds studied in the case $n=2$. Our construction is based on the study of geometric and algebraic objects attached to first and second prolongations of $\SM_Q$, which are, respectively, control-nonlinear and control-affine systems of the form 
-\begin{align*}
-\Xi_{p,q}\,:\,\dot{x} &= A(x) w^t\ipq w+B(x)w+C(x),\\ 
-\Sigma_{p,q}\,:\,\dot{x} &= A(x) w^t\ipq w+B(x)w+C(x),\quad \dot{w}=u, 
-\end{align*}
-\noindent
-\noindent
-where $\ipq=\left(\begin{smallmatrix}\id_p&0\\0&-\id_q\end{smallmatrix}\right)$, and $(A,B_1,\ldots,B_{m},C)$ are smooth vector fields. Our characterisation is explicit, i.e. it can be tested explicitly on any control-affine system by means of algebraic and differential relations between well-defined structure functions attached to the system. Every time when it is possible we give an interpretation of our conditions either by giving their geometric counterpart or by constructing normal forms. Next, we deal with the problem of classifying paraboloid submanifolds $\SM_Q$ by proposing a classification of their first prolongation $\Xi_{p,q}$. We explore the following normal forms, 
-\begin{align*}
-\Xi_{p,q}'\,:\, \dot{x} &=  w^t\ipq w\vec{z}+\sum_{i=1}^{m} w_i\vec{y_i}+C(x),\\ 
-\Xi_{p,q}'\,:\, \dot{x} &=  w^t\ipq w\vec{z}+\sum_{i=1}^{m} w_i\vec{y_i}+c_0(x)\vec{z},\\ 
-\Xi_{p,q}'\,:\, \dot{x} &=  w^t\ipq w\vec{z}+\sum_{i=1}^{m} w_i\vec{y_i}+c_0\vec{z},\quad c_0\in\RR.
-\end{align*}
-\noindent
-The first form corresponds to the existence of a commutative frame $A,B_1,\ldots,B_m$ (which corresponds to the normalisation $Q=\ipq$ in $\SM_Q$). In the second normal form, we characterise the form where the vector field $C$ is collinear with $A$ (which is interesting because it corresponds to $\SM_Q$ with $Q=\ipq$ and, additionally, $b=0$), and finally we give conditions for $C$ being constant (corresponding to $Q=\ipq$, $b=0$, and $c\in\RR$ for $\SM_Q$). The latter case leads to a canonical form with $c_0=\pm1$ or $c_0=0$. Our classification of paraboloid system gives, equivalently, a classification of paraboloid submanifolds. 
-
-We also propose an approach to directly characterise paraboloid submanifolds $\SM_Q$ with no parameters, called null-forms and given by $\Sm_Q^0=\dot{z}-\dot{y}^t\ipq\dot{y}$. That characterisation is based on studying symmetries of their second prolongation given by 
-\begin{align*}
-\Sigma_{p,q}^0\,:\,\left\{\begin{array}{rl}
-\dot{z} &= w^t\ipq w \\ \dot{y} &= w \\ \dot{w} &= u
-\end{array}\right..
-\end{align*}
-\noindent
-We show that the Lie algebra of infinitesimal symmetries of $\Sigma_{p,q}^0$ describes that class of control-affine systems. \\%is reflected in feedback equivalence of , we give another characterisation for a subclass of paraboloid submanifolds, namely those without functional parameters, called \emph{null-forms} (i.e. $\Xi_{p,q}'''$ with $c_0=0$).\\
-
-
-
-\noindent
-
-
-%We propose a regularisation of the \emph{continuation method} introduced by Chitour and Sussmann at the beginning of the century. The idea of the method is to start with an arbitrary control $u^0$ which, in general, gives a final state $x^0$ different from $x^{\star}$. Then, we construct a path $\pi$ in $\RR^n$ joining the first guess $x^0$ to the target point $x^{\star}$, i.e. $\pi\,:\,[0,1]\rightarrow\RR^n$ satisfies $\pi(0)=x^0$ and $\pi(1)=x^{\star}$. The core of the procedure is the construction of a lift in $L^2([0,T],\RR^m)$ of $\pi$. Namely, we look for a path $\Pi(s)$ of controls satisfying $\Pi(0)=u^0$ and for all $s\in[0,1]$ we have $E(\Pi(s))=\pi(s)$. If that procedure can be carried out to $s=1$ then $\Pi(1)$ is a solution of the motion planning problem. The resolution of this method is done by differentiating with respect to $s$ the relation $E(^\Pi(s))=\pi(s)$ which gives rise to two major inconvenients. Firstly, one need that $\pi(s)$ avoid the singular set of $E$ (otherwise, at such a point, the differential equation is not well-posed), and secondly, we need to guarantee that the differential admits a global solution on $[0,1]$. There si a global and alocal condition to ensure the feasability of the process and the convergence of the algorithm. 
-We propose a regularisation of the \emph{continuation method} introduced by Chitour and Sussmann \cite{chitour1998LineIntegralEstimatesMotion,chitour2006continuationmethodmotionplanning} at the beginning of the century. The idea of the method is to start with an arbitrary control $u^0$ which, in general, gives a final state $x^0$ different from $x^{\star}$. Then, we construct a path $\pi$ in $\RR^n$ joining the first guess $x^0$ to the target point $x^{\star}$, that is $\pi(0)=x^0$ and $\pi(1)=x^{\star}$. The core of the procedure is the construction of a lift of $\pi$ in $L^2([0,T],\RR^m)$. Namely, we look for a path $\Pi(s)$ of controls satisfying $\Pi(0)=u^0$ and for all $s\in[0,1]$ we have $E(\Pi(s))=\pi(s)$. If that procedure can be carried out to $s=1$ then $\Pi(1)$ is a solution of the motion planning problem. The resolution of this method is done by differentiating with respect to $s$ the last relation, which yield the differential equation 
-\begin{align*}
-\dend(\Pi(s))\Pi'(s)=\pi'(s),\quad \Pi(0)=u^0, 
-\end{align*}
-\noindent
-called the path lifting equation (PLE). If $\dend(\Pi(s))$ is surjective for all $s$, then it possesses a right inverse, for instance the Moore-Penrose pseudo-inverse, and thus the PLE has a local solution. Under that assumption, we need to show that the PLE possesses a global solution on $[0,1]$. Therefore, the two difficulties of the continuation method are: first, one needs that $\pi(s)$ avoids the singular set of $E$ (otherwise, at such a point, the PLE is not well-posed), and secondly, one needs to guarantee that the PLE admits a global solution on $[0,1]$. Nowadays, the description of the singular set of $E$ is still an open problem in its generality, and the second point requires the analysis of a highly nonlinear differential equation posed on an infinite-dimensional space. Therefore, there is a global and a local condition to ensure the feasibility of the continuation method and the convergence of the algorithm. 
-
-
-The idea presented in this thesis is to introduce a regularisation, inspired by the Tikhonov regularisation in the theory of the Moore-Penrose pseudo-inverse, in the continuation method. We propose a parameter deformation of the right inverse of $\dend{\Pi(s))}$, which yields equation 
-\begin{align*}
-\Pi_{\lambda}'(s)&=\dend\left(\Pi_{\lambda}(s)\right)^*\left(\dend\left(\Pi_{\lambda}(s)\right)\dend\left(\Pi_{\lambda}(s)\right)^*+\lambda\,\id\right)^{-1}\pi'(s),\quad \Pi_{\lambda}(0)=u^0,
-\end{align*}
-\noindent
-called the regularised path lifting equation (R-PLE). We show that our method fixes both issues of the classical continuation method. Indeed, the regularisation ensures that the R-PLE is well-posed for every $s\in[0,1]$ and that it admits a global solution. In the thesis, we show that the condition for a solution $\Pi_{\lambda}$ of the R-PLE to converge ($\lambda\to0$) towards a solution of the PLE is that $\pi(s)$ satisfies $\pi'(s)\in\im{\dend(\Pi(s))}$, for all $s$. %we give theoretical results guaranteeing the convergence of our regularised solution $\Pi_{\lambda}(s)$ to a solution of the classical continuation method. 
-Finally, we illustrate the potential of our method through several numerical examples.
-
-```
-
-My PhD research are of two kind. First I want to deeply understand nonlinear dynamical control systems. Using the language of differential geometry my purpose is to classified quadratic nonlinear control systems. During his PhD [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) classified non linear dynamical system that are equivalent (up to a state diffeomorphism or up to feedback action) to a controllable linear system. We want to extend this results and found conditions for a system to be equivalent to a system with a product of control. <br/>
-
-On the other hand, I want to propose an improved version of the continuation method, developed first by [Yacine Chitour](http://www.l2s.centralesupelec.fr/perso/yacine.chitour). This method was developed to compute optimal control. However the method assume that we can avoid the singular set of the system. This is a practical strong assumptions. With  [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) we propose a modified algorithm giving an approximation of the optimal control but dealing with the singular set of the system. <br/>
-
-# Short CV  [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)
+## Short CV  [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)
 
 * 2018 - : **Ph.D in Nonlinear control theory**, INSA Rouen Normandie
   * Advisor : [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html)
@@ -134,7 +54,7 @@ On the other hand, I want to propose an improved version of the continuation met
 
 - *27/10/2021*: **Motion Planning with a Regularized Continuation Method**, <u>T. Schmoderer</u> and E. Trélat, *Conférence des Jeunes Chercheurs en Mathématiques Appliquées* (CJC-MA-21). [abstract](https://tschmoderer.github.io/files/talks/20211027_cjc_ma/abstract_tschmoderer.pdf). [presentation](https://tschmoderer.github.io/files/talks/20211027_cjc_ma/#).
 - *24/06/2020*: **Conic nonholonomic constraints on  surfaces and control systems** ,  <u>T. Schmoderer</u> and W. Respondek, *13e journée de la fédération Normandie-Mathématiques*. [abstract](https://tschmoderer.github.io/files/talks/20210624_13_fnm/abstract.pdf). [presentation](https://tschmoderer.github.io/files/talks/20210624_13_fnm/presentation_240621.pdf).
-- *07/11/2020*: **Introduction to the equivalence and classification of quadratic submanifolds in $\mathbf{\textrm{T}\mathbb{R}^2}$** , <u>T. Schmoderer</u> and W. Respondek, *12e journée de la fédération Normandie-Mathématiques*. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
+- *07/11/2020*: **Introduction to the equivalence and classification of quadratic submanifolds in $$\mathbf{\textrm{T}\mathbb{R}^2}$$** , <u>T. Schmoderer</u> and W. Respondek, *12e journée de la fédération Normandie-Mathématiques*. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
 - *17/07/2020*: **Learning Optical Flow for Fast MRI Reconstruction**, <u>T. Schmoderer</u>, A. I.  Aviles-Rivero, V. Corona, N. Debroux and C-B. Schönlieb, *SIAM Imaging Science 2020 - Mini-Symposium: The Power of Variational and Hybrid Multi-task Models for Image Analysis*. [abstract](https://meetings.siam.org/sess/dsp_talk.cfm?p=104925). [presentation](https://tschmoderer.github.io/files/talks/20200717_siam_is_20/mri_presentation_17072020.pdf).
 
 ## Invitations
@@ -145,8 +65,9 @@ On the other hand, I want to propose an improved version of the continuation met
 
 ## Teaching [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/teaching/)
 
-- 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students.
-- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students.
+- 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students (271h).
+- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students (215h).
+- 2018 / 2019 : Informatics, Embedded system, FORTRAN (64h).
 
 
 ## Administrative functions

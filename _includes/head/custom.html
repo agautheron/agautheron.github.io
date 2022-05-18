@@ -36,15 +36,20 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!--<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>-->
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
+  MathJax = {
+    tex: {
       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
+      processEscapes: true,
+      tags: "all"
+    },
+    svg: {
+      fontCache: 'global'
     }
-  });
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>-->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!-- end custom head snippets -->
