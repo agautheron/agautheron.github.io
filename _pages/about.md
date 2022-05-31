@@ -43,8 +43,11 @@ In the second part of the manuscript we study the motion planning problem, that 
 ## Publications  [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/publications/)
 
 ---
+- **Null-forms of conic systems in $$\mathbb{R}^3$$ are determined by their symmetries** (2022), Submitted to *Systems & Control Letters*. <u>T. Schmoderer</u> and W. Respondek. [preprint](https://arxiv.org/abs/2205.12170).
 
-- **Conic nonholonomic constraints on surfaces and control systems** (2021), Submitted at *Journal of Dynamical and Control Systems*. <u>T. Schmoderer</u> and W. Respondek. [preprint](https://arxiv.org/abs/2106.08635). [blog post](https://tschmoderer.github.io/posts/2021/05/blog-post-4/). 
+---
+
+- **Conic nonholonomic constraints on surfaces and control systems** (2021), Submitted to *Journal of Dynamical and Control Systems*. <u>T. Schmoderer</u> and W. Respondek. [preprint](https://arxiv.org/abs/2106.08635). [blog post](https://tschmoderer.github.io/posts/2021/05/blog-post-4/). 
 
 ---
 
