@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome on my professional web page. I am a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). My Ph.D defense is scheduled by the end of June 2022. 
+Welcome on my professional web page. I am a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). My Ph.D was successfully defended on the 21st of June 2022. 
 
 [Link to the thesis](http://theses.fr/s221665) <br/>
 
@@ -32,10 +32,17 @@ In the second part of the manuscript we study the motion planning problem, that 
 
 ## Short CV  [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)
 
-* 2018 - : **Ph.D in Nonlinear control theory**, INSA Rouen Normandie
-  * Advisor : [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html)
-  * Co-Advisor : [Emmanuel Trélat](https://www.ljll.math.upmc.fr/~trelat/)
-  * Funding : INSA Rouen Normandie
+* 2018 - 2022 : **Ph.D thesis in geometric control  theory**, INSA Rouen Normandie
+  * <u>Title</u>: *Study of control systems under quadratic nonholonomic constraints. Motion planning, introduction to the regularised continuation method.*
+  * <u>Advisors</u>: [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) (LMI, INSA Rouen Normandie) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/~trelat/) (LJLL, Sorbonne Université)
+  * <u>Defense</u>: 21 June 2022 before the jury composed of
+    * Professor Yacine Chitour (CentralSupélec, Reviewer)
+    * Professor Frédéric Jean (ENSTA, Reviewer)
+    * Research Director Ugo Boscain (CNRS, Examiner)
+    * Research Director Jean-Baptiste Pomet (INRIA, Examiner)
+    * Professor Hasnaa Zidani (INSA, Examiner, President)
+  * <u>Manuscript</u>:  [direct link](https://tschmoderer.github.io/files/thesis/manuscrit_these_tschmoderer.pdf) ; [HAL]() ; [theses.fr](http://theses.fr/s221665)
+  * Funding: INSA Rouen Normandie
 * 2013 - 2018 : **Engineer degree** in applied Mathematics at INSA Rouen Normandie
 * 2016 - 2018 : **Master degree** in applied Mathematics at Sorbonne Univerity (Paris VI)
 * 2018 : **Master degree** in applied Mathematics at University of Rouen
@@ -55,6 +62,7 @@ In the second part of the manuscript we study the motion planning problem, that 
 
 ## Communications [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/talks/)
 
+- *22/06/2022*: **Control systems with paraboloid nonholonomic constraints**, <u>T. Schmoderer</u>, *Workshop on "Optimal Control Theory"*. [abstract](https://tschmoderer.github.io/files/talks/20220623_wkshop_ctrl/abstract_tschmoderer.pdf). [presentation](https://tschmoderer.github.io/files/talks/20220623_wkshop_ctrl/tschmoderer_slides.pdf).
 - *27/10/2021*: **Motion Planning with a Regularized Continuation Method**, <u>T. Schmoderer</u> and E. Trélat, *Conférence des Jeunes Chercheurs en Mathématiques Appliquées* (CJC-MA-21). [abstract](https://tschmoderer.github.io/files/talks/20211027_cjc_ma/abstract_tschmoderer.pdf). [presentation](https://tschmoderer.github.io/files/talks/20211027_cjc_ma/#).
 - *24/06/2020*: **Conic nonholonomic constraints on  surfaces and control systems** ,  <u>T. Schmoderer</u> and W. Respondek, *13e journée de la fédération Normandie-Mathématiques*. [abstract](https://tschmoderer.github.io/files/talks/20210624_13_fnm/abstract.pdf). [presentation](https://tschmoderer.github.io/files/talks/20210624_13_fnm/presentation_240621.pdf).
 - *07/11/2020*: **Introduction to the equivalence and classification of quadratic submanifolds in $$\mathbf{\textrm{T}\mathbb{R}^2}$$** , <u>T. Schmoderer</u> and W. Respondek, *12e journée de la fédération Normandie-Mathématiques*. [presentation](https://tschmoderer.github.io/files/talks/20201106_12_fnm/presentation_061120.pdf).
