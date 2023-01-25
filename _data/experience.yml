@@ -1,9 +1,25 @@
 # Experience template
+- company: Université Jean Monnet Saint-Etienne / Hubert CREATIS
+  link: https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp
+  logo : images/postdoc1.jpg
+  job_title: Post-Doctoral Research Fellow
+  dates: January 2023 - Now
+  quote: #>
+ #  Short description of the company (optional)
+  description: | # this will include new lines to allow paragraphs
+    <u>Funding:</u> Manutech Sleight Graduate School
+    
+    Spectrophotometric analysis has many advantages for in vivo characterization of human biological tissues and classification of healthy or pathological tissues: it is fast and contactless. The search for spectral patterns allows for example to detect the presence of biological components, chromophores or fluorophores, characteristic of some tumors. The challenge of the project is to be able not only to detect but also to quantify these components, i.e. to estimate their concentration in a reliable way, in order for example to help the surgeon to decide the perimeter of the tumor area to be resected. The envisaged methodology includes a rigorous photometric analysis of the measurement system and an optical model for light scattering and fluorescence in the various layers of tissues, which allow, in an inverse approach, to deduce the concentrations of components of interest from the spectral measurements. 
+    The difficulty of this approach is mainly due to the translucency of biological materials (light trajectories are more complex to describe than for more opaque materials), and to the constraints related to in vivo measurements (reflection measurements are possible, but not transmission measurements, which limits the data available for evaluating the parameters of the model). 
+    Applications in dermatology (melanoma and other cancers), neurosurgery (gliomas) and organ transplantation (liver, kidney) are targeted.
+    fluorescence analysis for glioma classification (development of multi-excitatory models).
+    
+  
 - company: Université de Lyon / CREATIS
   link: https://www.creatis.insa-lyon.fr/site7/fr
   logo : images/doctorat.png
   job_title: PhD Student
-  dates: October 2019 - Now
+  dates: October 2019 - December 2022
   quote: #>
  #  Short description of the company (optional)
   description: | # this will include new lines to allow paragraphs
@@ -24,7 +40,7 @@
   link: http://www.essilor.fr
   logo : images/Polytech-Lyon.png
   job_title: Associate Professor
-  dates: October 2019 - Now
+  dates: October 2019 - September 2022
   quote: #>
  #  Short description of the company (optional)
   description: | # this will include new lines to allow paragraphs
