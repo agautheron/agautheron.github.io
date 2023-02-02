@@ -80,8 +80,8 @@ analytics:
 author:
   name             : "Timothée Schmoderer"
   avatar           : "new_profil.jpg"
-  bio              : "Phd. Student in Nonlinear Control Theory."
-  location         : "INSA Rouen Normandie"
+  bio              : "Phd. in Nonlinear Control Theory."
+  location         : "INRIA Disco team"
   employer         : 
   googlescholar    : "https://scholar.google.fr/citations?user=WxwKbngAAAAJ&hl=fr"
   email            : "timothee.schmoderer@insa-rouen.fr"
@@ -110,7 +110,9 @@ author:
   xing             :
   youtube          : "UCWEaiI8pBIMfr0OoC_gnp5A"
   wikipedia        :
-  lichess	       : "tschmoderer"
+  lichess	         : "tschmoderer"
+  hal              : "timothee-schmoderer"
+  arxiv            : "schmoderer_t_1"
 
 # Reading Files
 include:
@@ -126,7 +128,7 @@ exclude:
   - .sass-cache
   - assets/js/plugins
   - assets/js/_main.js
-  - assets/js/vendor
+  #- assets/js/vendor
   - Capfile
   - CHANGELOG
   - config

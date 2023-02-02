@@ -8,13 +8,22 @@ redirect_from:
   - /about.html
 ---
 
-Welcome on my professional web page. I am a Ph.D. student in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). My Ph.D was successfully defended on the 21st of June 2022. 
+Welcome to the professional web page of **Dr. Timothée Schmoderer**.  TS is an engineer who graduated from INSA Rouen Normandie with a  specialization in applied mathematics. In 2018, they received two  Masters degrees in theoretical and applied mathematics, one from  Sorbonne Université (Paris VI) and the other from Normandie Université. TS started in 2018 a thesis in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). He successfully defended his Ph.D thesis on the 21st of June 2022. In 2023, TS was appointed as a one year post-doctoral fellow in the control of  time-delay dynamical systems at [INRIA DISCO](https://team.inria.fr/disco/fr/) team ([L2S](https://l2s.centralesupelec.fr/), CentraleSupélec).
 
-[Link to the thesis](http://theses.fr/s221665) <br/>
+[Link to the thesis of TS](http://theses.fr/s221665) <br/>
 
 # Research interests
-My Ph.D thesis is composed of two parts. First, we are interested in characterizing and classifying control systems whose trajectories satisfies a quadratic nonholonmic constraint of the form 
+### Characterisation and classification of quadratic control systems 
 
+### Symmetries of control systems 
+
+### Trivial control-systtems 
+
+### Stabilization of time-delay dynamical systems 
+
+### Motion planning
+
+My Ph.D thesis is composed of two parts. First, we are interested in characterizing and classifying control systems whose trajectories satisfies a quadratic nonholonmic constraint of the form 
 
 $$
 S_q(x,\dot{x})=\dot{x}^t\textsf{g}(x)\dot{x}+2\omega(x)\dot{x}+h(x)=0,
@@ -32,7 +41,10 @@ In the second part of the manuscript we study the motion planning problem, that 
 
 ## Short CV  [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)
 
-* 2018 - 2022 : **Ph.D thesis in geometric control  theory**, INSA Rouen Normandie
+* 2023 - :  Post-doctoral fellow at INRIA DISCO team, L2S CentraleSupélec
+  * <u>Subject</u>: Stabilization of time-delay dynamical systems 
+  * <u>Collaborators</u>: [Islam Boussaada](https://l2s.centralesupelec.fr/u/boussaada-islam/) and [Silviu Niculescu](https://l2s.centralesupelec.fr/u/niculescu-silviu-iulian/)
+* 2018 - 2022 : **Ph.D thesis in nonlinear control  theory**, INSA Rouen Normandie
   * <u>Title</u>: *Study of control systems under quadratic nonholonomic constraints. Motion planning, introduction to the regularised continuation method.*
   * <u>Advisors</u>: [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) (LMI, INSA Rouen Normandie) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/~trelat/) (LJLL, Sorbonne Université)
   * <u>Defense</u>: 21 June 2022 before the jury composed of
@@ -48,6 +60,10 @@ In the second part of the manuscript we study the motion planning problem, that 
 * 2018 : **Master degree** in applied Mathematics at University of Rouen
 
 ## Publications  [<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/publications/)
+
+<div id="hal-publi"></div>
+
+
 
 ---
 - **Null-forms of conic systems in $$\mathbb{R}^3$$ are determined by their symmetries** (2022), Submitted to *Systems & Control Letters*. <u>T. Schmoderer</u> and W. Respondek. [preprint](https://arxiv.org/abs/2205.12170).
