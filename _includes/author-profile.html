@@ -35,13 +35,13 @@
         <li><a href="mailto:{{ author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
       {% if author.hal %}
-        <li><a href="https://cv.hal.science/{{ author.hal }}" target="_blank"><i class="ai ai-hal-square ai-fw" style="color:purple"></i>HAL</a></li>
+        <li><a href="https://cv.hal.science/{{ author.hal }}" target="_blank"><i class="ai ai-hal-square ai-fw" style="color:#7d2d46"></i>HAL</a></li>
       {% endif %}
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-fw" style="color:blue"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+        <li><a href="{{ author.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-fw" style="color: #a6ce39;"></i> ORCID</a></li>
       {% endif %}
       {% if author.arxiv %}
         <li><a href="http://arxiv.org/a/{{ author.arxiv }}" target="_blank"><i class="ai ai-arxiv" style="color:#01f202"></i> Arxiv</a></li>
