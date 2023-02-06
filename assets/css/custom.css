@@ -269,3 +269,15 @@ table {
 		position: inherit;
 	}
 }
+
+.semi-bold {
+	font-weight: bold;
+	text-decoration: none;
+	color: #5c6266;
+}
+
+@media (max-width: 500px) {
+	mjx-container[jax="SVG"][display="true"] {
+		font-size: 0.7em;
+	}
+}

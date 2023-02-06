@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to the professional web page of **Dr. Timothée Schmoderer**.  TS is an engineer who graduated from INSA Rouen Normandie with a  specialization in applied mathematics. In 2018, they received two  Masters degrees in theoretical and applied mathematics, one from  Sorbonne Université (Paris VI) and the other from Normandie Université. TS started in 2018 a thesis in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). He successfully defended his Ph.D thesis on the 21st of June 2022. In 2023, TS was appointed as a one year post-doctoral fellow in the control of  time-delay dynamical systems at [INRIA DISCO](https://team.inria.fr/disco/fr/) team ([L2S](https://l2s.centralesupelec.fr/), CentraleSupélec).
+Welcome to the professional web page of **Dr. Timothée Schmoderer**. <span class="semi-bold">TS</span> is an engineer who graduated from INSA Rouen Normandie with a  specialization in applied mathematics. In 2018, he received two  Masters degrees in theoretical and applied mathematics, one from  Sorbonne Université (Paris VI) and the other from Normandie Université. <span class="semi-bold">TS</span> started in 2018 a thesis in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). He successfully defended his Ph.D thesis on the 21st of June 2022. In 2023, <span class="semi-bold">TS</span> was appointed as a one year post-doctoral fellow in the control of  time-delay dynamical systems at [INRIA DISCO](https://team.inria.fr/disco/fr/) team ([L2S](https://l2s.centralesupelec.fr/), CentraleSupélec).
 
 
 <p style="margin-bottom: 0;"><strong>Content</strong>:</p>
@@ -20,16 +20,16 @@ Welcome to the professional web page of **Dr. Timothée Schmoderer**.  TS is an 
 
 ## Research interests <a name="research"></a>
 
-Dr. Timothée Schmoderer's expertise lies in the field of nonlinear control theory, which encompasses a wide range of both theoretical and practical aspects of control systems. He is particularly interested in exploring the following research topics: the characterisation and classification of quadratic control systems, the study of the Lie algebra of infinitesimal symmetries of control-systems, the study of trivial control systems and their relation to control-curvature, the motion planning problem and the development of practical algorithms for determining control laws, and the stabilization of linear time-delay systems...
+<span class="semi-bold">TS</span>'s expertise lies in the field of nonlinear control theory, which encompasses a wide range of both theoretical and practical aspects of control systems. He is particularly interested in exploring the following research topics: the characterisation and classification of quadratic control systems, the study of the Lie algebra of infinitesimal symmetries of control-systems, the study of trivial control systems and their relation to control-curvature, the motion planning problem and the development of practical algorithms for determining control laws, and the stabilization of linear time-delay systems...
 
 <small>**Keywords**: Nonlinear control system, Quadratic nonholonomic constraints, Feedback equivalence, Normal forms, Lie algebra of infinitesimal symmetries, Control curvature, Motion planning, Continuation method, Regularization techniques (e.g. Tikhonov regularization), Time-delay systems, Stabilization, Complex analysis</small>
 
 ### Characterisation and classification of quadratic control systems 
 
-The main contribution of TS thesis to control theory is the extensive study of quadratic control systems, i.e. nonlinear systems of the form $\dot{x}(t)=F(x(t),u(t))$, whose trajectories satisfiy a scalar equation of the form 
+The main contribution of <span class="semi-bold">TS</span> thesis to control theory is the extensive study of quadratic control systems, i.e. nonlinear systems of the form $\dot{x}(t)=F(x(t),u(t))$, whose trajectories satisfiy a scalar equation of the form 
 
 $$
-S_q(x,\dot{x})=\dot{x}^t\textsf{g}(x)\dot{x}+2\omega(x)\dot{x}+h(x)=0,\label{eq:quadratic}
+\class{my-mathjax-math-style}{S_q(x,\dot{x})=\dot{x}^t\textsf{g}(x)\dot{x}+2\omega(x)\dot{x}+h(x)=0,\label{eq:quadratic}}
 $$
 
 where $x$ belongs to a smooth $n$-dimensional manifold, $\textsf{g}$ is a smooth $(0,2)$-tensor (possibly degenerated), $\omega$ is a smooth one-form, and $h$ is a smooth function. This study generalizes the classical feedback classification of control-affine and control-linear systems, respectively given by
@@ -38,20 +38,20 @@ $$
 \dot{x}(t) = f(x)+g(x)u\quad\textrm{and}\quad \dot{x}(t)=g(x)u\nonumber. 
 $$
 
-Dr. TS's thesis provides a complete characterization and a classifcation of control-systems that satisfy \eqref{eq:quadratic} when $\dim x=2$ and $\dim u=1$, including the case when $\textrm{rk}(\textsf{g})$ is non-constant. When the rank of $\textsf{g}$ is constant and equal to $n-1$, a complete characterization is obtained in the case of an $n$-dimensional state space, and the identified class of control systems is referred to as the *paraboloid control systems*.
+<span class="semi-bold">TS</span>'s thesis provides a complete characterization and a classifcation of control-systems that satisfy \eqref{eq:quadratic} when $\dim x=2$ and $\dim u=1$, including the case when $\textrm{rk}(\textsf{g})$ is non-constant. When the rank of $\textsf{g}$ is constant and equal to $n-1$, a complete characterization is obtained in the case of an $n$-dimensional state space, and the identified class of control systems is referred to as the *paraboloid control systems*.
 
 <small>**Future Research Directions**: generalise the $2$-dimensional case and characterise control systems satisying \eqref{eq:quadratic} with full generality of $n$ and rank of $\textsf{g}$, study the property of the identifyed class (e.g. controlability, stability, ...), extend the $2$-dimensional case to equations of the form \eqref{eq:quadratic} with additional polynomial terms in $\dot{x}$ of order higher than three...</small>
 
 
 ### Symmetries of control systems 
 
-In the study of quadratic and trivial control systems, Dr. TS demonstrated that the simplest classes (that can be represented by a normal form without any functional or real continuous parameters) are uniquely identified by their Lie algebra of infinitesimal symmetries. This implies that if a given control system has a Lie algebra of infinitesimal symmetries that is isomorphic to the Lie algebra of symmetries of a particular class, then the system is feedback equivalent to the corresponding normal form that represents the class.
+In the study of quadratic and trivial control systems, <span class="semi-bold">TS</span> demonstrated that the simplest classes (that can be represented by a normal form without any functional or real continuous parameters) are uniquely identified by their Lie algebra of infinitesimal symmetries. This implies that if a given control system has a Lie algebra of infinitesimal symmetries that is isomorphic to the Lie algebra of symmetries of a particular class, then the system is feedback equivalent to the corresponding normal form that represents the class.
 
 <small>**Future Research Directions**: obtain a general comprehension of the class of control-systems that are determined by their symmetries, give a characterisation of the Lie algebra that can be symmetries of control systems... </small>
 
 ### Motion planning
 
-In Dr. TS's thesis, he study the motion planning problem (MPP), that is, the problem of designing and studying algorithms that (for a given control-nonlinear system) compute controls realizing a certain target trajectory. Specifically, for a given control system of the form $\dot{x}(t)=F(t,x(t),u(t))$, the MPP amounts solving an inverse problem on the input-output map 
+In <span class="semi-bold">TS</span>'s thesis, he study the motion planning problem (MPP), that is, the problem of designing and studying algorithms that (for a given control-nonlinear system) compute controls realizing a certain target trajectory. Specifically, for a given control system of the form $\dot{x}(t)=F(t,x(t),u(t))$, the MPP amounts solving an inverse problem on the input-output map 
 
 $$
 \begin{align}
@@ -60,37 +60,37 @@ u&\longmapsto E_{T,x_0}(u) = x(T,u,x_0),\nonumber
 \end{align}
 $$
 
-which maps a control to the endpoint of the associated trajectory. In his work, TS propose a regularisation of the **continuation method** (CS) introduced by Chitour and Sussmann at the beginning of the century. The classical version of the continuation method reduces the MPP to solving an ordinary differential equation on $U([0,T],\mathbb{R}^m)$, which might be singular at some points and might not posses a global solution. The regularised version of the CM proposed by TS tackles both the problem of singularity and the existence of a global solution. In his thesis, he shows the potential of his method through several numerical examples. 
+which maps a control to the endpoint of the associated trajectory. In his work, <span class="semi-bold">TS</span> propose a regularisation of the **continuation method** (CS) introduced by Chitour and Sussmann at the beginning of the century. The classical version of the continuation method reduces the MPP to solving an ordinary differential equation on $U([0,T],\mathbb{R}^m)$, which might be singular at some points and might not posses a global solution. The regularised version of the CM proposed by <span class="semi-bold">TS</span> tackles both the problem of singularity and the existence of a global solution. In his thesis, he shows the potential of his method through several numerical examples.
 
 <small>**Future Research Directions**: further theoretical analysis on the regularised continuation method, study in details the effect of the proposed regularisation, incorporate other types of regularisation, high-performance computing implementation, add constraints on the set of controls and state. </small>
 
 ### Trivial control-systems
 
-After completing his thesis, TS became interested in the concept of trivial control systems, which are systems whose dynamics depend only on the controls (or controlled variables) and are represented by either of the following forms:
+After completing his thesis, <span class="semi-bold">TS</span> became interested in the concept of trivial control systems, which are systems whose dynamics depend only on the controls (or controlled variables) and are represented by either of the following forms:
 
 $$
 \dot{x}(t)=F(u(t))\quad\textrm{or}\quad \left\{\begin{array}[rl] \dot{x}(t)&=w(t) \\ \dot{w}(t) &= u(t) \end{array}\right..\nonumber
 $$
 
-This notion of trivial control systems has previously been introduced in literature (in the case $\dim x = 2$ and $\dim u = 1$) by U. Serres in his thesis. TS further developed this concept by providing two general characterizations of trivial control systems of arbitrary dimension and with an arbitrary number of controls. However, those two novel characterisations can not be used in practice. In the case of $\dim x = 2$ and $\dim u = 1$, TS revisited the results of Serres and found that a characterization could be expressed via two feedback invariant functions: the control-curvature (introduced by Agrachev) and the centro-affine curvature. Based on the properties of these two feedback invariants, TS was able to give a complete classification of control-affine systems with $\dim x = 3$ and $\dim u = 1$.
+This notion of trivial control systems has previously been introduced in literature (in the case $\dim x = 2$ and $\dim u = 1$) by U. Serres in his thesis. <span class="semi-bold">TS</span> further developed this concept by providing two general characterizations of trivial control systems of arbitrary dimension and with an arbitrary number of controls. However, those two novel characterisations can not be used in practice. In the case of $\dim x = 2$ and $\dim u = 1$, <span class="semi-bold">TS</span> revisited the results of Serres and found that a characterization could be expressed via two feedback invariant functions: the control-curvature (introduced by Agrachev) and the centro-affine curvature. Based on the properties of these two feedback invariants, <span class="semi-bold">TS</span> was able to give a complete classification of control-affine systems with $\dim x = 3$ and $\dim u = 1$.
 
 <small>**Future Research Directions**: extend the characterisation of trivial control systems via curvatures to the case of $\dim x=n$...  </small>
 
-### Stabilization of time-delay dynamical systems 
+### Stabilization of time-delay dynamical systems
 
-During his postdoctoral fellowship at INRIA team DISCO, TS studied the stabilisation of linear time-delay equations of the form 
+During his postdoctoral fellowship at INRIA team DISCO, <span class="semi-bold">TS</span> studied the stabilisation of linear time-delay equations of the form
 
 $$
 x^{(n)}(t)+\sum_{k=0}^{n-1}a_kx^{(k)}(t)+\sum_{k=0}^m\alpha_kx^{(k)}(t-\tau) = 0,\label{eq:delay}
 $$
 
-where $\tau>0$ is the delay. In contrast to the no-delay case, where the Rough-Hurwitz criteria directly provides stability information for linear ODEs, the stability analysis of the time-delay case is much more involved due to the corresponding transfer function being a quasipolynomial with an infinite number of roots. However, a bound on the number of real roots can be obtained, and it has been shown that assigning a single root with maximal multiplicity ensures asymptotic stability of the equation. During his postdoctoral position, TS focused on assigning the maximal number of real roots and showed that this guarantees asymptotic stability of the corresponding equation.
+where $\tau>0$ is the delay. In contrast to the no-delay case, where the Rough-Hurwitz criteria directly provides stability information for linear ODEs, the stability analysis of the time-delay case is much more involved due to the corresponding transfer function being a quasipolynomial with an infinite number of roots. However, a bound on the number of real roots can be obtained, and it has been shown that assigning a single root with maximal multiplicity ensures asymptotic stability of the equation. During his postdoctoral position, <span class="semi-bold">TS</span> focused on assigning the maximal number of real roots and showed that this guarantees asymptotic stability of the corresponding equation.
 
 <small>**Future Research Directions**: design a control law to stabilize a given time-delay equation with some fixed parameters, analyze the properties of a system for which roots with arbitrary multiplicity are assigned, extend the results to the multi-delay case,...</small>
 
 ### Misc: Variational optimisation and imaging science 
 
-In 2019, TS was invited to the Department of Applied Mathematics at the University of Cambridge, where he developed a model for reconstructing MRI images. Due to technical limitations, MRI images are often taken as undersampled Fourier data and must be extrapolated to produce a usable image. To address this issue, TS developed an optimization procedure that combines both variational and learned techniques. The learning aspect of the optimization involves the optical flow between two frames in the same sequence of MRI images. The procedure constructs a dictionary of representative optical flows, allowing the true optical flow to be expressed as a linear combination of dictionary atoms. The variational aspect of the optimization problem includes data fidelity and regularization terms, such as total variation (TV) or $L^1$ penalties. Thus, the optimization problem is non-trivial, as it involves non-convex and non-differentiable terms. In his publications, he and his colleagues provided theoretical guarantees on the existence of a solution to the optimization problem and demonstrated its potential through numerical simulations.
+In 2019, <span class="semi-bold">TS</span> was invited to the Department of Applied Mathematics at the University of Cambridge, where he developed a model for reconstructing MRI images. Due to technical limitations, MRI images are often taken as undersampled Fourier data and must be extrapolated to produce a usable image. To address this issue, <span class="semi-bold">TS</span> developed an optimization procedure that combines both variational and learned techniques. The learning aspect of the optimization involves the optical flow between two frames in the same sequence of MRI images. The procedure constructs a dictionary of representative optical flows, allowing the true optical flow to be expressed as a linear combination of dictionary atoms. The variational aspect of the optimization problem includes data fidelity and regularization terms, such as total variation (TV) or $L^1$ penalties. Thus, the optimization problem is non-trivial, as it involves non-convex and non-differentiable terms. In his publications, he and his colleagues provided theoretical guarantees on the existence of a solution to the optimization problem and demonstrated its potential through numerical simulations.
 
 ## Short CV <a name="shortcv"></a> <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)-->
 
