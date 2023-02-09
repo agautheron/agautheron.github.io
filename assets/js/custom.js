@@ -48,7 +48,7 @@ $(document).ready(function(){
     /* ARTICLE */
     callHALAPI("ART").then(data => {
         // Set title 
-        $("#hal-art-card-title").text("Journal articles (" + data.length + ")");
+        $("#hal-art-card-title").text("Journal article (" + data.length + ")");
         var tab = $("#hal-art-table");
         for (const p of data) {
             console.log(p);
