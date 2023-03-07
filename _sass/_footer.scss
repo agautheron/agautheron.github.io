@@ -1,7 +1,24 @@
 /* ==========================================================================
    FOOTER
    ========================================================================== */
+.page__footer {
+  @include full();
+  margin-top: 1em;
+  color: $darker-gray;
+  background-color: $lighter-gray;
+  border-top: 1px solid $light-gray;
 
+  footer {
+    .page__footer-copyright {
+      font-family: $global-font-family;
+      font-size: $type-size-7;
+      padding: 1em;
+      text-align: right;
+    }
+  }
+}
+
+/*
 .page__footer {
   @include full();
   @include clearfix;
@@ -70,4 +87,4 @@
     padding-right: 10px;
     font-weight: bold;
   }
-}
+}*/
