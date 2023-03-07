@@ -1,4 +1,3 @@
-# main links links
 main:
   - title: "Research"
     url: /#research
@@ -8,19 +7,9 @@ main:
 
   - title: "Publications"
     url: /#publis
-
-  #- title: "Talks"
-  #  url: /talks/    
-
+    
   - title: "Teaching"
     url: /#teaching    
-        
-  #- title: "Blog Posts"
-   # url: /year-archive/
-  
+
   - title: "Administrative"
     url: /#admin
-  
-    
-#  - title: "Guide"
-#    url: /markdown/
