@@ -1,4 +1,3 @@
-# IGNORE tmp files of CV editting
-files/CV/.~lock*
-
 _site/
+Gemfile.lock
+*.lock
