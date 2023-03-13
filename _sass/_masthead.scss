@@ -2,48 +2,103 @@
    MASTHEAD
    ========================================================================== */
 
-.masthead {
-  position: relative;
-  border-bottom: 1px solid $border-color;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-  z-index: 20;
+/* NEW MASTHEAD STYLE */
 
-  &__inner-wrap {
-    @include container;
-    @include clearfix;
-    padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+#site-nav {
+	display: grid;
+	grid-template-columns: $template-column;
+  	grid-column-gap: $template-gap;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
+	padding-top: 1em;
+	padding-bottom: 1em;
 
-    nav {
-      z-index: 10;
-    }
+	opacity: 0.75;
+	-webkit-transition: opacity 0.2s ease-in-out;
+  	transition: opacity 0.2s ease-in-out;
 
-    a {
-      text-decoration: none;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      clear: both;
-      list-style-type: none;
-    }
-  }
-  
-  .masthead__menu-item {
-    display: block;
-    list-style-type: none;
-    white-space: nowrap;
-  
-    &--lg {
-      padding-right: 2em;
-      font-weight: 700;
-    }
-  }
+	&:hover {
+		opacity: 1;
+	}
+	@media (max-width: $phone-size) {
+		opacity: 1;
+	}
+}
+
+#site-nav button {
+	display: none;
+	@media (max-width: $phone-size) {
+		display: inline;
+		scale: 1.5;
+		background: transparent;
+		grid-row: 1;
+		grid-column: 2;
+		margin: auto;
+		margin-right: 0;
+		cursor: pointer;
+		border: 0;
+		color: var(--main-text-color);
+	}
+}
+
+#site-nav a {
+	color: var(--main-text-color);
+}
+
+.visible-links a {
+	margin: 0 1rem 0 1rem;
+}
+
+.visible-links li:first-child a {
+	margin-left: 0;
+	@media (max-width: $phone-size) {
+		margin-left: 1rem;
+	}
+}
+
+.masthead__site-title {
+	grid-column: 1;
+	margin: auto;
+	font-weight: $semi-bold;
+}
+
+.visible-links {
+	grid-column: 2;
+	padding: 0;
+	margin: 0;
+	@media (max-width: $phone-size) {
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		padding: 5px;
+		border: 1px solid #f2f3f3;
+		border-radius: 4px;
+		background: var(--main-background-color);
+		box-shadow: 0 0 10px rgba(0,0,0,0.25);
+		&:before {
+			content: "";
+			position: absolute;
+			top: -11px;
+			right: 2.1em;
+			width: 0;
+			border-style: solid;
+			border-width: 0 10px 10px;
+			border-color: #f2f3f3 transparent;
+			display: block;
+			z-index: 0;
+		}
+	}
+}
+
+.masthead__menu-item {
+	display: inline;
+	list-style-type: none;
+  	white-space: nowrap;
+	@media (max-width: $phone-size) {
+		display: block;
+	}
+}
+
+#darkmode-buttons {
+	grid-column-end: -1;
 }
