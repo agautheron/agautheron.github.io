@@ -7,6 +7,9 @@ main:
 
   - title: "Publications"
     url: /#publis
+  
+  - title: "Softwares"
+    url: /#softwares
     
   - title: "Teaching"
     url: /#teaching    

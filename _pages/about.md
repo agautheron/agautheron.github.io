@@ -117,6 +117,16 @@ In 2019, <span class="semi-bold">TS</span> was invited to the Department of Appl
 
 <div id="publi-hal-all"></div>
 
+## Softwares <a name="softwares"></a> 
+
+### MRIR-DLMC
+
+A MATLAB implementation of the MRIR-DLMC algorithm for reconstructing magnetic resonance images from undersampled Fourier data. For a given sequence of sparse MRI data, the algorithm exploits the structure of each individual frame as well as the correlation between two consecutive frames (computed through the optical flow). The model includes a data fidelity term and several penalties on the structure of the data. The optimization task is computationally challenging due to the presence of non-convex and non-differentiable terms.. Moreover, the optical flow is computed from a learned dictionary, which is constructed using fully-sampled MRI sequences and phantom data. [Link to the code](https://github.com/tschmoderer/2019_mri_reconstruction).
+
+### Control-ToolBox 
+
+A C++ toolbox with a Python interface designed to handle control systems. The toolbox primarily focuses on implementing the homotopy continuation method for solving motion planning problems. Additionally, it provides functionalities such as dynamical and control systems simulations, motion planning with state and input constraints, and state-of-the-art algorithms for stabilizing linear equations, which may include delays. *Work in progress*. [Link to the code](https://github.com/tschmoderer/control-toolbox).
+
 ## Invitations <a name="invitations"></a> 
 
 |             |                                                              |                                                              |
