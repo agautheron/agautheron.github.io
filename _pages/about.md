@@ -15,9 +15,10 @@ Welcome to the professional web page of **Dr. Timothée Schmoderer**. <span clas
 1. [Research interests](#research)
 2. [Short CV](#shortcv)
 3. [Publications](#publis) 
-4. [Invitations](#invitations)
-5. [Teaching](#teaching)
-6. [Administrative functions](#admin)
+4. [Softwares](#softwares)
+5. [Invitations](#invitations)
+6. [Teaching](#teaching)
+7. [Administrative functions](#admin)
 
 ## Research interests <a name="research"></a>
 
@@ -135,9 +136,25 @@ A C++ toolbox with a Python interface designed to handle control systems. The to
 
 ## Teaching <a name="teaching"></a>  <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/teaching/)-->
 
-- 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students (271h). [Page du cours](https://tschmoderer.github.io/teaching/2021-gm3-ananum).
-- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students (215h).
-- 2018 / 2019 : Informatics, Embedded system, FORTRAN (64h).
+### Teaching assignment and Temporary teaching assistant at INSA de Rouen Normandie (278h)
+
+- 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students (*lectures, tutorials, and practical sessions* - 63h). [Page du cours](https://tschmoderer.github.io/teaching/2021-gm3-ananum).
+  * Linear algebra 
+  * Direct and iterative methods for linear
+equations
+  * Methods for nonlinear equations 
+  * Python practical exercices
+
+
+- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students (*tutorials* - 215h).
+  * Introduction to logic 
+  * Sets theory
+  * Sequences 
+  * Real functions analysis
+
+### Temporary teaching at Polytech Sorbonne (64h)
+
+- 2018 / 2019 : Informatics, Embedded system, FORTRAN (*practical sessions* - 64h).
 
 
 ## Administrative functions <a name="admin"></a> 
