@@ -114,11 +114,17 @@ In 2019, <span class="semi-bold">TS</span> was invited to the Department of Appl
 * 2016 - 2018 : **Master degree** in applied Mathematics at Sorbonne Univerity (Paris VI)
 * 2018 : **Master degree** in applied Mathematics at University of Rouen
 
+[Full CV pdf (fr)]() [Full CV pdf (en)]()
+
 ## Publications <a name="publis"></a> 
 
 <div id="publi-hal-all"></div>
 
 ## Softwares <a name="softwares"></a> 
+
+### P3δ
+
+A Python implementation of state-of-the-art partial pole placement methods for stability analysis of delay differential equations. [Link to the code](https://iboussaa.gitlabpages.inria.fr/partial-pole-placement-via-delay-action/P3d-Home.html).
 
 ### MRIR-DLMC
 
@@ -127,6 +133,8 @@ A MATLAB implementation of the MRIR-DLMC algorithm for reconstructing magnetic r
 ### Control-ToolBox 
 
 A C++ toolbox with a Python interface designed to handle control systems. The toolbox primarily focuses on implementing the homotopy continuation method for solving motion planning problems. Additionally, it provides functionalities such as dynamical and control systems simulations, motion planning with state and input constraints, and state-of-the-art algorithms for stabilizing linear equations, which may include delays. *Work in progress*. [Link to the code](https://github.com/tschmoderer/control-toolbox).
+
+### Optimal Transport
 
 ## Invitations <a name="invitations"></a> 
 
