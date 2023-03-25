@@ -40,6 +40,8 @@ html {
   overflow: auto;
   scroll-behavior: smooth;
   scroll-padding-top: 65px;
+
+  transition: background-color $transition-bg-color;
 }
 
 body {
@@ -79,6 +81,7 @@ header {
 	grid-column: 1 / 4;
 	grid-row: 1;
   background-color: var(--main-background-color);
+  transition: background-color $transition-bg-color;
 
   @media (max-width: $phone-size) {
     grid-column: 1/-1;
@@ -90,6 +93,7 @@ aside {
 	grid-column: 1;
 	grid-row: 2;
   background-color: var(--main-background-color);
+  transition: background-color $transition-bg-color;
 
   @media (max-width: $phone-size) {
     grid-column: 1/-1;
