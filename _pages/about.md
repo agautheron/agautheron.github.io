@@ -118,6 +118,7 @@ In 2019, <span class="semi-bold">TS</span> was invited to the Department of Appl
 
 ## Publications <a name="publis"></a> 
 
+<div id="wordcloud-hal"></div>
 <div id="publi-hal-all"></div>
 
 ## Softwares <a name="softwares"></a> 
