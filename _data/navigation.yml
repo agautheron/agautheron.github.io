@@ -1,18 +1,18 @@
 main:
+  - title: "CV"
+    url: /cv/
+    
   - title: "Research"
     url: /#research
   
-  - title: "CV"
-    url: /#shortcv
-
   - title: "Publications"
-    url: /#publis
+    url: /publications/
   
   - title: "Softwares"
-    url: /#softwares
+    url: /softwares/
     
   - title: "Teaching"
-    url: /#teaching    
+    url: /teaching/    
 
   - title: "Administrative"
     url: /#admin

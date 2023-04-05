@@ -8,165 +8,298 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to the professional web page of **Dr. Timothée Schmoderer**. <span class="semi-bold">TS</span> is an engineer who graduated from INSA Rouen Normandie with a  specialization in applied mathematics. In 2018, he received two  Masters degrees in theoretical and applied mathematics, one from  Sorbonne Université (Paris VI) and the other from Normandie Université. <span class="semi-bold">TS</span> started in 2018 a thesis in nonlinear control theory under the supervision of [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) from [LMI](http://lmi.insa-rouen.fr/) (INSA Rouen Normandie, Rouen) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/trelat/) from [LJLL](https://www.ljll.math.upmc.fr/) (Sorbonne Université, Paris). He successfully defended his Ph.D thesis on the 21st of June 2022. In 2023, <span class="semi-bold">TS</span> was appointed as a one year post-doctoral fellow in the control of  time-delay dynamical systems at [Inria DISCO](https://team.inria.fr/disco/fr/) team ([L2S](https://l2s.centralesupelec.fr/), CentraleSupélec).
+Welcome to the professional web page of **Dr. Arthur Gautheron**.<br/><br/>
+<span class="semi-bold">AG</span> is an engineer who graduated from the Institut d'Optique Graduate School. <br/>
+In 2019, he also received two other degrees, one university degree from the Institut de Formation Supérieure en Biomédical ([IFSBM](https://www.ifsbm.universite-paris-saclay.fr/), Paris Saclay Université) and a master degree in automatic & signal and images processing from Université Paris-Saclay.
 
+<span class="semi-bold">AG</span> started in 2019 a thesis in engineering for health (biomedical optics, optical modeling and signal processing) under the supervision of [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) from [CREATIS](http://creatis.insa-lyon.fr/) (Université Claude Bernard, Lyon) and [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321) from [LHC](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html) (Université Jean Monnet, Saint-Etienne). His thesis was funded by the [Labex PRIMES](https://primes.universite-lyon.fr/) and is briefly summarized [here](https://primes.universite-lyon.fr/medias/fichier/resume-these-labex-arthur-gautheron-v2_1625571544265-pdf).
+He successfully defended his Ph.D thesis on the 8th of December 2022. 
+
+In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doctoral fellow in the [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) funded by the [Manutech Sleight Graduate School](https://manutech-sleight.com/). He is thus member of the Image team ([LHC](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html), Saint-Etienne) and the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).<br/>
 
 <p style="margin-bottom: 0;"><strong>Content</strong>:</p>
-1. [Research interests](#research)
-2. [Short CV](#shortcv)
+1. [Short CV](#shortcv)
+2. [Research interests](#research)
 3. [Publications](#publis) 
 4. [Softwares](#softwares)
-5. [Invitations](#invitations)
-6. [Teaching](#teaching)
-7. [Administrative functions](#admin)
-
-## Research interests <a name="research"></a>
-
-<span class="semi-bold">TS</span>'s expertise lies in the field of nonlinear control theory, which encompasses a wide range of both theoretical and practical aspects of control systems. He is particularly interested in exploring the following research topics: the characterisation and classification of quadratic control systems, the study of the Lie algebra of infinitesimal symmetries of control-systems, the study of trivial control systems and their relation to control-curvature, the motion planning problem and the development of practical algorithms for determining control laws, and the stabilization of linear time-delay systems...
-
-<small>**Keywords**: Nonlinear control system, Quadratic nonholonomic constraints, Feedback equivalence, Normal forms, Lie algebra of infinitesimal symmetries, Control curvature, Motion planning, Continuation method, Regularization techniques (e.g. Tikhonov regularization), Time-delay systems, Stabilization, Complex analysis</small>
-
-### Characterisation and classification of quadratic control systems 
-
-The main contribution of <span class="semi-bold">TS</span> thesis to control theory is the extensive study of quadratic control systems, i.e. nonlinear systems of the form $\dot{x}(t)=F(x(t),u(t))$, whose trajectories satisfiy a scalar equation of the form 
-
-$$
-\class{my-mathjax-math-style}{S_q(x,\dot{x})=\dot{x}^t\textsf{g}(x)\dot{x}+2\omega(x)\dot{x}+h(x)=0,\label{eq:quadratic}}
-$$
-
-where $x$ belongs to a smooth $n$-dimensional manifold, $\textsf{g}$ is a smooth $(0,2)$-tensor (possibly degenerated), $\omega$ is a smooth one-form, and $h$ is a smooth function. This study generalizes the classical feedback classification of control-affine and control-linear systems, respectively given by
-
-$$
-\dot{x}(t) = f(x)+g(x)u\quad\textrm{and}\quad \dot{x}(t)=g(x)u\nonumber. 
-$$
-
-<span class="semi-bold">TS</span>'s thesis provides a complete characterization and a classifcation of control-systems that satisfy \eqref{eq:quadratic} when $\dim x=2$ and $\dim u=1$, including the case when $\textrm{rk}(\textsf{g})$ is non-constant. When the rank of $\textsf{g}$ is constant and equal to $n-1$, a complete characterization is obtained in the case of an $n$-dimensional state space, and the identified class of control systems is referred to as the *paraboloid control systems*.
-
-<small>**Future Research Directions**: generalise the $2$-dimensional case and characterise control systems satisying \eqref{eq:quadratic} with full generality of $n$ and rank of $\textsf{g}$, study the property of the identifyed class (e.g. controlability, stability, ...), extend the $2$-dimensional case to equations of the form \eqref{eq:quadratic} with additional polynomial terms in $\dot{x}$ of order higher than three...</small>
-
-
-### Symmetries of control systems 
-
-In the study of quadratic and trivial control systems, <span class="semi-bold">TS</span> demonstrated that the simplest classes (that can be represented by a normal form without any functional or real continuous parameters) are uniquely identified by their Lie algebra of infinitesimal symmetries. This implies that if a given control system has a Lie algebra of infinitesimal symmetries that is isomorphic to the Lie algebra of symmetries of a particular class, then the system is feedback equivalent to the corresponding normal form that represents the class.
-
-<small>**Future Research Directions**: obtain a general comprehension of the class of control-systems that are determined by their symmetries, give a characterisation of the Lie algebra that can be symmetries of control systems... </small>
-
-### Motion planning
-
-In <span class="semi-bold">TS</span>'s thesis, he study the motion planning problem (MPP), that is, the problem of designing and studying algorithms that (for a given control-nonlinear system) compute controls realizing a certain target trajectory. Specifically, for a given control system of the form $\dot{x}(t)=F(t,x(t),u(t))$, the MPP amounts solving an inverse problem on the input-output map 
-
-$$
-\begin{align}
-E_{T,x_0}\,:\, U([0,T],\mathbb{R}^m)&\longrightarrow \mathbb{R}^n\nonumber \\ 
-u&\longmapsto E_{T,x_0}(u) = x(T,u,x_0),\nonumber
-\end{align}
-$$
-
-which maps a control to the endpoint of the associated trajectory. In his work, <span class="semi-bold">TS</span> propose a regularisation of the **continuation method** (CS) introduced by Chitour and Sussmann at the beginning of the century. The classical version of the continuation method reduces the MPP to solving an ordinary differential equation on $U([0,T],\mathbb{R}^m)$, which might be singular at some points and might not posses a global solution. The regularised version of the CM proposed by <span class="semi-bold">TS</span> tackles both the problem of singularity and the existence of a global solution. In his thesis, he shows the potential of his method through several numerical examples.
-
-<small>**Future Research Directions**: further theoretical analysis on the regularised continuation method, study in details the effect of the proposed regularisation, incorporate other types of regularisation, high-performance computing implementation, add constraints on the set of controls and state. </small>
-
-### Trivial control-systems
-
-After completing his thesis, <span class="semi-bold">TS</span> became interested in the concept of trivial control systems, which are systems whose dynamics depend only on the controls (or controlled variables) and are represented by either of the following forms:
-
-$$
-\dot{x}(t)=F(u(t))\quad\textrm{or}\quad \left\{\begin{array}[rl] \dot{x}(t)&=w(t) \\ \dot{w}(t) &= u(t) \end{array}\right..\nonumber
-$$
-
-This notion of trivial control systems has previously been introduced in literature (in the case $\dim x = 2$ and $\dim u = 1$) by U. Serres in his thesis. <span class="semi-bold">TS</span> further developed this concept by providing two general characterizations of trivial control systems of arbitrary dimension and with an arbitrary number of controls. However, those two novel characterisations can not be used in practice. In the case of $\dim x = 2$ and $\dim u = 1$, <span class="semi-bold">TS</span> revisited the results of Serres and found that a characterization could be expressed via two feedback invariant functions: the control-curvature (introduced by Agrachev) and the centro-affine curvature. Based on the properties of these two feedback invariants, <span class="semi-bold">TS</span> was able to give a complete classification of control-affine systems with $\dim x = 3$ and $\dim u = 1$.
-
-<small>**Future Research Directions**: extend the characterisation of trivial control systems via curvatures to the case of $\dim x=n$.  </small>
-
-### Stabilization of time-delay dynamical systems
-
-During his postdoctoral fellowship at INRIA team DISCO, <span class="semi-bold">TS</span> studied the stabilisation of linear time-delay equations of the form
-
-$$
-x^{(n)}(t)+\sum_{k=0}^{n-1}a_kx^{(k)}(t)+\sum_{k=0}^m\alpha_kx^{(k)}(t-\tau) = 0,\label{eq:delay}
-$$
-
-where $\tau>0$ is the delay. In contrast to the no-delay case, where the Rough-Hurwitz criteria directly provides stability information for linear ODEs, the stability analysis of the time-delay case is much more involved due to the corresponding transfer function being a quasipolynomial with an infinite number of roots. However, a bound on the number of real roots can be obtained, and it has been shown that assigning a single root with maximal multiplicity ensures asymptotic stability of the equation. During his postdoctoral position, <span class="semi-bold">TS</span> focused on assigning the maximal number of real roots and showed that this guarantees asymptotic stability of the corresponding equation.
-
-<small>**Future Research Directions**: design a control law to stabilize a given time-delay equation with some fixed parameters, analyze the properties of a system for which roots with arbitrary multiplicity are assigned, extend the results to the multi-delay case,...</small>
-
-### Misc: Variational optimisation and imaging science 
-
-In 2019, <span class="semi-bold">TS</span> was invited to the Department of Applied Mathematics at the University of Cambridge, where he developed a model for reconstructing MRI images. Due to technical limitations, MRI images are often taken as undersampled Fourier data and must be extrapolated to produce a usable image. To address this issue, <span class="semi-bold">TS</span> developed an optimization procedure that combines both variational and learned techniques. The learning aspect of the optimization involves the optical flow between two frames in the same sequence of MRI images. The procedure constructs a dictionary of representative optical flows, allowing the true optical flow to be expressed as a linear combination of dictionary atoms. The variational aspect of the optimization problem includes data fidelity and regularization terms, such as total variation (TV) or $L^1$ penalties. Thus, the optimization problem is non-trivial, as it involves non-convex and non-differentiable terms. In his publications, he and his colleagues provided theoretical guarantees on the existence of a solution to the optimization problem and demonstrated its potential through numerical simulations.
+5. [Teaching](#teaching)
+6. [Administrative functions](#admin)
 
 ## Short CV <a name="shortcv"></a> <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)-->
+---
+	
 
-* 2023 - :  Post-doctoral fellow at INRIA DISCO team, L2S CentraleSupélec
-  * <u>Subject</u>: Stabilization of time-delay dynamical systems 
-  * <u>Collaborators</u>: [Islam Boussaada](https://l2s.centralesupelec.fr/u/boussaada-islam/) and [Silviu Niculescu](https://l2s.centralesupelec.fr/u/niculescu-silviu-iulian/)
-* 2018 - 2022 : **Ph.D thesis in nonlinear control  theory**, INSA Rouen Normandie
-  * <u>Title</u>: *Study of control systems under quadratic nonholonomic constraints. Motion planning, introduction to the regularised continuation method.*
-  * <u>Advisors</u>: [Witold Respondek](http://lmi.insa-rouen.fr/membres/9-membres/professeurs/19-respondek-witold.html) (LMI, INSA Rouen Normandie) and [Emmanuel Trélat](https://www.ljll.math.upmc.fr/~trelat/) (LJLL, Sorbonne Université)
-  * <u>Defense</u>: 21 June 2022 before the jury composed of
-    * Professor Yacine Chitour (CentralSupélec, Reviewer)
-    * Professor Frédéric Jean (ENSTA, Reviewer)
-    * Research Director Ugo Boscain (CNRS, Examiner)
-    * Research Director Jean-Baptiste Pomet (INRIA, Examiner)
-    * Professor Hasnaa Zidani (INSA, Examiner, President)
-  * <u>Manuscript</u>:  [direct link](https://tschmoderer.github.io/files/thesis/manuscrit_these_tschmoderer.pdf) ; [HAL](https://hal.science/tel-03767853) ; [theses.fr](http://theses.fr/s221665)
-  * Funding: INSA Rouen Normandie
-* 2013 - 2018 : **Engineer degree** in applied Mathematics at INSA Rouen Normandie
-* 2016 - 2018 : **Master degree** in applied Mathematics at Sorbonne Univerity (Paris VI)
-* 2018 : **Master degree** in applied Mathematics at University of Rouen
+* 2023 - Now :  **Post-doctoral fellow at LHC**, Jean Monnet Université, Saint-Etienne
+  * <u>Subject</u>: Quantitative analysis of biomarkers by spectrometry 
+  * <u>Collaborators</u>: [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321), [Raphaël Clerc](https://fr.linkedin.com/in/raphael-clerc-0249741), [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) and [Jean-Luc Perrot](https://www.chu-st-etienne.fr/Offre_de_Soins/Medecins/PERROT_Jean_Luc/34911052)<br/><br/>
+* 2019 - 2022 : **Ph.D thesis in engineering for health (biomedical optics, optical modeling and signal processing)**<br/> Université de Lyon operated inside Université Claude Bernard
+  * <u>Title</u>: *Towards quantitative multispectral excitation fluorescence spectroscopy for intraoperative assistance in glioma resection in neurosurgery*
+  * <u>Advisors</u>: [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) (CREATIS, Université Claude Bernard, Lyon) and [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321) (LHC, Université Jean Monnet, Saint-Etienne)
+  * <u>Funding</u>: [Labex PRIMES](https://primes.universite-lyon.fr/)
+  * <u>Manuscript</u>:  [direct link](https://agautheron.github.io/files/thesis/manuscrit_these_gautheron.pdf)
+  * <u>Defense</u>: 8th December 2022 in front of the jury composed of
+	<style>
+		table.jury {
+			border-collapse: collapse;
+			font-size:18px;
+			padding:0;
+			margin-bottom:0;
+		}
+		table.jury, table.jury >  thead > tr> th, table.jury >  tbody > tr> td {
+		   border: none!important;
+		}
+		table.jury > blockquote {
+			border-left: solid blue;
+			padding-left: 10px;
+		}
+	</style>
+	<table class="jury">
+          <thead>
+            <tr>
+              <th style="text-align: left">Column One</th>
+              <th>Column Two</th>
+              <th>Column Three</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Darine ABI HAIDAR</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Reviewer, Université Paris Diderot</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Anabela DA SILVA</li></ul></td>
+              <td style="text-align: left"><em>Research Director</em></td>
+              <td style="text-align: left">Reviewer, CNRS Marseille</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Anne PILLONNET</li></ul></td>
+              <td style="text-align: left"><em>Professor</em></td>
+              <td style="text-align: left">Examiner, Université Claude Bernard</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Pablo A. VALDES</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Examiner, University Texas Medical Branch</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Rémi CARMINATI</li></ul></td>
+              <td style="text-align: left"><em>Professor</em></td>
+              <td style="text-align: left">President, Examiner, ESPCI Paris, Université PSL</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Raphaël CLERC</li></ul></td>
+              <td style="text-align: left"><em>Professor</em></td>
+              <td style="text-align: left">Examiner, Université Jean Monnet</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Bruno MONTCEL</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Director, Université Claude Bernard</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Mathieu HEBERT</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Co-Director, Université Jean Monnet</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Jacques GUYOTAT</li></ul></td>
+              <td style="text-align: left"><em>Hospital Practitioner</em></td>
+              <td style="text-align: left">Inviter, Hospices Civils de Lyon</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Michaël SDIKA</li></ul></td>
+              <td style="text-align: left"><em>Research Engineer</em></td>
+              <td style="text-align: left">Invited, CNRS Lyon</td>
+            </tr>
+          </tbody>
+        </table><br/><br/>
+* 2019 : **Master degree** in Automatic, Signal and Image Processing (Paris-Saclay)
+* 2015 - 2019 : **Engineer degree** in photonics at Institut d'Optique Graduate School
+* 2015 - 2019 : **University degree** from the Institut de Formation Supérieur en Biomédical (Paris-Saclay)
 
-[Full CV pdf (fr)]() [Full CV pdf (en)]()
+[Full CV pdf (fr)]()
 
-## Publications <a name="publis"></a> 
+## Research interests <a name="research"></a>
+---
 
+<span class="semi-bold">AG</span>s expertise lies in the field of biomedical optics, which encompasses a wide range of theoretical and practical aspects: signal processing, optical modeling, experimental expertise. He is particularly interested in exploring the following research topics: fluorescence spectroscopy for intraoperative diagnosis, biomedical engineering at the bedside, radiative transfer for appearance prediction, inverse problems for optical properties extraction, fast and operating room compatible acquisition systems...
+
+<small>**Keywords**: Fluorescence spectroscopy, Signal Processing, spectral unminxing, Classification, Biomedical Engineering, intra-operative Optic Tools, Optical Modeling, Radiative Transfer, PpIX, Glioma, Focal Cortical Dysplasia, Actinic Keratosis</small>
+
+### Fluorescence spectral unmixing
+
+The main contribution of <span class="semi-bold">AG</span> thesis to spectral unmixing theory is a method to estimate the contribution of biomarkers related to PpIX fluorescence using multiple excitation wavelengths. Indeed, current methods suffer from crosstalk when estimating biomarkers related to PpIX fluorescence. 
+These crosstalks can be due to the omission or the wrong spectral shape of one or more endogenous fluorophores present in the measured signal. 
+They occur when the spectrum of the omitted endogenous fluorophores is spectrally close to the PpIX emission spectral band and leads to an overestimation of PpIX and thus to a classification as "tumor" of the healthy tissue.
+The proposed method is free from preconceived ideas about the endogenous biomarkers present in the measured signal and their respective spectral shapes. 
+For this purpose, several fluorescence excitation wavelengths are required to transfer the a priori in the fluorescence quantum yield of the biomarkers related to the PpIX fluorescence and to estimate the signal related to the endogenous biomarkers, called baseline.
+
+
+<span class="semi-bold">AG </span>'s thesis provides a complete characterization of the different steps were performed for the validation of the method:
+- A mathematical solution of the nonlinear estimation problem by least squares regression was proposed in the specific case of two excitation wavelengths. Since an explicit mathematical solution has been found, the computational time has been considerably reduced.
+- Construction of a numerical phantom as realistic as possible. For this purpose, the parameters of the acquisition noise models were estimated from real experimental systems and the other parameters of the phantom were extracted from experimental data in the literature. The modeling of the endogenous biomarkers was also chosen in order to model as well as possible the cases of interference mentioned previously.
+- A comparative study of the parameters estimated by this method and those of the state of the art was carried out using measurements generated by the digital phantom.
+- The extension of the comparative study to the final classification of the estimated parameters has allowed to demonstrate that, this new method is as efficient as the existing spectral unmixing methods for the already solved cases, but it keeps a specificity equal to 100% with respect to the ground truth in the cases where the specificity of the existing methods falls to 0%.
+
+These results have led to several papers in international and national conferences as well as to the submission of a paper under review in the IEEE TBME journal.
+
+<small>**Future Research Directions**: extend the $2$-excitation wavelengths case, study the hot points issue...</small>
+
+
+### Impact of internal reflectance on the estimation of optical properties of translucent media
+
+Concerning optical modeling, <span class="semi-bold">AG </span>'s thesis focuses on improving the estimation of optical properties of biological tissues based on optical models approximating the radiative transfer equation.
+Let us recall that the quantification of biological biomarkers is based on more or less complex optical models, it seemed relevant to verify that some of the assumptions made in simple models are compatible with the case studied. 
+One of them concerns the shape of the angular distribution of light. This assumption directly affects the value of a parameter called the internal reflectance, i.e. the reflectance of the air-tissue interface on the tissue side.
+Compared to the commonly used values of internal reflectance that depend only on the optical index of the medium, and that can induce an error on the prediction of reflectance and transmittance of about 10%, <span class="semi-bold">AG </span> has shown that taking into account an accurate value of the internal reflectance of the tissue-air interface, depending on the thickness of the material and its optical properties, in simple optical models leads to a reduction of the error in the prediction of reflectance and transmittance to less than 1.0% for translucent media, such as biopsies.
+
+Different steps were necessary to obtain these results:
+- An implementation from scratch of the method of solving the radiative transfer equation (RTE) called discrete ordinate method (D.O.M. or $S_N$) for semi-infinite and layered media with consideration of the Fresnel reflectance at the interfaces.
+- A validation of the results of our implementation of DOM by comparison with the Monte Carlo simulation software MCX for multiple cases (presence/absence of interfaces, isotropic/anisotropic diffusion).
+- Validation of the reflectance and transmittance values obtained by our DOM implementation by comparison with literature cases.
+- Validation of the luminance distributions obtained by our implementation of DOM by comparison with literature cases.
+- Comparative study of the optical properties estimation with the 2-flux optical model for different internal reflectance values including those commonly used in the literature.
+
+These results led to a paper presented at the Electronic Imaging 2022 international conference and to the submission of an article to the Optics Express journal.
+
+<small>**Future Research Directions**: extend the D.O.M. to the resolution of RTE including fluorescence phenomenon (coupled RTE), study of internal reflectance parameter to extend the validity of diffusion approximation, compare inversion using D.O.M. with the one using Monte-Carlo, ... </small>
+
+### Experimental development
+
+Last part of <span class="semi-bold">AG</span>'s thesis concerns the development and characterization of an interventional fluorescence spectroscopy system aimed at both identifying the two forms of PpIX fluorescence and extracting the optical properties of the sample probed by diffuse reflectance spectroscopy (DRS).
+
+This system is equipped with two lasers and a broadband white light source. 
+The broadband white light source provides DRS measurements and the lasers sequentially excite the biological tissue with two distinct wavelengths and a spectrometer collects each emitted fluorescence spectrum. 
+All excitation and detection is performed via a fiber optic probe.
+
+<small>**Future Research Directions**: realization of a clinical study on biological brain wastes, extension to measurements in Focal Cortical Dysplasia- and Actinic keratosis -resection </small>
+
+### Characterization of the dose-response effect of nanoparticles by fluorescence spectroscopy for active dynamic X-PDT - European Project Scan'n'Treat
+
+In <span class="semi-bold">AG</span>'s thesis, he also took part to quantify the fluorescence emitted by the new nanoparticles manufactured within the framework of the project. This element is crucial to study the dose-response effect.
+
+The objective of the dose-response characterization measurements is to successfully acquire the fluorescence spectrum for each type of nanoparticle and then to extract relevant criteria for each of the acquired spectra.
+
+Since the fluorescence excitation signal is emitted by the SPCCT, it is necessary to have a timing signal indicating whether the X-rays are activated or not.
+After contacting Philips, it appears that attempts to obtain a direct signal from the gantry were met with obstacles. A simple alternative was to use a stand-alone scintillation detector, i.e. a basic scintillation detector connected to a photodiode. Philips provided us with a stand-alone detector measuring about 1x1x20 mm, the whole thing encapsulated in epoxy to protect it. Nevertheless, I developed an electronic circuit to acquire both the spectrum of the light background and the spectrum of the fluorescent signal. These two signals are a prerequisite to extract the fluorescence spectrum by subtracting the light background from the fluorescent signal. The resulting fluorescence spectrum matches perfectly with that of terbium III.
+To study the dose effect, I then post-processed the acquired data to characterize the evolution of the fluorescence signal as a function of the X-ray parameters (keV and mAs).
+
+These results are the subject of a paper currently in progress.
+
+<small>**Future Research Directions**: application to small animals, quantification of singlet oxygen radicals using an absorbance measurement technique </small>
+
+## Scientific Production <a name="publis"></a> 
+---
+
+### <span style="margin-left:3rem">Verbatim</span>
 <div id="wordcloud-hal"></div>
-<div id="publi-hal-all"></div>
+<div id="publi-hal-all" style="display:none"></div>
+
+### <span style="margin-left:3rem">[Details](publications)</span>
 
 ## Softwares <a name="softwares"></a> 
+---
 
-### P3δ
+### Radiative Transfer Equation 1D Solver
 
-A Python implementation of state-of-the-art partial pole placement methods for stability analysis of delay differential equations. [Link to the code](https://iboussaa.gitlabpages.inria.fr/partial-pole-placement-via-delay-action/P3d-Home.html).
+Radiative transfer equation solver in 1D geometry based on the discrete coordinates method. <br/>[Link to the code](https://gitlab.in2p3.fr/agautheron/radiativetransferequation)
 
-### MRIR-DLMC
+### Laser Spectral Fluorescence IHM
 
-A MATLAB implementation of the MRIR-DLMC algorithm for reconstructing magnetic resonance images from undersampled Fourier data. For a given sequence of sparse MRI data, the algorithm exploits the structure of each individual frame as well as the correlation between two consecutive frames (computed through the optical flow). The model includes a data fidelity term and several penalties on the structure of the data. The optimization task is computationally challenging due to the presence of non-convex and non-differentiable terms.. Moreover, the optical flow is computed from a learned dictionary, which is constructed using fully-sampled MRI sequences and phantom data. [Link to the code](https://github.com/tschmoderer/2019_mri_reconstruction).
+Software which interacts with an OceanInsight Spectrometer and an Arduino Board in order to control lasers Intensity, shutters and trigger of the acquisition process of Glioma Diffuse Fluorescence Spectroscopy. <br/>[Link to the code](https://gitlab.in2p3.fr/agautheron/laser-spectral-fluorescence)
 
-### Control-ToolBox 
+### LED Spectral Fluorescence IHM
 
-A C++ toolbox with a Python interface designed to handle control systems. The toolbox primarily focuses on implementing the homotopy continuation method for solving motion planning problems. Additionally, it provides functionalities such as dynamical and control systems simulations, motion planning with state and input constraints, and state-of-the-art algorithms for stabilizing linear equations, which may include delays. *Work in progress*. [Link to the code](https://github.com/tschmoderer/control-toolbox).
-
-### Optimal Transport
-
-## Invitations <a name="invitations"></a> 
-
-|             |                                                              |                                                              |
-| :-----------: | ------------------------------------------------------------ | ------------------------------------------------------------ | --- |
-| Summer 2019 | University of Cambridge, UK, with [Noemie Debroux](http://lmi.insa-rouen.fr/mfa/2-non-categorise/60-n-debroux.html) and [Angelica I. Aviles-Rivero](https://www.maths.cam.ac.uk/person/ai323). | University of Cambridge, Department of Applied Mathematics and Theoretical Physics, Cambridge Image Analysis Group | ![Cambridge University](./assets/img/cambridge.png)|
+*Not up to date*<br/>
+Software which interacts with an OceanInsight Spectrometer and an National Instruments Board in order to control LEDs, shutter and triggers of the acquisition process of Glioma Diffuse Fluorescence Spectroscopy. <br/>[Link to the code](https://gitlab.in2p3.fr/agautheron/spectral-fluorescence-laure)
 
 ## Teaching <a name="teaching"></a>  <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/teaching/)-->
+---
+### 2022-2023 Vacancies planned during the post-doctoral fellow (45.5h)
 
-### Teaching assignment and Temporary teaching assistant at INSA de Rouen Normandie (278h)
+A summary of the lessons being taught and to be taught during the 2022-2023 school year is presented in the table below. 
+The content of these courses is detailed in the links. 
 
-- 2021 / 2022 : Numerical Analysis, direct and iterative methods for solving systems of linear equations, for graduated students (*lectures, tutorials, and practical sessions* - 63h). [Page du cours](https://tschmoderer.github.io/teaching/2021-gm3-ananum).
-  * Linear algebra 
-  * Direct and iterative methods for linear
-equations
-  * Methods for nonlinear equations 
-  * Python practical exercices
+<table>
+  <tbody>
+    <tr style="border: solid 2px">
+      <th>Course title</th>
+      <th>Structure</th>
+      <th>Number of hours (Type)</th>
+      <th>Level</th>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="./teaching/2019-CIM">Sensors and Instrumentation</a></td>
+      <td>Polytech Lyon</td>
+      <td>18h (Theorical Sessions) <br> + 12h (Practical Sessions)</td>
+      <td>undergraduation year (equivalent L3)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="./teaching/2021-projetS9">Biomedical Engineering Project</a></td>
+      <td>Polytech Lyon</td>
+      <td>12h (Theorical Sessions)</td>
+      <td>graduation year (M2)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="./teaching/2023-light-scattering">Light Scattering for Material Appearance</a></td>
+      <td>IOGS</td>
+      <td>1h (Lecture) + 3h (Theorical Session)</td>
+      <td>graduation year (M2)</td>
+    </tr>
+  </tbody>
+</table>
 
+### 2019-2022 Complementary Teaching Activity (196h)
 
-- 2019 / 2022 : Sequences, Real variable functions analysis, differentiability, integration for undergraduates students (*tutorials* - 215h).
-  * Introduction to logic 
-  * Sets theory
-  * Sequences 
-  * Real functions analysis
-
-### Temporary teaching at Polytech Sorbonne (64h)
-
-- 2018 / 2019 : Informatics, Embedded system, FORTRAN (*practical sessions* - 64h).
+A summary of the courses taught during my thesis is presented in the table below. 
+The content of these courses is detailed in the links. 
+These teachings were realized between October 2019 and June 2022 in the framework of a complementary teaching activity (ACE) and correspond to an hourly volume of 196h over the 3 years.
+<table>
+  <tbody>
+    <tr style="border: solid 2px">
+      <th>Course title</th>
+      <th>Structure</th>
+      <th>Number of hours (Type)</th>
+      <th>Level</th>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="h./teaching/2019-TdS-ISTR">Basics of Signal Processing</a></td>
+      <td>ISTR Audioprothesist</td>
+      <td>50h (Practical Sessions)</td>
+      <td>1st year (equivalent L1)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="./teaching/2021-enum-ISTR">Digital Electronics</a></td>
+      <td>ISTR Audioprothesist</td>
+      <td>32h (Practical Sessions)</td>
+      <td>1st year (equivalent L1)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="./teaching/2019-CIM">Sensors and Instrumentation</a></td>
+      <td>Polytech Lyon</td>
+      <td>31.5h (Theorical Sessions) <br> + 32h (Practical Sessions)</td>
+      <td>undergraduation year (equivalent L3)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td><a href="./teaching/2021-projetS9">Biomedical Engineering Project</a></td>
+      <td>Polytech Lyon</td>
+      <td>16h (Theorical Sessions)</td>
+      <td>graduation year (M2)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td>Transversal Lecture <br> Informatic Basics</td>
+      <td>Lyon 1</td>
+      <td>34.5h (Theorical Sessions)</td>
+      <td>1st year (L1)</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Administrative functions <a name="admin"></a> 
+---
 
-- 2021 / 2023: Elected member representative of PhD students for the [laboratory](http://lmi.insa-rouen.fr/).
-- 2020 / 2022: Elected member representative of PhD students for the [Doctoral School](http://ed-miis.normandie-univ.fr/).
+- 2021 / 2023: One of the founding members of the "Laboratory Initiative For Environment" working group, which aims to raise awareness of environmental issues within the CREATIS laboratory through various actions (climate mural, waste sorting management, laboratory carbon footprint). In addition, he supports the laboratory in its efforts to reduce its carbon footprint in order to reach the Paris agreements: implementation of an annual carbon footprint calculation for missions carried out by staff, suggestion of a carbon quota.<br/><br/>
+- 2020 / 2023: One of the elected members representative of PhD students/post-docs within the Unit Council which meets several times a year. In particular, I have carried out several surveys within the college on key points of the life of the laboratory submitted to the vote of the Unit Council (composed of 20 members).<br/><br/>
+-     2019   : During the HCERES evaluation of the CREATIS laboratory, I participated in the meeting between the evaluation committee and the PhD students.

@@ -46,6 +46,7 @@ html {
 
 body {
   display: grid;
+  color: var(--main-text-color);
   grid-template-columns: $template-column;
   grid-template-rows: auto auto auto;
   grid-column-gap: $template-gap;

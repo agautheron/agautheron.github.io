@@ -7,6 +7,7 @@ permalink: /teaching/2021-gm3-ananum
 venue: "INSA Rouen Normandie, GM3"
 date: 2021-09-01
 location: "Rouen, France"
+visible: false
 ---
 Analyse Numérique I - GM3 2021 / 2022
 ======
