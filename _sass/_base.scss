@@ -51,8 +51,7 @@ body {
   grid-template-rows: auto auto auto;
   grid-column-gap: $template-gap;
   grid-row-gap: 1.5em;
-
-  background-color: transparent;
+  background: inherit;
   margin: 0 10% 0 10%;
   padding: 0;
 
