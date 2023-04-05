@@ -1,0 +1,136 @@
+---
+layout: default
+title: "CV"
+author_profile: true
+permalink: /cv/
+---
+<!-- <div class="container" style="text-align:center">
+<ol style="display: inline-flex;width: 100%;">
+<li style="margin: 0 10%;"><a href="#current_position">Current Position</a></li>
+<li style="margin: 0 10%;"><a href="#education">Education</a></li>
+<li style="margin: 0 10%;"><a href="#past_experiences">Past Experiences</a></li>
+</ol>
+</div> -->
+  <h1 style="margin-bottom: 2em;color:#fff;"> Curriculum Vitæ</h1>
+<div class="container experience-container" name="current_position">
+<h2 style="margin-top: 0;color:#eee;">{{ site.currentPosition_title | default: "Current Position" }}</h2>
+  <hr style="border-top: 4px solid #eee;margin-top:0px;">
+  {% for currentPosition in site.data.cv.currentPosition %}
+		{% if forloop.first == false %}
+		  <hr>
+		{% endif %}
+    <div class="row clearfix experience">
+	    {%- if currentPosition.logo -%}
+      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+        <span class="company-logo align-middle" style="background-image: url({{ currentPosition.logo | relative_url }});background-size: 100%;margin-bottom: auto;" />
+      </div>
+    {%- endif -%}
+      <div class="{{ 'col-xs-12 ' }}{%- if currentPosition.logo -%}col-sm-8 col-md-9 col-print-12{%- endif -%}">
+        <h3 class="name">
+          {%- if currentPosition.link -%}
+            <a href="http://{{ currentPosition.link }}" target="_blank">
+          {%- endif -%}
+            {{ currentPosition.company }}
+          {%- if currentPosition.link -%}
+            </a>
+          {%- endif -%}
+          </h3>
+        <p style="{%- if currentPosition.quote -%} margin: 0;{%-endif -%}"><b>{{ currentPosition.job_title }}</b></p>
+        <p style="{%- if currentPosition.quote -%} margin: 0;{%-endif -%}">{{ currentPosition.dates }}</p>
+      <!-- </div> -->
+      <!-- <div class="col-xs-12 col-sm-8 col-md-9 col-print-12"> -->
+	  {%- if currentPosition.description -%}
+        {%- if currentPosition.quote -%}
+          <p class="quote"  style="{%- if currentPosition.quote -%} margin: 0;margin-top:1rem;{%-endif -%}">{{ currentPosition.quote  | strip | markdownify }}</p>
+        {%- endif -%}
+	  <details style="margin-top: 1rem;"><summary style="display:list-item;"> <i>More</i> </summary><br/>
+        {{ currentPosition.description | strip | markdownify }}
+		</details>
+        {%- endif -%}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class="container education-container" name="education">
+<h2 style="color:#eee;">{{ site.education_title | default: "Education" }}</h2>
+  <hr style="border-top: 4px solid #eee;margin-top:0px;">
+  {% for education in site.data.cv.education %}
+    <div class="row clearfix education">
+	    {%- if education.logo -%}
+      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+		{% if forloop.first == false %}
+		  <hr>
+		{% endif %}
+        <span class="company-logo align-middle" style="background-image: url({{ education.logo | relative_url }});background-size: 100%;margin-bottom: auto;{% if forloop.first == true %}margin-top:20px{%endif%}"></span>
+
+        <!-- <h4>{{ education.name }}</h4> -->
+        <!-- <p><b>{{ education.qualification }}</b></p> -->
+        <!-- <p>{{ education.dates }}</p> -->
+      </div>
+    {%- endif -%}
+      <div class="{{ 'col-xs-12 ' }}{%- if education.logo -%}col-sm-8 col-md-9 col-print-12{%- endif -%}">
+		{% if forloop.first == false %}
+		  <hr>
+		{% endif %}
+  <h3 class="name">
+          {{ education.qualification }}
+          </h3>
+              <p  style="{%- if education.quote -%} margin: 0;{%-endif -%}">{{ education.name }}</br>
+        {{ education.dates }}</p>
+        {%- if education.quote -%}
+          <p class="quote"  style="{%- if currentPosition.quote -%} margin: 0;margin-top:1rem;{%-endif -%}">{{ education.quote}}</p>
+		{%- endif -%}
+		<details style="margin-top: 1rem;"><summary style="display:list-item;"> <i>More</i> </summary><br/>
+			{%- if education.link -%}
+            <br/><br/><a style="font-style:normal" href="https://{{ education.link }}" target="_blank">
+            {{ education.link_name | default: "Presentation Video"}}
+            </a>
+			{%- endif -%}
+        {{ education.description | strip | markdownify }}
+		</details>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class="container experience-container"  name="past_experiences">
+  <h2 style="color:#eee;">{{ site.experience_title | default: "Past Experiences" }}</h2>
+  <hr style="border-top: 4px solid #eee;margin-top:0px;">
+  {% for experience in site.data.cv.experience %}
+    <div class="row clearfix experience">
+	    {%- if experience.logo -%}
+      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+		{% if forloop.first == false %}
+		  <hr>
+		{% endif %}
+        <span class="company-logo align-middle" style="background-image: url({{ experience.logo | relative_url }});background-size: 100%;margin-bottom: auto;{% if forloop.first == true %}margin-top:20px{%endif%}" />
+      </div>
+    {%- endif -%}
+      <div class="{{ 'col-xs-12 ' }}{%- if experience.logo -%}col-sm-8 col-md-9 col-print-12{%- endif -%}">
+	{% if forloop.first == false %}
+	  <hr>
+	{% endif %}
+        <h3 class="name">
+          {%- if experience.link -%}
+            <a href="http://{{ experience.link }}" target="_blank">
+          {%- endif -%}
+            {{ experience.company }}
+          {%- if experience.link -%}
+            </a>
+          {%- endif -%}
+          </h3>
+        <p><b>{{ experience.job_title }}</b></p>
+        <p>{{ experience.dates }}</p>
+      <!-- </div> -->
+      <!-- <div class="col-xs-12 col-sm-8 col-md-9 col-print-12"> -->
+        {%- if experience.quote -%}
+          <p class="quote"  style="{%- if currentPosition.quote -%} margin: 0;margin-top:1rem;{%-endif -%}">{{ experience.quote }}</p>
+        {%- endif -%}
+	  {%- if experience.description -%}
+	  <details style="margin-top: 1rem;"><summary style="display:list-item;"> <i>More</i> </summary><br/>
+        {{ experience.description | strip | markdownify }}
+		</details>
+        {%- endif -%}
+      </div>
+    </div>
+  {% endfor %}
+</div>

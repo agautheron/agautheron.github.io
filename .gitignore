@@ -1,8 +1,6 @@
-*.gem
-.bundle
-.sass-cache
-_site
+_site/
 Gemfile.lock
-*.code-workspace
-vendor
-/index.html
+*.lock
+.DS_Store
+2021_gm3_ananum
+/_teaching/2021-gm3-ananum.md

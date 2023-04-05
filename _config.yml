@@ -1,83 +1,102 @@
-# Site
-repository: agautheron/cv/
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-
-# Personal info
-name: Arthur Gautheron
-title: Master in Engineering - PhD
-email: arthur.gautheron@gmail.com
-website: https://agautheron.github.io/
-
-# Social links
-twitter_username: 
-github_username:  agautheron
-gitlab_username: agautheron
-dribbble_username: 
-facebook_username: 
-flickr_username: 
-instagram_username: 
-linkedin_username: arthurgautheron
-xing_username: 
-pinterest_username: 
-youtube_username: 
-googleplus_username: 
-
-# About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: images/profile-2.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Graduated from Institut d'Optique Graduate School in 2019, I am currently <mark>PhD Student</mark> at the [CREATIS Lab](https://www.creatis.insa-lyon.fr/site7/fr). 
-  My PhD, financed by the [Labex PRIMES](https://primes.universite-lyon.fr/), is summerised [here](https://primes.universite-lyon.fr/medias/fichier/resume-these-labex-arthur-gautheron-v2_1625571544265-pdf).
-  Please find below my expertise in different programming languages :
-  - PyQt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<progress id="file" max="100" value="90"> 90% </progress>
-  - Python&nbsp;&nbsp;:&nbsp;<progress id="file" max="100" value="90"> 90% </progress>
-  - Matlab&nbsp;&nbsp;:&nbsp;<progress id="file" max="100" value="80"> 80% </progress>
-  - C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<progress id="file" max="100" value="70"> 70% </progress>
-  - HTML&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<progress id="file" max="100" value="50"> 50% </progress>
-# Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-#  You can even add paragraphs by using empty lines like this and add anything else markdown supports such as
-#    - Lists
-#    - Tables
-#    - Links
-#    - Images
-
-# Projects Section
-# projects_title: Projects #(Use this to override about projects section title)
-projects_matlab_icon : assets/matlab.png
-projects_python_icon : assets/python.png
-projects_pyqt_icon : assets/pyqt.png
-projects_c_icon : assets/c.png
-# Experience Section
-# experience_title: Experience #(Use this to override about experience section title)
-
-# Education Section
-# educaton_title: Education #(Use this to override about education section title)
-
-# More Section
-more_title: Publications #(Use this to override about more section title)
-more_content: | # this will include new lines to allow paragraphs
-    <spirhal researcherName="Arthur Gautheron" norm="APA" structId="139739,530749"></spirhal>
-#    <iframe id="iframe1" src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Arthur+Gautheron&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Rech&lang=fr&Formate=Oui&css=../css/VisuCondense.css"
-#    scrolling="auto" frameborder="0" style="width: 100%;white-space: nowrap;position: relative; height:250px"></iframe>
-#    <spirhal researcherName="Arthur Gautheron" norm="APA"></spirhal>
-#    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-# This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-# Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
-# Footer
-footer_show_references: true
+title    : "Arthur Gautheron"
+url      : https://agautheron.github.io
+locale   : "en"
+encoding : "utf-8"
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+exclude:
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
+include:
+  - _pages
+  - _talks
+  - _teaching
 
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed 
 
-plugins:
- - jekyll-seo-tag
+# Conversion
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
 
-theme: jekyll-theme-minimal
+projects_matlab_icon : assets/img/matlab.png
+projects_python_icon : assets/img/python.png
+projects_pyqt_icon : assets/img/pyqt.png
+projects_c_icon : assets/img/c.png
+
+
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+    
+    
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true

@@ -1,0 +1,23 @@
+<nav id="site-nav">
+  <button id="button-menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="masthead__menu-item masthead__site-title"><a href="{{ base_path }}/#home">{{ site.title }}</a></div>
+  <ul class="visible-links" id="menu-list">
+    {% for link in site.data.navigation.main %}
+    {% if link.url contains 'http' %}
+    {% assign domain = '' %}
+    {% else %}
+    {% assign domain = base_path %}
+    {% endif %}
+    <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <ul class="hidden-links hidden"></ul>
+  <div id="darkmode-buttons">
+    <a id="button-theme-toggle" onclick="modeSwitcher()">
+      <i class="fa-regular fa-moon hidden" id="darkmode-moon-icon"></i>
+      <i class="fa-regular fa-sun hidden" id="darkmode-sun-icon"></i>
+    </a>
+  </div>
+</nav>
