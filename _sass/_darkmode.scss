@@ -1,0 +1,25 @@
+/* ==========================================================================
+   DARKMODE
+   ========================================================================== */
+
+#darkmode-buttons {
+    margin: auto;
+}
+
+#button-theme-toggle:hover {
+	cursor: pointer;
+}
+
+#darkmode-sun-icon {
+	color: rgb(231, 147, 0);
+}
+
+#darkmode-moon-icon {
+	color: #337ab7;
+}
+
+#button-theme-toggle:active {
+	#darkmode-sun-icon, #darkmode-moon-icon {
+		scale: 1.2;
+	}
+}

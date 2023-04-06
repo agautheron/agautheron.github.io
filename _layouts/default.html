@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+  <html lang="{{ site.locale | slice: 0,2 }}">
+  {% assign base_path = site.url %}
+
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <header>
+      {% include masthead.html %}
+    </header>
+    <aside>
+      {% include sidebar.html %}
+    </aside>
+    <main id="home">
+    {{ content }}
+    </main>
+    <footer>
+      {% include footer.html %}
+    </footer>
+    {% include scripts.html %}
+  </body>
+</html>
