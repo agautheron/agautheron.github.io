@@ -1,6 +1,5 @@
 ---
 ---
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
 @import "variables"; 
 @import "base";
@@ -10,7 +9,9 @@
 @import "tables";
 @import 'footer';
 
-
+#home{
+	padding-top: 1.3em;
+}
 
 .company-logo {
   width: auto;
