@@ -1,0 +1,14 @@
+# Experience template
+- company: Université Jean Monnet / Manutech Sleight Graduate School / LHC
+  link: https://laboratoirehubertcurien.univ-st-etienne.fr/
+  logo : images/eur_manutech.jpg
+  job_title: Post-Doctoral Researcher
+  dates: January 2023 - Now
+  quote: >
+    [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) funded by the [Manutech Sleight Graduate School](https://manutech-sleight.com/).
+  description: | # this will include new lines to allow paragraphs
+    <u>Objectives</u>
+    - Extend the optical model to fluorescence, to predict spectral reflectances, and also the lateral propagation of light around the illuminated area (PSF), taking care to keep analytical or semi-analytical models easy to reverse.
+    - Reduce as much as possible the number of parameters to be evaluated in these models for a given tissue, taking care to keep the information useful for the clinical analysis of the tissues (tests on phantoms or clinical data already acquired)
+    - Find a measurement strategy (multi-position, multi-angle, multi-excitation?) to evaluate these parameters (model used in inverse approach), ensuring that the measurement system can be used by a practitioner in clinical routine.
+    - Implement the instrumentation and methodology for skin characterization (healthy skin, pathologies), glioma resection (PpIX quantification), or organ transplantation.

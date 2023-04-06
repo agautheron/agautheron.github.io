@@ -1,0 +1,152 @@
+# Education Template
+- name: Université de Lyon
+  logo : images/doctorat.png
+  dates: 2018 - 2019
+  qualification: PhD in Engineering for Health
+  quote: >
+    <u>Title:</u> <i>Towards a quantitative fluorescence spectroscopy with multispectral excitation for intraoperative assistance in glioma resection in neurosurgery</i><br/>
+    <u>Funding:</u> <a href="https://primes.universite-lyon.fr/">Labex PRIMES</a>, Claude Bernard University Lyon 1<br/>
+    <u>Advisors:</u> Bruno Montcel, Mathieu Hébert, Raphaël Clerc    
+  description: | # this will include new lines to allow paragraphs
+    <u>Defense</u>: 8th December 2022 in front of the jury composed of
+    <style>
+        table.jury {
+            border-collapse: collapse;
+            font-size:18px;
+            padding:0;
+            margin-bottom:0;
+        }
+        table.jury, table.jury >  thead > tr> th, table.jury >  tbody > tr> td {
+           border: none!important;
+        }
+        table.jury > blockquote {
+            border-left: solid blue;
+            padding-left: 10px;
+        }
+    </style>
+    <table class="jury">
+          <thead>
+            <tr>
+              <th style="text-align: left">Column One</th>
+              <th>Column Two</th>
+              <th>Column Three</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Darine ABI HAIDAR</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Reviewer, Université Paris Diderot</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Anabela DA SILVA</li></ul></td>
+              <td style="text-align: left"><em>Research Director</em></td>
+              <td style="text-align: left">Reviewer, CNRS Marseille</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Anne PILLONNET</li></ul></td>
+              <td style="text-align: left"><em>Professor</em></td>
+              <td style="text-align: left">Examiner, Université Claude Bernard</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Pablo A. VALDES</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Examiner, University Texas Medical Branch</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Rémi CARMINATI</li></ul></td>
+              <td style="text-align: left"><em>Professor</em></td>
+              <td style="text-align: left">President, Examiner, ESPCI Paris, Université PSL</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Raphaël CLERC</li></ul></td>
+              <td style="text-align: left"><em>Professor</em></td>
+              <td style="text-align: left">Examiner, Université Jean Monnet</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Bruno MONTCEL</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Director, Université Claude Bernard</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Mathieu HEBERT</li></ul></td>
+              <td style="text-align: left"><em>Assistant Professor</em></td>
+              <td style="text-align: left">Co-Director, Université Jean Monnet</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Jacques GUYOTAT</li></ul></td>
+              <td style="text-align: left"><em>Hospital Practitioner</em></td>
+              <td style="text-align: left">Inviter, Hospices Civils de Lyon</td>
+            </tr>
+            <tr>
+              <td style="text-align: left"><ul style="list-style:square;"><li>Michaël SDIKA</li></ul></td>
+              <td style="text-align: left"><em>Research Engineer</em></td>
+              <td style="text-align: left">Invited, CNRS Lyon</td>
+            </tr>
+          </tbody>
+        </table>        
+    * <u>Manuscript</u>:  [direct link](https://agautheron.github.io/files/thesis/manuscrit_these_gautheron.pdf) ; [HAL]() ; [theses.fr]()
+    * Funding: [Labex PRIMES](https://primes.universite-lyon.fr/)<br/><br/>
+# Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
+    
+- name: Université Paris-Saclay
+  logo : images/Universite-paris-saclay.jpg
+  dates: 2018 - 2019
+  qualification: Master's degree, Automatic & signal and images processing
+  quote: >
+    After a basic education in automatic, signal and image processing, students can choose between elective options that allow them to deepen the areas concerned, with a strong application opening towards robotics, the medical and the energy networks, target areas of major societal challenges.
+    
+    
+  description: | # this will include new lines to allow paragraphs
+    The internships offered come from public research laboratories and industrial organizations.
+    
+    The strengths of the Master are the novelty of the proposed methodologies, its societal relevance, the partnership of the project's leading institutions: the Paris-Saclay University institutions, the Toulouse ISAE, and public research laboratories and industrial organizations.
+    
+    Students will master the fundamentals of the course and the various in-depth studies provided by university specialists.    
+    
+# Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
+    
+- name: Institut d'Optique Graduate School
+  logo : images/iogs.png
+  dates: 2015 - 2019
+  qualification: Master of Engineering (MEng), Optic, Photonics, Physics
+  quote: >
+    The Institut d'Optique Graduate School is set at Palaiseau in the campus of ParisTech and Paris-Saclay, at the south of Paris. This school trains engineers with very different experiences: from the general engineer to the researcher in optics and photonics, and even engineers in finance and entrepreneurs.
+  description: | # this will include new lines to allow paragraphs
+    [<mark>Presentation Video</mark>](https://www.youtube.com/watch?v=kCykmN33m90)
+    
+    Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
+   
+- name: Université Paris-Saclay 
+  logo : images/ifsbm.png
+  dates: 2015 - 2019
+  qualification: University Degree, Biomedical/Medical Engineering
+  quote: >
+    It is mainly intended for engineers or for academics trained in exact sciences and preparing a thesis at the interface with biology.
+    
+    The goal is to train future executives in the biomedical industry, with a thorough knowledge of the hospital environment and bio-industries associated with research strategy skills.
+    
+    The challenge is to allow them to interact effectively with their physician, pharmacist or biologist colleagues in multidisciplinary science programs.
+  
+  description: | # this will include new lines to allow paragraphs
+    The degree offers engineering students the opportunity to follow a number of modules on different biomedical themes.
+    
+    Followed modules :
+    - Employment in the Life Sciences
+    - Medical innovation by Biotechs and Medtechs
+    - Initiation in physiology, biology and cell culture
+    - Pathological states of the human cell
+    - Cancer Care
+    - Immersion in a hospital environment
+    
+    Departments :
+    * Operating theater
+    * Dermatology
+    * Ophthalmology
+    * Anatomo-Pathology
+    * BMP Medical Imagery
+
+
+
+
+ 
