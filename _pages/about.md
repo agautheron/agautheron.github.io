@@ -105,7 +105,7 @@ In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doct
             <tr>
               <td style="text-align: left"><ul style="list-style:square;"><li>Jacques GUYOTAT</li></ul></td>
               <td style="text-align: left"><em>Hospital Practitioner</em></td>
-              <td style="text-align: left">Inviter, Hospices Civils de Lyon</td>
+              <td style="text-align: left">Invited, Hospices Civils de Lyon</td>
             </tr>
             <tr>
               <td style="text-align: left"><ul style="list-style:square;"><li>Michaël SDIKA</li></ul></td>
