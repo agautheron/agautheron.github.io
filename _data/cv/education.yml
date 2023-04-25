@@ -1,6 +1,6 @@
 # Education Template
 - name: Université de Lyon
-  logo : images/doctorat.png
+  logo : /images/doctorat.png
   dates: 2018 - 2019
   qualification: PhD in Engineering for Health
   quote: >
@@ -90,7 +90,7 @@
 # Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
     
 - name: Université Paris-Saclay
-  logo : images/Universite-paris-saclay.jpg
+  logo : /images/Universite-paris-saclay.jpg
   dates: 2018 - 2019
   qualification: Master's degree, Automatic & signal and images processing
   quote: >
@@ -107,7 +107,7 @@
 # Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
     
 - name: Institut d'Optique Graduate School
-  logo : images/iogs.png
+  logo : /images/iogs.png
   dates: 2015 - 2019
   qualification: Master of Engineering (MEng), Optic, Photonics, Physics
   quote: >
@@ -118,7 +118,7 @@
     Courses: Mathematics, Signal and Image Processing, Matlab, Python, C-programming, Electronics, Automation, Electromagnetism, Laser, Semi-conductors, Polarisation, Quantum Optics, Non-linear optics, Optical systems design, Biophotonic etc..
    
 - name: Université Paris-Saclay 
-  logo : images/ifsbm.png
+  logo : /images/ifsbm.png
   dates: 2015 - 2019
   qualification: University Degree, Biomedical/Medical Engineering
   quote: >
