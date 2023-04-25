@@ -22,7 +22,12 @@ permalink: /cv/
     <div class="row clearfix experience">
 	    {%- if currentPosition.logo -%}
       <div class="col-xs-12 col-sm-4 col-md-3 no-print">
-        <span class="company-logo align-middle" style="background-image: url({{ currentPosition.logo | relative_url }});background-size: 100%;margin-bottom: auto;" />
+		{% if currentPosition.logo contains 'http' %}
+		{% assign domain = '' %}
+		{% else %}
+		{% assign domain = site.url %}
+		{% endif %}
+        <span class="company-logo align-middle" style='background-image: url({{ domain }}{{ currentPosition.logo}});background-size: 100%;margin-bottom: auto;' />
       </div>
     {%- endif -%}
       <div class="{{ 'col-xs-12 ' }}{%- if currentPosition.logo -%}col-sm-8 col-md-9 col-print-12{%- endif -%}">
@@ -61,7 +66,7 @@ permalink: /cv/
 		{% if forloop.first == false %}
 		  <hr>
 		{% endif %}
-        <span class="company-logo align-middle" style="background-image: url({{ education.logo | relative_url }});background-size: 100%;margin-bottom: auto;{% if forloop.first == true %}margin-top:20px{%endif%}"></span>
+        <span class="company-logo align-middle" style="background-image: url({{ domain }}{{ education.logo}});background-size: 100%;margin-bottom: auto;{% if forloop.first == true %}margin-top:20px{%endif%}"></span>
 
         <!-- <h4>{{ education.name }}</h4> -->
         <!-- <p><b>{{ education.qualification }}</b></p> -->
@@ -102,7 +107,7 @@ permalink: /cv/
 		{% if forloop.first == false %}
 		  <hr>
 		{% endif %}
-        <span class="company-logo align-middle" style="background-image: url({{ experience.logo | relative_url }});background-size: 100%;margin-bottom: auto;{% if forloop.first == true %}margin-top:20px{%endif%}" />
+        <span class="company-logo align-middle" style="background-image: url({{ domain }}{{ experience.logo}});background-size: 100%;margin-bottom: auto;{% if forloop.first == true %}margin-top:20px{%endif%}" />
       </div>
     {%- endif -%}
       <div class="{{ 'col-xs-12 ' }}{%- if experience.logo -%}col-sm-8 col-md-9 col-print-12{%- endif -%}">
