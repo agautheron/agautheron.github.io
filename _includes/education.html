@@ -2,9 +2,9 @@
 <h3>{{ site.education_title | default: "Education" }}</h3>
   {% for education in site.data.education %}
     <div class="row clearfix education">
-	    {%- if education.logo -%}
+	    {%- if education.logo -%}		
       <div class="col-xs-12 col-sm-4 col-md-3 no-print">
-        <span class="company-logo align-middle" style="background-image: url({{ education.logo | relative_url }});background-size: 100%;margin-top: auto;
+        <span class="company-logo align-middle" style="background-image: url({{ base_path }}{{ education.logo}});background-size: 100%;margin-top: auto;
 margin-bottom: auto;"></span>
         <!-- <h4>{{ education.name }}</h4> -->
         <!-- <p><b>{{ education.qualification }}</b></p> -->
