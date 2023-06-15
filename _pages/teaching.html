@@ -5,7 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 {% include base_path %}
+{% include elements/get-teaching-exp.html %}
 
 {% for post in site.teaching reversed %}
   {% if post.visible==true %}
