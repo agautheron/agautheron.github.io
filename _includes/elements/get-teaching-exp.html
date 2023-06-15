@@ -1,0 +1,269 @@
+{%- assign course_sort = site.data.teaching | sort: "year" | reverse -%}
+{%- assign course_by_year = course_sort | group_by:"year" -%}
+{%- assign course_by_inst = course_sort | group_by:"institution" -%}
+
+{%- assign years_list = course_by_year | map: 'name' -%}
+{%- assign courses_per_year_list = course_by_year | map: 'items' -%}
+
+
+
+<!------------------------------------------- Institutions  ---------------------------------->
+
+<!-- Open bracket of parent -->
+{%- assign sep_institution = "" -%}
+	
+<!--- Get all courses per year --->
+{%- for courses_per_year in courses_per_year_list -%}
+	{%- assign courses_per_year_sort = courses_per_year | sort: "institution" -%}
+	
+	<!-- Open bracket of child -->
+	{%- assign sep_tmp_institution = "" -%}
+	
+	<!-- Go through institutions -->
+	{%- for course in courses_per_year_sort -%}
+		{%- assign sep_tmp_institution = sep_tmp_institution | append: "," -%}
+		{%- assign sep_tmp_institution = sep_tmp_institution | append: course.institution -%}
+	{%- endfor -%}
+	
+	<!-- Keep unique list -->
+	{%- assign sep_tmp_institution = sep_tmp_institution | remove_first: "," -%}
+	{%- assign temporary = sep_tmp_institution | split: "," -%}
+	{%- assign unique_inst = temporary | uniq | join: ',' -%}
+
+
+	<!-- Append to parent sepator -->
+	{%- assign sep_institution = sep_institution | append: "#" -%}
+	{%- assign sep_institution = sep_institution | append: unique_inst -%}
+	
+{%- endfor -%}
+
+<!-- Close bracket and remove first separator -->
+
+{%- assign sep_institution = sep_institution | remove_first: "#" -%}
+
+
+<!------------------------------------------- Course Titles ---------------------------------->
+
+<!-- Open bracket of parent -->
+{%- assign sep_title = "" -%}
+	
+<!--- Get all courses per year --->
+{%- for courses_per_year in courses_per_year_list -%}
+	{%- assign courses_per_year_sort = courses_per_year | sort: "institution" -%}
+	
+	<!-- Open bracket of child -->
+	{%- assign sep_tmp_title = "" -%}
+	
+	<!-- Go through course titles -->
+	{%- for course in courses_per_year_sort -%}
+		{%- assign sep_tmp_title = sep_tmp_title | append: ',' -%}
+		{%- assign sep_tmp_title = sep_tmp_title | append: course.title -%}
+	{%- endfor -%}
+	
+	<!-- Remove first separator -->
+	{%- assign sep_tmp_title = sep_tmp_title | remove_first: "," -%}
+	
+	<!-- Append to parent sepator -->
+	{%- assign sep_title = sep_title | append: "#" -%}
+	{%- assign sep_title = sep_title | append: sep_tmp_title -%}
+
+{%- endfor -%}
+
+<!-- Close bracket and remove first separator -->
+{%- assign sep_title = sep_title | remove_first: "#" -%}
+
+
+
+<!------------------------------------------- Course Hours ---------------------------------->
+
+<!-- Open bracket of parent -->
+{%- assign sep_hour = "" -%}
+	
+<!--- Get all courses per year --->
+{%- for courses_per_year in courses_per_year_list -%}
+	{%- assign courses_per_year_sort = courses_per_year | sort: "institution" -%}
+	{%- assign courses_per_year_sort_group = courses_per_year_sort | group_by:"institution" -%}
+	{%- assign institutions_this_year = courses_per_year_sort_group | map:'name' -%}
+	
+	
+	<!-- Open bracket of child -->
+	{%- assign sep_tmp_hour = "" -%}
+	
+	<!-- Go through institutions -->
+	{%- for inst in institutions_this_year -%}
+		{%- assign sep_hour_inner = "" -%}
+		
+		<!-- Go through courses-->
+		{%- for course in courses_per_year_sort -%}
+			{%- assign sep_hour_inner = sep_hour_inner | append: "," -%}
+			
+			{%- if course.institution == inst -%}
+				{%- assign sep_hour_inner = sep_hour_inner | append: course.hours -%}
+			{%- else -%}
+				{%- assign sep_hour_inner = sep_hour_inner | append: "null" -%}
+			{%- endif -%}
+		
+		{%- endfor -%}
+		
+		<!-- Close bracket and remove first separator of child -->
+		{%- assign sep_hour_inner = sep_hour_inner | remove_first: "," -%}
+		
+		<!-- Add to the direct parent -->
+		{%- assign sep_tmp_hour = sep_tmp_hour | append: ";" -%}
+		{%- assign sep_tmp_hour = sep_tmp_hour | append: sep_hour_inner -%}
+
+	{%- endfor -%}
+	
+	<!-- Close bracket and remove first separator of child -->
+	{%- assign sep_tmp_hour = sep_tmp_hour | remove_first: ";" -%}
+	
+	<!-- Add to the direct parent -->
+	{%- assign sep_hour = sep_hour | append: "#" -%}
+	{%- assign sep_hour = sep_hour | append: sep_tmp_hour -%}
+
+{%- endfor -%}
+
+<!-- Close bracket and remove first separator of child -->
+{%- assign sep_hour = sep_hour | remove_first: "#" -%}
+
+
+
+
+
+
+
+
+<div class="row" style="padding-top: 4%;padding-left: 10%;padding-right: 10%;" >
+  <div class="col-4">
+  <div  id="year-selector" class="list-group list-group-light" role="tablist">
+	  <!--- Create one button for each year --->
+	{% for year in years_list %}
+	{% capture year_str %}{{year}}{% endcapture %}
+	{% if forloop.first %}
+		<a id="btn-year-{{ forloop.index | minus: 1}}" class="list-group-item-action list-group-item active" data-toggle="tab" href="#" onclick="refreshChart('{{ forloop.index | minus: 1}}')">{{year_str}}</a>
+	{% else %}
+		<a id="btn-year-{{ forloop.index | minus: 1}}" class="list-group-item-action list-group-item" data-toggle="tab" href="#" onclick="refreshChart('{{ forloop.index | minus: 1}}')">{{year_str}}</a>
+	{% endif %}
+	{% endfor %}
+  </div>
+  </div>
+  <div class="col-8 table-responsive">
+	<canvas id="teaching-canvas" style="width:100%; display:block" class="table" width="586" height="260"></canvas>
+  </div>
+
+</div>
+
+
+<script>
+
+// Data extracted from the taught courses
+
+var INSTITUTIONS = [{%- assign institution_split = sep_institution | split: '#' -%}{%- for inst_year in institution_split -%}{%- assign inst_year_split = inst_year | split: ',' -%}[{%- for inst in inst_year_split -%}"{{- inst --}}"{% if forloop.last %}{% else %}{% if forloop.last %}{% else %},{% endif %}{% endif %}{%- endfor -%}],{%- endfor -%}];
+
+var TITLES = [{%- assign titles_split = sep_title | split: '#' -%}{%- for title_year in titles_split -%}{%- assign title_year_split = title_year | split: ',' -%}[{%- for title in title_year_split -%}"{{- title --}}"{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}];
+
+var HOURS = [{%- assign hours_split = sep_hour | split: '#' -%}{%- for hour_year in hours_split -%}{%- assign hour_year_split = hour_year | split: ';' -%}[{%- for hours_year_per_inst in hour_year_split -%}{%- assign hours_data = hours_year_per_inst | split: ',' -%}[{%- for hours in hours_data -%}{{ hours }}{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}];
+
+
+// Colors (to improve transparency)
+var style = getComputedStyle(document.body);
+var textcolor = style.getPropertyValue('-webkit-text-fill-color');
+var colors = [style.getPropertyValue('--success'),style.getPropertyValue('--danger'),style.getPropertyValue('--info')];
+var bgcolors = ["rgba(40, 167, 70, 0.5)","rgba(220, 53, 69, 0.5)","rgba(23, 163, 184, 0.5)"];
+
+
+// Create one set of data per each year
+var chart_data = [];
+for (var i = 0; i < {{ years_list | size }}; ++i) {
+    chart_data[i] = {
+    	labels: TITLES[i],
+    	datasets: INSTITUTIONS[i].map((ds, j) => ({
+    	    label: INSTITUTIONS[i][j],
+            backgroundColor: bgcolors[j],
+            borderColor: colors[j],
+            data: HOURS[i][j],
+            borderWidth: 2,
+	    borderRadius: 20,
+	    color: textcolor
+        }))
+    }
+};
+
+// Set bar options
+var barOptions = {
+	responsive: false,
+	maintainAspectRatio: false,
+    	interaction: {
+      		intersect: false,
+    	},
+	scales: {
+		yAxes: [{
+		    ticks: {
+		    	 display: true,
+		        fontColor: textcolor,
+		    },
+		    stacked: true,
+		    gridLines: {
+		    	display: false,
+		    },
+		}],
+		xAxes: [{
+		    ticks: {
+		        beginAtZero: true
+		    },
+		    gridLines: {
+		    	display: false,
+		    },
+			scaleLabel: {
+				display: true,
+				labelString: 'Hours of teaching'
+			}
+		}]
+	}
+};
+
+// Create chart
+Chart.defaults.global.defaultFontColor = textcolor;
+var ctx = document.getElementById("teaching-canvas").getContext("2d");
+var teachingBar = new Chart(ctx, {
+		type: 'horizontalBar',
+		data: chart_data[0],
+		options: barOptions,
+	    });
+
+
+// Change data
+// issue: changing the data object does not override the metadata
+function refreshChart(id) {
+	teachingBar.data = chart_data[id];
+	teachingBar.update();
+		
+	var btnContainer = document.getElementById("year-selector");
+
+	// Get all buttons with class="btn" inside the container
+	var current = btnContainer.getElementsByClassName("active");
+
+	// If there's no active class
+	if (current.length > 0) {
+	  current[0].className = current[0].className.replace(" active", "");
+	}
+	
+	var clickedBtn = document.getElementById('btn-year-'.concat('',id));
+	clickedBtn.className+= " active";
+	// Loop through the buttons and add the active class to the current/clicked button
+//	for (var i = 0; i < btns.length; i++) {
+//	  btns[i].addEventListener("click", function() {
+//		var current = document.getElementsByClassName("active");
+
+
+		// Add the active class to the current/clicked button
+//		this.className += " active";
+//	  });
+//} 
+//	setActive();
+}
+
+</script>
+
+
+

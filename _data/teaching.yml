@@ -1,0 +1,89 @@
+- id: 2022-LSMA
+  year: 2022-2023
+  institution: IOGS (AIMA)
+  title: Light Scattering for Material Appearence (M2)
+  hours: 6
+
+- id: 2022-CIM
+  year: 2022-2023
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TP (L3)
+  hours: 18  
+  
+- id: 2022-S9
+  year: 2022-2023
+  institution: Univ. Lyon 1 (Polytech)
+  title: Biomedical Engineering Project (M2)
+  hours: 12 
+  
+- id: 2021-S9
+  year: 2021-2022
+  institution: Univ. Lyon 1 (Polytech)
+  title: Biomedical Engineering Project (M2)
+  hours: 16 
+  
+- id: 2021-CIM
+  year: 2021-2022
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TP (L3)
+  hours: 12  
+  
+- id: 2021-CIM
+  year: 2021-2022
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TD (L3)
+  hours: 7.5 
+  
+- id: 2021-TSAudio
+  year: 2021-2022
+  institution: Univ. Lyon 1 (ISTR Audio)
+  title: Basics of Signal Processing TP (L1)
+  hours: 18
+  
+- id: 2020-CIM
+  year: 2020-2021
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TP (L3)
+  hours: 18  
+  
+- id: 2020-CIM
+  year: 2020-2021
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TD (L3)
+  hours: 12  
+  
+- id: 2020-EN
+  year: 2020-2021
+  institution: Univ. Lyon 1 (ISTR Audio)
+  title: Digital Electronics TP (L2)
+  hours: 16
+
+- id: 2020-TSAudio
+  year: 2020-2021
+  institution: Univ. Lyon 1 (ISTR Audio)
+  title: Basics of Signal Processing TP (L1)
+  hours: 16
+
+- id: 2019-CIM
+  year: 2019-2020
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TP (L3)
+  hours: 2  
+  
+- id: 2019-CIM
+  year: 2019-2020
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation TD (L3)
+  hours: 12  
+  
+- id: 2019-EN
+  year: 2019-2020
+  institution: Univ. Lyon 1 (ISTR Audio)
+  title: Digital Electronics TP (L2)
+  hours: 16
+
+- id: 2019-TSAudio
+  year: 2019-2020
+  institution: Univ. Lyon 1 (ISTR Audio)
+  title: Basics of Signal Processing TP (L1)
+  hours: 16
