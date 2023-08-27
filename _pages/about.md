@@ -193,9 +193,8 @@ These results are the subject of a paper currently in progress.
 ---
 
 ### <span style="margin-left:3rem">Verbatim</span>
-<div id="wordcloud-hal"></div>
-<div id="publi-hal-all" style="display:none"></div>
-
+<div id="hal-wordcloud-integrator"></div>
+<div id="hal-bibliography-integrator" style="display:none"></div>
 ### <span style="margin-left:3rem">[Details](publications)</span>
 
 ## Softwares <a name="softwares"></a> 

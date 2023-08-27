@@ -167,11 +167,12 @@ var HOURS = [{%- assign hours_split = sep_hour | split: '#' -%}{%- for hour_year
 
 // Colors (to improve transparency)
 var style = getComputedStyle(document.body);
-var textcolor = style.getPropertyValue('-webkit-text-fill-color');
+var textcolor = style.getPropertyValue('--main-text-color');
 var colors = [style.getPropertyValue('--success'),style.getPropertyValue('--danger'),style.getPropertyValue('--info')];
 var bgcolors = ["rgba(40, 167, 70, 0.5)","rgba(220, 53, 69, 0.5)","rgba(23, 163, 184, 0.5)"];
 
-
+var themeSwitcherBtn=document.getElementById('button-theme-toggle');
+themeSwitcherBtn.addEventListener("click", updateTheme);
 // Create one set of data per each year
 var chart_data = [];
 for (var i = 0; i < {{ years_list | size }}; ++i) {
@@ -184,7 +185,6 @@ for (var i = 0; i < {{ years_list | size }}; ++i) {
             data: HOURS[i][j],
             borderWidth: 2,
 	    borderRadius: 20,
-	    color: textcolor
         }))
     }
 };
@@ -200,7 +200,6 @@ var barOptions = {
 		yAxes: [{
 		    ticks: {
 		    	 display: true,
-		        fontColor: textcolor,
 		    },
 		    stacked: true,
 		    gridLines: {
@@ -209,14 +208,14 @@ var barOptions = {
 		}],
 		xAxes: [{
 		    ticks: {
-		        beginAtZero: true
+		        beginAtZero: true,
 		    },
 		    gridLines: {
 		    	display: false,
 		    },
 			scaleLabel: {
 				display: true,
-				labelString: 'Hours of teaching'
+				labelString: 'Hours of teaching',
 			}
 		}]
 	}
@@ -262,7 +261,19 @@ function refreshChart(id) {
 //} 
 //	setActive();
 }
-
+function updateTheme(){
+	var style = getComputedStyle(document.body);
+	var textcolor = style.getPropertyValue('--main-text-color');
+	console.log(teachingBar.options);
+	if(teachingBar.options.defaultFontColor!=textcolor){
+		teachingBar.options.legend.labels.fontColor=textcolor;
+		teachingBar.options.scales.yAxes[0].ticks.fontColor=textcolor;
+		teachingBar.options.scales.xAxes[0].ticks.fontColor=textcolor;
+		teachingBar.options.scales.yAxes[0].scaleLabel.fontColor=textcolor;
+		teachingBar.options.scales.xAxes[0].scaleLabel.fontColor=textcolor;
+	}
+	teachingBar.update();
+}
 </script>
 
 

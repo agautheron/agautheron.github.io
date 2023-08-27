@@ -33,7 +33,10 @@
 <!-- MAIN STYLE SHEET-->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 <!-- HAL PUBLICATION STYLE -->
-<link rel="stylesheet" href="{{ base_path }}/assets/hal-publication-list/hal-style.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal.min.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal-wordcloud.min.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal-artscore.min.css">
+
 
 <!-- SCRIPTS -->
 <!-- CONFIGURATION MATHJAX -->
@@ -57,10 +60,22 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 <!-- LOAD HAL PUBLICATION SCRIPTS -->
 <script type="text/javascript">
-    // idHal personalisé
-    const idhal = "{{ site.data.author.hal }}";
-    // Liste des keywords de type de publications souhaitées
-    const publiList = {{site.data.author.hal-list}}; 
-    // (Optionel: debug mode)
-    const halDebug = false;
+    const hal_integrator_config = {
+        "id": "{{ site.data.author.hal }}",
+        "onLoad": "{{ site.data.author.hal-init}}",
+        "typeList": {{site.data.author.hal-list}},
+        "plugins": {
+            "artscore": {
+                "scimago": {
+                    "Systems & Control Letters": "Systems and Control Letters",
+                },
+
+                "semantic": {},
+
+                "scopus": {
+                    "apiKey": "ba28b7b16741bdbc327b34c7b8a8ee24",
+                }
+            }
+        }
+    }
 </script>
