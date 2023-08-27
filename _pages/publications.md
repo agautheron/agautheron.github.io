@@ -10,5 +10,5 @@ author_profile: true
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 
-<!-- <div id="wordcloud-hal"></div> -->
-<div id="publi-hal-all"></div>
+<!-- <div id="hal-wordcloud-integrator"></div> -->
+<div id="hal-bibliography-integrator"></div>
