@@ -1,3 +1,33 @@
+- id: 2023-ETI-TSA
+  year: 2023-2024
+  institution: CPE (ETI)
+  title: Random Signal Processing TP (M1)
+  hours: 32
+  
+- id: 2023-ETI-TNS
+  year: 2023-2024
+  institution: CPE (ETI)
+  title: Digital Signal Processing TP (L3)
+  hours: 16
+  
+- id: 2023-PSM-TNS
+  year: 2023-2024
+  institution: CPE (PSM)
+  title: Digital Signal Processing TP (L3)
+  hours: 8
+  
+- id: 2023-ETI-TSI
+  year: 2023-2024
+  institution: CPE (ETI)
+  title: Image Synthesis and Processing TP (L3)
+  hours: 8
+  
+- id: 2023-TP-Projets
+  year: 2023-2024
+  institution: IOGS
+  title: Colorimetry Projects TP (M1)
+  hours: 22
+  
 - id: 2022-LSMA
   year: 2022-2023
   institution: IOGS (AIMA)
