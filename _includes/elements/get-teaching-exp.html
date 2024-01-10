@@ -148,7 +148,7 @@
   </div>
   </div>
   <div class="col-8 table-responsive">
-	<canvas id="teaching-canvas" style="width:100%; display:block" class="table" width="586" height="260"></canvas>
+	<canvas id="teaching-canvas" style="width:100%; display:block" class="table" width="1280" height="720"></canvas>
   </div>
 
 </div>
@@ -162,12 +162,13 @@ var INSTITUTIONS = [{%- assign institution_split = sep_institution | split: '#' 
 
 var TITLES = [{%- assign titles_split = sep_title | split: '#' -%}{%- for title_year in titles_split -%}{%- assign title_year_split = title_year | split: ',' -%}[{%- for title in title_year_split -%}"{{- title --}}"{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}];
 
-var HOURS = [{%- assign hours_split = sep_hour | split: '#' -%}{%- for hour_year in hours_split -%}{%- assign hour_year_split = hour_year | split: ';' -%}[{%- for hours_year_per_inst in hour_year_split -%}{%- assign hours_data = hours_year_per_inst | split: ',' -%}[{%- for hours in hours_data -%}{{ hours }}{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}];
+var HOURS = [{%- assign hours_split = sep_hour | split: '#' -%}{%- for hour_year in hours_split -%}{%- assign hour_year_split = hour_year | split: ';' -%}[{%- for hours_year_per_inst in hour_year_split -%}{%- assign hours_data = hours_year_per_inst | split: ',' -%}[{%- for hours in hours_data -%}{{ (hours||0) }}{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}];
 
-
+console.log(HOURS);
 // Colors (to improve transparency)
 var style = getComputedStyle(document.body);
 var textcolor = style.getPropertyValue('--main-text-color');
+var textsize = parseInt(style.getPropertyValue('font-size'));
 var colors = [style.getPropertyValue('--success'),style.getPropertyValue('--danger'),style.getPropertyValue('--info')];
 var bgcolors = ["rgba(40, 167, 70, 0.5)","rgba(220, 53, 69, 0.5)","rgba(23, 163, 184, 0.5)"];
 
@@ -175,6 +176,17 @@ var themeSwitcherBtn=document.getElementById('button-theme-toggle');
 themeSwitcherBtn.addEventListener("click", updateTheme);
 // Create one set of data per each year
 var chart_data = [];
+
+for (var i = 0; i < HOURS.length; i++) {
+    for (var j = 0; j < HOURS[i].length; j++) {
+		for (var k = 0; k < HOURS[i][j].length; k++) {
+			if (typeof(HOURS[i][j][k])!=typeof(1)){
+				HOURS[i][j][k]=0;
+			}
+		}
+    }
+}
+
 for (var i = 0; i < {{ years_list | size }}; ++i) {
     chart_data[i] = {
     	labels: TITLES[i],
@@ -204,7 +216,7 @@ var barOptions = {
 		    stacked: true,
 		    gridLines: {
 		    	display: false,
-		    },
+		    }
 		}],
 		xAxes: [{
 		    ticks: {
@@ -223,6 +235,7 @@ var barOptions = {
 
 // Create chart
 Chart.defaults.global.defaultFontColor = textcolor;
+Chart.defaults.global.defaultFontSize = textsize; 
 var ctx = document.getElementById("teaching-canvas").getContext("2d");
 var teachingBar = new Chart(ctx, {
 		type: 'horizontalBar',

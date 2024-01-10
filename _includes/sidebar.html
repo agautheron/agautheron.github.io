@@ -16,6 +16,10 @@
                   <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><a href="{{ site.data.author.location-url }}" target="_blank">{{ site.data.author.location }}</a>
                   </li>
                   {% endif %}
+                  {% if site.data.author.location2 %}
+                  <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><a href="{{ site.data.author.location2-url }}" target="_blank">{{ site.data.author.location2 }}</a>
+                  </li>
+                  {% endif %}
                   {% if site.data.author.uri %}
                   <li><i class="fa fa-fw fa-chain" aria-hidden="true"></i><a href="{{ site.data.author.uri }}"> {{
                               site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
