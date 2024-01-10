@@ -11,8 +11,11 @@ main:
   - title: "Softwares"
     url: /softwares/
     
+  - title: "Supervision"
+    url: /supervision/   
+    
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/     
 
   - title: "Administrative"
     url: /#admin

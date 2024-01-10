@@ -23,7 +23,8 @@ In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doct
 3. [Publications](#publis) 
 4. [Softwares](#softwares)
 5. [Teaching](#teaching)
-6. [Administrative functions](#admin)
+6. [Supervision](#supervision)
+7. [Administrative functions](#admin)
 
 ## Short CV <a name="shortcv"></a> <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)-->
 ---
@@ -215,6 +216,54 @@ Software which interacts with an OceanInsight Spectrometer and an National Instr
 
 ## Teaching <a name="teaching"></a>  <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/teaching/)-->
 ---
+
+
+### 2023-2024 Vacancies planned during the post-doctoral fellow (22h) and Lectures at CPE Lyon (20% part-time contract) (45.5h)
+
+A summary of the lectures taughted during the 2023-2024 school year is presented in the table below. 
+The content of these courses is detailed in the links. 
+
+<table>
+  <tbody>
+    <tr style="border: solid 2px">
+      <th>Course title</th>
+      <th>Structure</th>
+      <th>Number of hours (Type)</th>
+      <th>Level</th>
+    </tr>
+    <tr style="border: dashed 1px">
+      <!--<td><a href="./teaching/2023-light-scattering">Light Scattering for Material Appearance</a></td>-->
+      <td>Colorimetry Practical Session-Project</td>
+      <td>IOGS</td>
+      <td>20h (Pratical Session-Project) + 2h (Pitch rehearsal)</td>
+      <td>graduation year (M1)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td>Random Signal Processing</td>
+      <td>CPE Lyon (ETI)</td>
+      <td>32h (Pratical Session)</td>
+      <td>graduation year (M1)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td>Digital Signal Processing</td>
+      <td>CPE Lyon (ETI)</td>
+      <td>16h (Pratical Session)</td>
+      <td>undergraduation year (L3)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td>Digital Signal Processing</td>
+      <td>CPE Lyon (PSM)</td>
+      <td>8h (Pratical Session)</td>
+      <td>undergraduation year (L3)</td>
+    </tr>
+    <tr style="border: dashed 1px">
+      <td>Image Synthesis and Processing </td>
+      <td>CPE Lyon (ETI)</td>
+      <td>8h (Pratical Session)</td>
+      <td>undergraduation year (L3)</td>
+    </tr>
+  </tbody>
+</table>
 ### 2022-2023 Vacancies planned during the post-doctoral fellow (45.5h)
 
 A summary of the lessons being taught and to be taught during the 2022-2023 school year is presented in the table below. 
@@ -296,6 +345,13 @@ These teachings were realized between October 2019 and June 2022 in the framewor
 </table>
 
 
+## Supervision <a name="supervision"></a>  
+---
+### Master Students
+ - Simon Jollet (M2 - 5m) CREATIS (2024) : [_Links between preoperative MRS and intraoperative optical approaches in neurosurgery_](https://www.creatis.insa-lyon.fr/site/sites/default/files/Sujet_Master_WP2_IRMOpt_2024_en_1.pdf)
+ - Elias Gabory (M1 - 5m) CREATIS (2023) : [_Symbolic Monte-Carlo Method with Fluorescence for Biomarker Quantification in Neurosurgery_](https://www.creatis.insa-lyon.fr/site/sites/default/files/MonteCarloSymboliqueFluorescenceResectionGliome_v2_en.pdf)
+ 
+ 
 ## Administrative functions <a name="admin"></a> 
 ---
 
