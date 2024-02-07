@@ -39,8 +39,13 @@
                   {% endif %}
                   {% if site.data.author.orcid %}
                   <li><i class="ai ai-orcid-square ai-fw"></i><a
-                              href="{{ site.data.author.orcid }}" target="_blank">
+                              href="https://orcid.org/{{ site.data.author.orcid }}" target="_blank">
                               ORCID</a></li>
+                  {% endif %}
+                  {% if site.data.author.webofscience %}
+                  <li><i class="sidebar-img"><img src="{{ base_path }}/assets/img/webofscience.svg"></i><a
+                              href="https://www.webofscience.com/wos/author/record/{{ site.data.author.webofscience }}" target="_blank">
+                              Web Of Science</a></li>
                   {% endif %}
                   {% if site.data.author.arxiv %}
                   <li><i class="sidebar-img"><img src="{{ base_path }}/assets/img/arxiv.svg"></i><a
