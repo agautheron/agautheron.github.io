@@ -31,8 +31,9 @@ In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doct
 	
 
 * 2023 - Now :  **Post-doctoral fellow at LHC**, Jean Monnet Université, Saint-Etienne
-  * <u>Subject</u>: Quantitative analysis of biomarkers by spectrometry 
-  * <u>Collaborators</u>: [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321), [Raphaël Clerc](https://fr.linkedin.com/in/raphael-clerc-0249741), [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) and [Jean-Luc Perrot](https://www.chu-st-etienne.fr/Offre_de_Soins/Medecins/PERROT_Jean_Luc/34911052)<br/><br/>
+  * <u>Subject</u>: Quantitative analysis of biomarkers by spectrometry
+  * <u>Collaborators</u>: [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321), [Raphaël Clerc](https://fr.linkedin.com/in/raphael-clerc-0249741), [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) and [Jean-Luc Perrot](https://www.chu-st-etienne.fr/Offre_de_Soins/Medecins/PERROT_Jean_Luc/34911052)
+  * <u>Funding</u>: [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) by the [Manutech Sleight Graduate School](https://manutech-sleight.com/)<br/><br/>
 * 2019 - 2022 : **Ph.D thesis in engineering for health (biomedical optics, optical modeling and signal processing)**<br/> Université de Lyon operated inside Université Claude Bernard
   * <u>Title</u>: *Towards quantitative multispectral excitation fluorescence spectroscopy for intraoperative assistance in glioma resection in neurosurgery*
   * <u>Advisors</u>: [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) (CREATIS, Université Claude Bernard, Lyon) and [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321) (LHC, Université Jean Monnet, Saint-Etienne)
