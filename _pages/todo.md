@@ -18,16 +18,111 @@ author_profile: true
 
 #### Realisation de solutions de fluorescence connues
 - [ ] Réaliser les différentes solutions fluorescentes avec différents coefficients de diffusion (sans absorption)
-| ID Fantôme 	| C0 		| C1 		| µs 	| g 	| Volume eau (ml) 	| Volume Fluo 0 	| Volume Fluo 1 	| TiO2 (gr) 	|
-|------------	|--------	|--------	|----	|---	|-----------------	|---------------	|---------------	|-----------	|
-|      0      	|   0 		|   28.57\%	|   0 	|   1	|        50       	|        0       	|         20      	|   0       	|
-|      1      	|   0 		|  16.66 \%	|   0 	|   1	|        50       	|        0       	|         10      	|   0       	|
-|      1      	|  12.5\%	|   25\%	|   0 	|   1	|        50       	|        10       	|         20      	|   0       	|
-|      1      	|  14.28\%	|   14.28\%	|   0 	|   1	|        50       	|        10       	|         10      	|   0       	|
-|      1      	|  16.66 \% |   0 		|   0 	|   1	|        50       	|        10       	|         0      	|   0       	|
-|      2      	|  22.22\%	|  22.22\%	|   0 	|   1	|        50       	|        20       	|         20      	|   0       	|
-|      2      	| 25\%		| 12.5\% 	|   0 	|   1	|        50       	|        20       	|         10      	|   0       	|
-|      2      	| 28.57\%	| 0 		|   0 	|   1	|        50       	|        20       	|         0      	|   0       	|
+<table>
+<thead>
+  <tr>
+    <th>ID Fantôme</th>
+    <th>C0</th>
+    <th>C1</th>
+    <th>µs</th>
+    <th>g</th>
+    <th>Volume eau (ml)</th>
+    <th>Volume Fluo 0</th>
+    <th>Volume Fluo 1</th>
+    <th>TiO2 (gr)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>28.57\%</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>0</td>
+    <td>20</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>16.66 \%</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>12.5\%</td>
+    <td>25\%</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>10</td>
+    <td>20</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>14.28\%</td>
+    <td>14.28\%</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>10</td>
+    <td>10</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>16.66 \%</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>10</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>22.22\%</td>
+    <td>22.22\%</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>20</td>
+    <td>20</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>25\%</td>
+    <td>12.5\%</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>20</td>
+    <td>10</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>28.57\%</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>50</td>
+    <td>20</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+</tbody>
+</table>
 - [ ] Ajouter des encres imitant l'absorption du sang dans les solutions précédentes et refaire les mesures
 
 #### Quantification Fluo en Modèle Diffusion spatialement résolu (R uniquement)
