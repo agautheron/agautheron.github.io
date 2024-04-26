@@ -18,7 +18,7 @@ author_profile: true
 - [ ] Traitement des données et extraction des concentrations avec le Monte-Carlo Symbolique
  
 #### Quantification Fluo avec Modèle 2F (R+T)
-[ ] Mesurer le spectre de fluorescence de chaque encre fluorescente
-[ ] Mesurer le spectre d'absorption de chaque encre fluorescente
-[ ] Mesurer la fluorescence de différentes solutions fluorescentes avec différents coefficients de diffusion (sans absorption)
-[ ] Ajouter des encres imitant l'absorption du sang dans les solutions précédentes et refaire les mesures
+* [ ] Mesurer le spectre de fluorescence de chaque encre fluorescente
++ [ ] Mesurer le spectre d'absorption de chaque encre fluorescente
+* [ ] Mesurer la fluorescence de différentes solutions fluorescentes avec différents coefficients de diffusion (sans absorption)
++ [ ] Ajouter des encres imitant l'absorption du sang dans les solutions précédentes et refaire les mesures
