@@ -56,5 +56,5 @@ author_profile: true
 ### Imagerie Multi-modale préclinique IRM/Optique NADH
 - [ ] Déterminer la bascule 90 du NADH
 - [ ] Déterminer le T1 du NADH
-- [ ] Déterminer le profil de sensibilité de l'[antenne ^1^H^31^P](https://www.bruker.com/en/products-and-solutions/preclinical-imaging/mri/mri-rf-coils/mri-rf-coils-technical-details.html#section13) [https://pypi.org/project/biot-savart/](https://pypi.org/project/biot-savart/)
+- [ ] Déterminer le profil de sensibilité de l'[antenne <sup>1</sup>H<sup>31</sup>P](https://www.bruker.com/en/products-and-solutions/preclinical-imaging/mri/mri-rf-coils/mri-rf-coils-technical-details.html#section13) avec [biot-savart](https://pypi.org/project/biot-savart/)
 - [ ] Déterminer le seuil de détectabilité de NADH (mesures sur gamme de fantômes 20 mM, 7 mM, 1 mM)
