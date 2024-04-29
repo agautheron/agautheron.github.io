@@ -20,106 +20,25 @@ author_profile: true
 - [ ] Réaliser les différentes solutions fluorescentes avec différents coefficients de diffusion (sans absorption)
 <table>
 <thead>
-  <tr>
-    <th>ID Fantôme</th>
-    <th>C0</th>
-    <th>C1</th>
-    <th>µs</th>
-    <th>g</th>
-    <th>Volume eau (ml)</th>
-    <th>Volume Fluo 0</th>
-    <th>Volume Fluo 1</th>
-    <th>TiO2 (gr)</th>
+  <tr><th>ID Fantôme</th><th>C0</th><th>C1</th><th>µs</th><th>g</th><th>Volume eau (ml)</th><th>Volume Fluo 0</th><th>Volume Fluo 1</th><th>TiO2 (gr)</th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>0</td>
-    <td>0</td>
-    <td>28.57\%</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>0</td>
-    <td>20</td>
-    <td>0</td>
+  <tr><td>0</td><td>0</td><td>28.57\%</td><td>0</td><td>1</td><td>50</td><td>0</td><td>20</td><td>0</td>
   </tr>
-  <tr>
-    <td>1</td>
-    <td>0</td>
-    <td>16.66 \%</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>0</td>
-    <td>10</td>
-    <td>0</td>
+  <tr><td>1</td><td>0</td><td>16.66 \%</td><td>0</td><td>1</td><td>50</td><td>0</td><td>10</td><td>0</td>
   </tr>
-  <tr>
-    <td>2</td>
-    <td>12.5\%</td>
-    <td>25\%</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>10</td>
-    <td>20</td>
-    <td>0</td>
+  <tr><td>2</td><td>12.5\%</td><td>25\%</td><td>0</td><td>1</td><td>50</td><td>10</td><td>20</td><td>0</td>
   </tr>
-  <tr>
-    <td>3</td>
-    <td>14.28\%</td>
-    <td>14.28\%</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
+  <tr><td>3</td><td>14.28\%</td><td>14.28\%</td><td>0</td><td>1</td><td>50</td><td>10</td><td>10</td><td>0</td>
   </tr>
-  <tr>
-    <td>4</td>
-    <td>16.66 \%</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>10</td>
-    <td>0</td>
-    <td>0</td>
+  <tr><td>4</td><td>16.66 \%</td><td>0</td><td>0</td><td>1</td><td>50</td><td>10</td><td>0</td><td>0</td>
   </tr>
-  <tr>
-    <td>5</td>
-    <td>22.22\%</td>
-    <td>22.22\%</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>20</td>
-    <td>20</td>
-    <td>0</td>
+  <tr><td>5</td><td>22.22\%</td><td>22.22\%</td><td>0</td><td>1</td><td>50</td><td>20</td><td>20</td><td>0</td>
   </tr>
-  <tr>
-    <td>6</td>
-    <td>25\%</td>
-    <td>12.5\%</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>20</td>
-    <td>10</td>
-    <td>0</td>
+  <tr><td>6</td><td>25\%</td><td>12.5\%</td><td>0</td><td>1</td><td>50</td><td>20</td><td>10</td><td>0</td>
   </tr>
-  <tr>
-    <td>7</td>
-    <td>28.57\%</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td>50</td>
-    <td>20</td>
-    <td>0</td>
-    <td>0</td>
+  <tr><td>7</td><td>28.57\%</td><td>0</td><td>0</td><td>1</td><td>50</td><td>20</td><td>0</td><td>0</td>
   </tr>
 </tbody>
 </table>
@@ -134,4 +53,8 @@ author_profile: true
 - [ ] Pour chacune des solutions précédentes, faire une série de mesures avec le banc expérimental assemblé au labo où la quantité de solution augmente (<> Augmentation de l'épaisseur d'un slab)
 - [ ] Traitement des données et extraction des concentrations avec le modèle 2F
 
-### 
+### Imagerie Multi-modale préclinique IRM/Optique NADH
+- [ ] Déterminer la bascule 90 du NADH
+- [ ] Déterminer le T1 du NADH
+- [ ] Déterminer le profil de sensibilité de l'[antenne ^1^H^31^P](https://www.bruker.com/en/products-and-solutions/preclinical-imaging/mri/mri-rf-coils/mri-rf-coils-technical-details.html#section13) [https://pypi.org/project/biot-savart/](https://pypi.org/project/biot-savart/)
+- [ ] Déterminer le seuil de détectabilité de NADH (mesures sur gamme de fantômes 20 mM, 7 mM, 1 mM)
