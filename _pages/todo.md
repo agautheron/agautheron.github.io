@@ -6,6 +6,13 @@ author_profile: true
 
 ## To Do <a name="ToDo"></a>  
 ---
+### Optimisation des longueurs d'onde pour la mesure de fluorescence 
+
+ - [ ] Lancer un script complet
+ - [ ] Remettre la méthode originale d'optimisation utilisée par Charly
+ - [ ] Traiter les résultats
+
+---
 ### Quantification de deux fluorophores connus en solution 
 
 **Objectifs**
