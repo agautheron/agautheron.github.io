@@ -15,7 +15,9 @@ In 2019, he also received two other degrees, one university degree from the Inst
 <span class="semi-bold">AG</span> started in 2019 a thesis in engineering for health (biomedical optics, optical modeling and signal processing) under the supervision of [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) from [CREATIS](http://creatis.insa-lyon.fr/) (Université Claude Bernard, Lyon) and [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321) from [LHC](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html) (Université Jean Monnet, Saint-Etienne). His thesis was funded by the [Labex PRIMES](https://primes.universite-lyon.fr/) and is briefly summarized [here](https://primes.universite-lyon.fr/medias/fichier/resume-these-labex-arthur-gautheron-v2_1625571544265-pdf).
 He successfully defended his Ph.D thesis on the 8th of December 2022. 
 
-In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doctoral fellow in the [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) funded by the [Manutech Sleight Graduate School](https://manutech-sleight.com/). He is thus member of the Image team ([LHC](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html), Saint-Etienne) and the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).<br/>
+In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doctoral fellow in the [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) funded by the [Manutech Sleight Graduate School](https://manutech-sleight.com/). He was member of the Image team ([LHC](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html), Saint-Etienne) and the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).<br/>
+
+In September 2024, he started an Assistant Professor position, with teaching at [CPE Lyon](https://www.cpe.fr) and research in the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).
 
 <p style="margin-bottom: 0;"><strong>Content</strong>:</p>
 1. [Short CV](#shortcv)
@@ -29,8 +31,10 @@ In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doct
 ## Short CV <a name="shortcv"></a> <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)-->
 ---
 	
+* 2024 - Now : ** Assistant professor**, CPE Lyon, Lyon
 
-* 2023 - Now :  **Post-doctoral fellow at LHC**, Jean Monnet Université, Saint-Etienne
+<br/><br/>
+* 2023 - 2024 :  **Post-doctoral fellow at LHC**, Jean Monnet Université, Saint-Etienne
   * <u>Subject</u>: Quantitative analysis of biomarkers by spectrometry
   * <u>Collaborators</u>: [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321), [Raphaël Clerc](https://fr.linkedin.com/in/raphael-clerc-0249741), [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) and [Jean-Luc Perrot](https://www.chu-st-etienne.fr/Offre_de_Soins/Medecins/PERROT_Jean_Luc/34911052)
   * <u>Funding</u>: [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) by the [Manutech Sleight Graduate School](https://manutech-sleight.com/)<br/><br/>
@@ -348,10 +352,16 @@ These teachings were realized between October 2019 and June 2022 in the framewor
 
 ## Supervision <a name="supervision"></a>  
 ---
+### PhD Students
+ - Giorgi Asatiani, CREATIS (2024): <i>Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches.</i>
+ - Hermine Quardon, CREATIS (2024): <i>Development of an intraoperative tool in neurosurgery to assist in biopsy site selection based on fluorescence spectroscopy and machine learning to improve diagnostic accuracy in oncology</i>
+
 ### Master Students
  - Simon Jollet (M2 - 5m) CREATIS (2024) : [_Links between preoperative MRS and intraoperative optical approaches in neurosurgery_](https://www.creatis.insa-lyon.fr/site/sites/default/files/Sujet_Master_WP2_IRMOpt_2024_en_1.pdf)
  - Elias Gabory (M1 - 5m) CREATIS (2023) : [_Symbolic Monte-Carlo Method with Fluorescence for Biomarker Quantification in Neurosurgery_](https://www.creatis.insa-lyon.fr/site/sites/default/files/MonteCarloSymboliqueFluorescenceResectionGliome_v2_en.pdf)
  
+### Research Engineers
+ - Luis Martinez-Ceseña, CREATIS (2024) : <i>Modeling radiative transfer in the brain for biomarker quantification in neurosurgery</i>
  
 ## Administrative functions <a name="admin"></a> 
 ---
