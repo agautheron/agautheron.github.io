@@ -6,11 +6,67 @@ author_profile: true
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+
+<hr>
+<h2>Students</h2>
+
+
+{% assign students = site.data.students | sort: "year" | reverse %}
+
+<h3>PhD students</h3>
+<ul>
+{% for student in students %}
+  {% if student.type == 'phd' %}
+  <li>{{student.name}} - <em>{{student.title}}</em> (starting date: {{student.month}} {{student.year}}) - co-supervised with {{student.cosupervisor}}</li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h3>Interns</h3>
+<ul>
+{% for student in students %}
+  {% if student.type == 'internship' %}
+	{% if student.subjectOffer %}
+		<li>{{student.name}} - <a href={{student.subjectOffer}}><em>{{student.title}}</em></a> ({{student.month}} {{student.year}})</li>
+	{% endif %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h3>Research Engineer</h3>
+<ul>
+{% for student in students %}
+  {% if student.type == 'engineer' %}
+  <li>{{student.name}} - <em>{{student.title}}</em> ({{student.startMonth}} {{student.startYear}}-{{student.endMonth}} {{student.endYear}})</li>
+  {% endif %}
+{% endfor %}
+</ul><br/>
+
+
+<h2>Teaching Experience</h2>
+
 {% include base_path %}
 {% include elements/get-teaching-exp.html %}
 
+<h2>Courses</h2>
+
+
+
+{% capture accordion_items %}
+{% for course in site.teaching %}
+	  {%- assign course_url = course.url | relative_url -%}
+		{{course.title}};<i class="fas fa-university"></i> {{course.institution}}<br><i class="fas fa-solid fa-graduation-cap"></i><em> {{course.year}}, {{course.program}}</em><br><br>{{course.description}}<br><br><a href="{{course_url}}"><i class="fas fa-chalkboard"></i> Course webpage</a>
+{% endfor %}
+{% endcapture %}
+{% include elements/accordion.html id="accordiontest"%}
+
+
+<!--
+<h2>Courses</h2>
 {% for post in site.teaching reversed %}
   {% if post.visible==true %}
 	{% include archive-single.html %}
   {%endif%}
 {% endfor %}
+-->

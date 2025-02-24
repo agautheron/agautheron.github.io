@@ -1,0 +1,53 @@
+.bg-themed {
+  background-color: var(--timeline-background-color);
+}
+.timeline-body {
+  position: relative;
+  border-radius: 0 $border-radius $border-radius 0;
+  padding: 5px 0;
+
+  &:after {
+    // Left Border
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: $info-color;
+    position: absolute;
+    left: -4px;
+    top: 0;
+  }
+
+  .timeline-item {
+    position: relative;
+
+    &:after {
+      // Circle
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 4px solid $info-color;
+      background-color: var(--main-background-color);
+      position: absolute;
+      left: -12px;
+      top: 8px;
+      z-index: 10;
+    }
+
+    .content {
+      margin: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #6c757d;
+
+      .date {
+        margin-top: -5px;
+        margin-bottom: 15px;
+        color: #6c757d;
+      }
+    }
+	
+	.active{
+		background-color: #343a40;
+	}
+  }
+}

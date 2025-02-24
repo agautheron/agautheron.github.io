@@ -1,13 +1,15 @@
 ---
 title: "Sensors and Instrumentation"
 collection: teaching
-type: "Undergraduate course"
+year: "Undergraduate course"
 permalink: /teaching/2019-CIM
-venue: "Polytech Lyon, Département GBM"
+institution: "Polytech Lyon"
+program: "Msc Biomedical Eng."
 date: 2019-12-30
 end_date: 2023-06-16
 location: "Lyon, France"
 visible: true
+description: The aim of the module "Sensors and Instrumentation" is to study the principle of measurement by a sensor (general principles of measurements and sensors, transduction element, conditioning for reading, ...). 
 ---
 
 The aim of the module "Sensors and Instrumentation" is to study the principle of measurement by a sensor (general principles of measurements and sensors, transduction element, conditioning for reading, ...). 

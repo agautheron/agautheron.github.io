@@ -34,7 +34,7 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}{% if page.end_date %}-{{ page.end_date | default: site.time | date: "%Y" }}{%endif%} </p>
+          <p> {{ page.year }}, <i>{{ page.program }}, {{ page.institution }}</i> - {{ page.date | default: "1900-01-01" | date: "%Y" }}{% if page.end_date %}-{{ page.end_date | default: site.time | date: "%Y" }}{%endif%} </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}

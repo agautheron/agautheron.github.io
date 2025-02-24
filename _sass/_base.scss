@@ -9,14 +9,20 @@ html,
 html[data-theme="light"] {
   --main-background-color: #{$background-light};
   --main-text-color: #{$text-color-light};
+  --timeline-background-color: #f8f9fa;
   --link-color: #{$link-color};
+  --card-color: #{$lighter-gray};
 }
 
 html[data-theme="dark"] {
   --main-background-color: #{$background-dark};
   --main-text-color: #{$text-color-dark};
+  --timeline-background-color: #343a40;
   --link-color: #{$link-color};
+  --card-color: #{$darker-gray};
 }
+
+
 
 @media (prefers-color-scheme: dark) {
 
@@ -24,14 +30,20 @@ html[data-theme="dark"] {
   html[data-theme="dark"] {
     --main-background-color: #{$background-dark};
     --main-text-color: #{$text-color-dark};
+    --timeline-background-color: #343a40;
     --link-color: #{$link-color};
+	--card-color: #{$darker-gray};
   }
 
   html[data-theme="light"] {
     --main-background-color: #{$background-light};
     --main-text-color: #{$text-color-light};
+    --timeline-background-color: #f8f9fa;
     --link-color: #{$link-color};
+	--card-color: #{$lighter-gray};
   }
+	  
+ 
 }
 
 html {
@@ -198,4 +210,16 @@ div.list-group.list-group-light > .list-group-item.active {
   border-color: var(--link-color);
   color: var(--main-text-color);
 	
+}
+
+// Cards
+.card{
+	background-color: var(--card-color);
+}
+
+.card.border{
+	.card-footer{
+	  background-color: var(--main-background-color);
+	  transition: background-color $transition-bg-color;
+	}
 }

@@ -1,0 +1,15 @@
+- name: Biomedical Optics
+  percentage: 100
+  color: success
+
+- name: Multimodal Imaging
+  percentage: 100
+  color: warning
+
+- name: Simulation
+  percentage: 95
+  color: 
+  
+- name: Image/Signal Processing
+  percentage: 90
+  color: info

@@ -1,0 +1,29 @@
+{%- assign items = accordion_items | strip | newline_to_br | split: '<br />' -%}
+
+<div class="list-group my-3" id="{{ include.id }}">
+
+  {% assign counter = 0 %}
+  {% for item in items %}
+  
+  {%- assign item_object = item | split: ';' -%}
+  
+  <div class="card">
+    <div class="card-header" id="heading-{{ include.id }}-{{ counter }}">
+      <h3 class="mb-0 mt-0">
+        <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{ include.id }}-{{ counter }}" aria-expanded="false" aria-controls="collapse-{{ include.id }}-{{ counter }}">
+          {{ item_object[0] }}
+        </a>
+      </h3>
+    </div>
+
+    <div id="collapse-{{ include.id }}-{{ counter }}" class="collapse" aria-labelledby="heading-{{ include.id }}-{{ counter }}" data-parent="#{{ include.id }}">
+      <div class="card-body">
+        {{ item_object[1] }}
+      </div>
+    </div>
+  </div>
+  
+    {% assign counter = counter | plus:1 %}
+  {% endfor %}
+
+</div>

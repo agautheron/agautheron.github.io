@@ -1,13 +1,15 @@
 ---
 title: "Biomedical Engineering Project"
 collection: teaching
-type: "Graduate course"
+year: "Graduate course"
 permalink: /teaching/2021-projetS9
-venue: "Polytech Lyon, Département GBM"
+institution: "Polytech Lyon"
+program: "Msc Biomedical Eng."
 date: 2021-10-01
 end_date: 2023-06-16
 location: "Lyon, France"
 visible: true
+description: The engineering project is an end-of-studies project, carried out individually or in a team, with a strong scientific and technical dimension (development/design of software, electronic cards or systems, embedded systems, etc., with application(s) related to health).
 ---
 
 The engineering project is an end-of-studies project, carried out individually or in a team, with a strong scientific and technical dimension (development/design of software, electronic cards or systems, embedded systems, etc., with application(s) related to health).

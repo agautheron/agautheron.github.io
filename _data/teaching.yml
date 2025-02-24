@@ -1,3 +1,76 @@
+
+- id: 2024-ETI-TSI
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Image Synthesis and Processing TP (L3)
+  hours: 8
+  
+- id: 2024-ETI-VENV
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Venv Installation
+  hours: 2
+
+- id: 2024-ETI-PTC
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Transverse Project (M1)
+  hours: 16
+
+- id: 2024-PSM-TSA
+  year: 2024-2025
+  institution: CPE (PSM)
+  title: Random Signal Processing TP (M1)
+  hours: 32
+  
+- id: 2024-PSM-TSA
+  year: 2024-2025
+  institution: CPE (PSM)
+  title: Advanced Digital Filtering Project (M1)
+  hours: 12
+
+- id: 2024-PSM-OptoElec
+  year: 2024-2025
+  institution: CPE (PSM)
+  title: Opto-Electronics TP (L3)
+  hours: 8
+  
+- id: 2024-ETI-TLW
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Web Languages And Techniques Project (L3)
+  hours: 32
+  
+- id: 2024-ETI-TNS
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Digital Signal Processing TP (L3)
+  hours: 16
+  
+- id: 2024-PSM-TNS
+  year: 2024-2025
+  institution: CPE (PSM)
+  title: Digital Signal Processing TP (L3)
+  hours: 8
+  
+- id: 2024-ETI-Probas
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Probabilities (M1)
+  hours: 24
+
+- id: 2024-ETI-TSA
+  year: 2024-2025
+  institution: CPE (ETI)
+  title: Random Signal Processing TP (M1)
+  hours: 48
+
+- id: 2023-PSM-OptoElec
+  year: 2023-2024
+  institution: CPE (PSM)
+  title: Opto-Electronics TP (L3)
+  hours: 8
+  
 - id: 2023-ETI-PTC
   year: 2023-2024
   institution: CPE (ETI)

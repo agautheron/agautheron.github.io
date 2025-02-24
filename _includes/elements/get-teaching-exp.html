@@ -133,8 +133,8 @@
 
 
 
-<div class="row" style="padding-top: 4%;padding-left: 10%;padding-right: 10%;" >
-  <div class="col-4">
+<div class="row"><!-- style="padding-top: 4%;padding-left: 10%;padding-right: 10%; display:inline-block" >-->
+  <div class="col-2"><!-- style="width:20%"> -->
   <div  id="year-selector" class="list-group list-group-light" role="tablist">
 	  <!--- Create one button for each year --->
 	{% for year in years_list %}
@@ -147,8 +147,8 @@
 	{% endfor %}
   </div>
   </div>
-  <div class="col-8 table-responsive">
-	<canvas id="teaching-canvas" style="width:100%; display:block" class="table" width="1280" height="720"></canvas>
+  <div class="col-10 table-responsive"><!-- style="width:80%">-->
+	<canvas id="teaching-canvas" style="display:block" class="table" width="1280" height="720"></canvas>
   </div>
 
 </div>

@@ -1,0 +1,67 @@
+- title: Associate Professor, CPE Lyon, CREATIS
+  from: September 2024
+  to: Now
+  iscurrent: true
+  description: <b>Team:</b> MAGICS<br>
+               <b>Laboratory:</b> Laboratoire CREATIS<br>
+               <b>Teaching institution:</b> CPE Lyon<br>
+
+               # Experience template
+- title: Postdoc, Université Jean Monnet, LHC
+  link: https://laboratoirehubertcurien.univ-st-etienne.fr/
+  logo : /images/eur_manutech.jpg
+  from : January 2023
+  to: August 2024
+  description: >
+    [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) funded by the [Manutech Sleight Graduate School](https://manutech-sleight.com/).<br>
+    <b>Team:</b> Images<br>
+    <b>Laboratory:</b> Laboratoire Hubert Curien (LabHC)<br>
+    <b>Teaching institution:</b> Institut d'Optique, Jean Monnet University & Polytech Lyon, Claude Bernard Lyon 1 University<br>
+  more: | # this will include new lines to allow paragraphs
+    <u>Objectives</u>
+    - Extend the optical model to fluorescence, to predict spectral reflectances, and also the lateral propagation of light around the illuminated area (PSF), taking care to keep analytical or semi-analytical models easy to reverse.
+    - Reduce as much as possible the number of parameters to be evaluated in these models for a given tissue, taking care to keep the information useful for the clinical analysis of the tissues (tests on phantoms or clinical data already acquired)
+    - Find a measurement strategy (multi-position, multi-angle, multi-excitation?) to evaluate these parameters (model used in inverse approach), ensuring that the measurement system can be used by a practitioner in clinical routine.
+    - Implement the instrumentation and methodology for skin characterization (healthy skin, pathologies), glioma resection (PpIX quantification), or organ transplantation.
+
+- title: PhD in Engineering for Health, Université de Lyon
+  from : October 2019
+  to: December 2022
+  description: >
+    <b>Title:</b> <i>Towards a quantitative fluorescence spectroscopy with multispectral excitation for intraoperative assistance in glioma resection in neurosurgery</i><br/>
+    <b>Funding:</b> <a href="https://primes.universite-lyon.fr/">Labex PRIMES</a>, Claude Bernard University Lyon 1<br/>
+    <b>Advisors:</b> Bruno Montcel, Mathieu Hébert, Raphaël Clerc <br>  
+    <b>Team:</b> MAGICS & Images <br>
+    <b>Laboratory:</b> CREATIS & Laboratoire Hubert Curien (LabHC)<br>
+    <b>Teaching institution:</b> Polytech Lyon, Claude Bernard Lyon 1 University (64h/year)<br>
+
+# Experience template
+- title: Complementary Teaching Activity, Polytech Lyon
+  from : March 2019 
+  to: September 2019  
+  description: | # this will include new lines to allow paragraphs
+    Tutorial and practical classes for bachelors and master students in a biomedical engineering school.
+# Experience template
+- title: Student Intern, Essilor
+  from : March 2019 
+  to: September 2019  
+  description: | # this will include new lines to allow paragraphs
+    A tool which generate images as seen by the retina has been developed previously.<br>
+    This tool is taking into account the aberrations of the glass and the eye.<br>
+    The aim of the internship is to analyze these retinal images to extract information and thus creating a visual acuity model.
+# Experience template
+- title: Student Intern, Essilor
+  from : March 2018 
+  to: September 2018
+  description: | # this will include new lines to allow paragraphs
+    Inside the modelisation and simulation team of Essilor, my internship goal was to implement a new eye-spectacles model with wavefront characterization inspired from an existing one in MATLAB.<br>
+    In particular, I have adapted the Navarro eye-model to match with ametropic cases. I have also validate the wavefront computation with external tools like Zemax or infinitesimal computation of prescription.<br>
+    At the end I just began to look at neural network to try to implement a brain identification of pictures.<br>
+
+- title: Student Intern, Medical University of Vienna
+  from: September 2017
+  to : December 2017
+  description: | # this will include new lines to allow paragraphs 
+    The main task is to implement a swept source OCT system that can be used for wavefront measurement using the principle of digital adaptive optics. <br>
+    The tasks involved are the design of the OCT system that uses descanning of the single illumination spot of the retina, with optics, that project an OCT guide star beam selected areas of the human retina. <br>
+    After the design, the unit will be implemented with support from the workshop with rapid prototyping machines. The operation of the system needs appropriate software that will also allow synchronization with the OCT data recording.

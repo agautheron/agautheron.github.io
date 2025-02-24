@@ -1,0 +1,35 @@
+- name: Giorgi Asatiani
+  type: phd  
+  year: 2024
+  month: October
+  title: 'Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches.'
+  cosupervisor: Hélène Ratiney and Bruno Montcel
+
+- name: Hermine Quardon
+  type: phd  
+  year: 2024
+  month: October
+  title: Development of an intraoperative tool in neurosurgery to assist in biopsy site selection based on fluorescence spectroscopy and machine learning to improve diagnostic accuracy in oncology
+  cosupervisor: Cédric Ray and Thiébaud Picart
+
+- name: Luis Martinez-Ceseña
+  type: engineer  
+  startYear: 2024
+  startMonth: October
+  endYear: 2025
+  endMonth: June
+  title: Modeling radiative transfer in the brain for biomarker quantification in neurosurgery
+  
+- name: Simon Jollet
+  type: internship  
+  year: 2024
+  month: February-July
+  title: Links between preoperative MRS and intraoperative optical approaches in neurosurgery
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/Sujet_Master_WP2_IRMOpt_2024_en_1.pdf"
+  
+- name: Elias Gabory
+  type: internship  
+  year: 2023
+  month: April-August
+  title: Symbolic Monte-Carlo Method with Fluorescence for Biomarker Quantification in Neurosurgery
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/MonteCarloSymboliqueFluorescenceResectionGliome_v2_en.pdf"

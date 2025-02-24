@@ -1,12 +1,15 @@
 ---
 title: "Light Scattering for Material Appearence"
 collection: teaching
-type: "Graduate course"
+year: "Graduate course"
 permalink: /teaching/2023-light-scattering
-venue: "Institut d'Optique Graduate School"
+institution: "Institut d'Optique Graduate School"
+program: "MSc Eng"
 date: 2023-01-27
 location: "Saint-Etienne, France"
 visible: true
+description: The objective of this master course is to present and explain the physical mechanisms of light scattering, as well as modeling methods to predict the propagation of light in scattering media in the radiative transfer approximation.
+
 ---
 
 The objective of this master course is to present and explain the physical mechanisms of light scattering, as well as modeling methods to predict the propagation of light in scattering media in the radiative transfer approximation.

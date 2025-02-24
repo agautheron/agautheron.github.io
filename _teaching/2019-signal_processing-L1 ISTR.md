@@ -1,13 +1,15 @@
 ---
 title: "Basics of Signal Processing"
 collection: teaching
-type: "Undergraduate course"
+year: "Undergraduate course"
 permalink: /teaching/2019-TdS-ISTR
-venue: "ISTR Lyon, D.E. Audioprothésiste"
+institution: "ISTR Lyon"
+program: "D.E. Audioprothésiste"
 date: 2019-09-30
 end_date: 2022-06-16
 location: "Lyon, France"
 visible: true
+description: This module aims to provide students with the theoretical basis of signal processing (discrete/continuous signals, fourier transform, sampling, convolution, correlation). 
 ---
 This module aims to provide students with the theoretical basis of signal processing (discrete/continuous signals, fourier transform, sampling, convolution, correlation). 
 

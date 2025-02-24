@@ -31,8 +31,7 @@ In September 2024, he started an Assistant Professor position, with teaching at 
 ## Short CV <a name="shortcv"></a> <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)-->
 ---
 	
-* 2024 - Now : ** Assistant professor**, CPE Lyon, Lyon
-
+* 2024 - Now : **Assistant professor**, CPE Lyon, Lyon
 <br/><br/>
 * 2023 - 2024 :  **Post-doctoral fellow at LHC**, Jean Monnet Université, Saint-Etienne
   * <u>Subject</u>: Quantitative analysis of biomarkers by spectrometry
