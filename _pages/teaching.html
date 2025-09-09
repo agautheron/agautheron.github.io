@@ -55,10 +55,8 @@ author_profile: true
 
 {% capture accordion_items %}
 {% for course in site.teaching %}
-	{% if course.visible == true %}
 	  {%- assign course_url = course.url | relative_url -%}
 		{{course.title}};<i class="fas fa-university"></i> {{course.institution}}<br><i class="fas fa-solid fa-graduation-cap"></i><em> {{course.year}}, {{course.program}}</em><br><br>{{course.description}}<br><br><a href="{{course_url}}"><i class="fas fa-chalkboard"></i> Course webpage</a>
-	{% endif %}
 {% endfor %}
 {% endcapture %}
 {% include elements/accordion.html id="accordiontest"%}
