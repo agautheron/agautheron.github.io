@@ -1,0 +1,92 @@
+---
+layout: default
+title: "Research"
+author_profile: true
+permalink: /research/
+---
+
+<h1>Scientific Production</h1>
+
+<h4 style="font-size:1.25em; margin-left:3rem">Verbatim</h4>
+<div id="hal-wordcloud-integrator"></div>
+<div id="hal-bibliography-integrator" style="display:none"></div><br/>
+<a href="/publications/"><span style="font-size:1.25em; margin-left:3rem">Details</span></a>
+<br/><br/>
+<h1> Funds Raised </h1>
+<div class="container projects-container clearfix">
+  <!--<h1 style="margin-bottom: 2em;">{{ site.projects_title | default: " Current Funded Projects" }}</h1><br/>-->
+  <div>
+  <h2>{{ site.projects_title | default: " Current Funded Projects" }}</h2><br/>
+  {% for project in site.data.projects %}
+		{% if project.done!=true %}
+		{% if forloop.first == false %}
+		  <hr>
+		{% endif %}
+		<div class="row jumbotron col-sm-12 col-xs-12">
+		  <div>
+			{%- if project.link -%}
+			<h4 style="font-size:1.25em; margin-top:0px"><a href="https://{{project.link}}" target="_blank" class="project-link" style="font-size:1em">{{ project.acronym }}</a></h4>
+			{%- else -%}
+			<h4 style="font-size:1.25em; margin-top:0px">{{ project.acronym }}</h4>
+			{%- endif -%}
+			{%- if project.name -%}
+			  <h5 style="font-size:1em;margin-top:0px">{{ project.name }}</h5><br/>
+			{%- endif -%}
+			<p style="font-size:.95em;">
+			{% if project.pi_url %}
+			PI: <a href="https://{{project.pi_url}}" target="_blank" class="project-link" style="font-size:1em"> {{project.pi}}</a><br/>
+			Funding: {{project.funding}}<br/>
+			Year: {{project.years}}<br/>
+			{% else %}
+			PI: {{project.pi}}<br/>
+			Funding: {{project.funding}}<br/>
+			Year: {{project.years}}<br/>
+			<em>My Status: {{project.status}}</em><br/>
+			{% endif %}
+			{%- if project.website -%}
+			  <!-- <a href="https://github.com/{{ project.github }}" target="_blank"> -->
+				Website: <a href="https://{{ project.website }}" target="_blank" class="project-link" style="font-size:1em">{{ project.website }}</a><br/>
+			  <!-- </a> -->
+			{%- endif -%}
+			</p>
+		  </div>
+		</div>
+	{% endif %}
+  {% endfor %}
+  </div><br/>
+  <div>
+  <h2>{{ site.projects_title | default: "Past Funded Projects" }}</h2><br/>
+  {% for project in site.data.projects %}
+		{% if project.done %}
+		{% if forloop.first == false %}
+		  <hr>
+		{% endif %}
+		<div class="row jumbotron col-sm-12 col-xs-12">
+		  <div>
+        <h4 style="font-size:1.25em; margin-top:0px">{{ project.acronym }}</h4>
+        {%- if project.name -%}
+			  <h5 style="font-size:1em;margin-top:0px">{{ project.name }}</h5><br/>
+        {%- endif -%}
+		<p style="font-size:.95em;">
+		{% if project.pi_url %}
+		PI: <a href="{{project.pi_url}}" target="_blank" class="project-link" style="font-size:1em"> {{project.pi}}</a><br/>
+		Funding: {{project.funding}}<br/>
+		Year: {{project.years}}<br/>
+		{% else %}
+		PI: {{project.pi}}<br/>
+		Funding: {{project.funding}}<br/>
+		Year: {{project.years}}<br/>
+			<em>My Status: {{project.status}}</em><br/>
+		{% endif %}
+		{%- if project.website -%}
+		  <!-- <a href="https://github.com/{{ project.github }}" target="_blank"> -->
+			Website: <a href="https://{{ project.website }}" target="_blank" class="project-link" style="font-size:1em">{{ project.website }}</a><br/>
+		  <!-- </a> -->
+		{%- endif -%}
+		</p>
+	  </div>
+    </div>
+{% endif %}
+  {% endfor %}
+  </div>
+</div>

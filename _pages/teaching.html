@@ -5,8 +5,8 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
-
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.js"></script>
 
 <hr>
 <h2>Students</h2>
@@ -28,7 +28,7 @@ author_profile: true
 {% for student in students %}
   {% if student.type == 'internship' %}
 	{% if student.subjectOffer %}
-		<li>{{student.name}} - <a href={{student.subjectOffer}}><em>{{student.title}}</em></a> ({{student.month}} {{student.year}})</li>
+		<li>{{student.name}} - <a href={{student.subjectOffer}} target="_blank"><em>{{student.title}}</em></a> ({{student.month}} {{student.year}})</li>
 	{% endif %}
   {% endif %}
 {% endfor %}

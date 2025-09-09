@@ -1,8 +1,16 @@
-- name: Giorgi Asatiani
+
+- name: Doriane Arzur
+  type: phd  
+  year: 2025
+  month: November
+  title: Modeling of radiative transfers in the brain for the quantification of biomarkers in neurosurgery
+  cosupervisor: Agnès Delmas (CETHIL), Maxime Roger (CETHIL), Mathieu Galtier (CETHIL) and Bruno Montcel
+ 
+ - name: Giorgi Asatiani
   type: phd  
   year: 2024
   month: October
-  title: 'Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches.'
+  title:  Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches.
   cosupervisor: Hélène Ratiney and Bruno Montcel
 
 - name: Hermine Quardon
@@ -11,6 +19,13 @@
   month: October
   title: Development of an intraoperative tool in neurosurgery to assist in biopsy site selection based on fluorescence spectroscopy and machine learning to improve diagnostic accuracy in oncology
   cosupervisor: Cédric Ray and Thiébaud Picart
+
+- name: Angèle Denis
+  type: phd  
+  year: 2024
+  month: October
+  title: Assisting epilepsy neurosurgery with multimodality fluorescence and SpiderMass spectroscopy
+  cosupervisor: Bruno Montcel and Isabelle Fournier (PRISM)
 
 - name: Luis Martinez-Ceseña
   type: engineer  

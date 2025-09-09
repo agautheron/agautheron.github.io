@@ -1,36 +1,50 @@
 # Project template
-- name: Radiative Transfer Equation 1D Solver
-  link: gitlab.in2p3.fr/agautheron/radiativetransferequation
-  gitlab: agautheron/radiativetransferequation
-  python: false
-  pyqt: false
-  matlab: true
-  c: false
+- name: PEPR Luma
+  acronym: Opticskin
+  link: https://www.pepr-luma.fr/projet/opticskin/
+  pi: Walter Blondel
+  pi_url: https://fr.linkedin.com/in/walter-blondel-20575351
+  funding: 200k€
+  years : 2026-2029
+  website: 
+  status: Collaborator
+  done: false
+  
+  # Project template
+- name: INSERM Impulsion Chirurgie du futur
+  acronym: FluoFoCoDys + GE-137
+  link: 
+  pi: Bruno Montcel
+  pi_url: https://fr.linkedin.com/in/bruno-montcel-a58192131
+  funding: 140k€
+  years : 2024-2027 
+  website: 
+  status: Collaborator
+  done: false
+  
+# Project template
+- name: EIC
+  acronym: HyperProbe
+  link: https://hyperprobe.eu/
+  pi: Francesco Pavone
+  pi_url: https://lens.unifi.it/aboutus/profile/francesco-saverio-pavone
+  funding: 3.4M€
+  years : 2022-2028 
+  website: 
+  status: Collaborator
+  done: false
+# Project template
+- name: Graduate School Medical Device Engineering
+  acronym: Appel à Allocation Doctorale 
+  link: 
+  pi: Cedric Ray-Garreau
+  pi_url: https://www.creatis.insa-lyon.fr/site/fr/user/793
+  funding: 58k€
+  years : 2024-2027 
+  website: 
+  status: Collaborator
+  done: false
 
-  quote: >
-  description: | # this will include new lines to allow paragraphs
-    Radiative transfer equation solver in 1D geometry based on the discrete coordinates method.
-
-- name: Laser Spectral Fluorescence IHM
-  link: gitlab.in2p3.fr/agautheron/laser-spectral-fluorescence
-  gitlab: agautheron/laser-spectral-fluorescence
-  python: true
-  pyqt: true
-  matlab: false
-  c: true
-
-  quote: >
-  description: | # this will include new lines to allow paragraphs
-    Software which interacts with an OceanInsight Spectrometer and an Arduino Board in order to control lasers Intensity, shutters and trigger of the acquisition process of Glioma Diffuse Fluorescence Spectroscopy
-
-- name: LED Spectral Fluorescence IHM
-  link: gitlab.in2p3.fr/agautheron/spectral-fluorescence-laure
-  gitlab: agautheron/spectral-fluorescence-laure
-  python: true
-  pyqt: true
-  matlab: false
-  c: true
-
-  quote: >
-  description: | # this will include new lines to allow paragraphs
-    Software which interacts with an OceanInsight Spectrometer and an National Instruments Board in order to control LEDs, shutter and triggers of the acquisition process of Glioma Diffuse Fluorescence Spectroscopy
+#  quote: >
+#  description: | # this will include new lines to allow paragraphs
+#    Radiative transfer equation solver in 1D geometry based on the discrete coordinates method.

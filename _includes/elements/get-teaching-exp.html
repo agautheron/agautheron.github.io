@@ -164,7 +164,7 @@ var TITLES = [{%- assign titles_split = sep_title | split: '#' -%}{%- for title_
 
 var HOURS = [{%- assign hours_split = sep_hour | split: '#' -%}{%- for hour_year in hours_split -%}{%- assign hour_year_split = hour_year | split: ';' -%}[{%- for hours_year_per_inst in hour_year_split -%}{%- assign hours_data = hours_year_per_inst | split: ',' -%}[{%- for hours in hours_data -%}{{ (hours||0) }}{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}]{% if forloop.last %}{% else %},{% endif %}{%- endfor -%}];
 
-console.log(HOURS);
+console.log(INSTITUTIONS);
 // Colors (to improve transparency)
 var style = getComputedStyle(document.body);
 var textcolor = style.getPropertyValue('--main-text-color');
@@ -188,40 +188,39 @@ for (var i = 0; i < HOURS.length; i++) {
 }
 
 for (var i = 0; i < {{ years_list | size }}; ++i) {
-    chart_data[i] = {
+    chart_data[i] = mergeDuplicateLabels({
     	labels: TITLES[i],
     	datasets: INSTITUTIONS[i].map((ds, j) => ({
     	    label: INSTITUTIONS[i][j],
             backgroundColor: bgcolors[j],
             borderColor: colors[j],
             data: HOURS[i][j],
-            borderWidth: 2,
-	    borderRadius: 20,
+            <!-- borderWidth: 2, -->
+			<!-- borderRadius: 20, -->
+			stack:'stack1',
         }))
-    }
+    });
 };
 
 // Set bar options
 var barOptions = {
-	responsive: false,
-	maintainAspectRatio: false,
+	indexAxis: 'y',
+	responsive: true,
     	interaction: {
       		intersect: false,
     	},
 	scales: {
-		yAxes: [{
+		y: {
+		    stacked: true,
 		    ticks: {
 		    	 display: true,
 		    },
-		    stacked: true,
 		    gridLines: {
 		    	display: false,
 		    }
-		}],
-		xAxes: [{
-		    ticks: {
-		        beginAtZero: true,
-		    },
+		},
+		x: {
+		    stacked: true,
 		    gridLines: {
 		    	display: false,
 		    },
@@ -229,20 +228,71 @@ var barOptions = {
 				display: true,
 				labelString: 'Hours of teaching',
 			}
-		}]
+		}
 	}
 };
 
 // Create chart
-Chart.defaults.global.defaultFontColor = textcolor;
-Chart.defaults.global.defaultFontSize = textsize; 
+Chart.defaults.defaultFontColor = textcolor;
+Chart.defaults.defaultFontSize = textsize; 
 var ctx = document.getElementById("teaching-canvas").getContext("2d");
 var teachingBar = new Chart(ctx, {
-		type: 'horizontalBar',
-		data: chart_data[0],
-		options: barOptions,
+		type: 'bar',
+		data: mergeDuplicateLabels(chart_data[0]),
+		options: {
+		indexAxis:'y',
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Stacked Datasets Example'
+            }
+        },
+        scales: {
+            x: {
+                stacked: true
+            },
+            y: {
+                stacked: true
+            }
+        }
+    }
+		//options: barOptions,
 	    });
 
+function mergeDuplicateLabels(data) {
+  const { labels, datasets } = data;
+
+  const labelMap = {}; // key: label, value: array of indices where it appears
+
+  labels.forEach((label, index) => {
+    if (!labelMap[label]) labelMap[label] = [];
+    labelMap[label].push(index);
+  });
+
+  // Create new unique labels array
+  const newLabels = Object.keys(labelMap);
+
+  // Create new datasets
+  const newDatasets = datasets.map(dataset => {
+    const newData = newLabels.map(label => {
+      const indices = labelMap[label];
+      // Find the max value across all duplicate positions
+      return Math.max(...indices.map(i => dataset.data[i]));
+    });
+
+    // Clone the dataset but with the new data
+    return {
+      ...dataset,
+      data: newData
+    };
+  });
+
+  return {
+    labels: newLabels,
+    datasets: newDatasets
+  };
+}
 
 // Change data
 // issue: changing the data object does not override the metadata
@@ -277,7 +327,7 @@ function refreshChart(id) {
 function updateTheme(){
 	var style = getComputedStyle(document.body);
 	var textcolor = style.getPropertyValue('--main-text-color');
-	console.log(teachingBar.options);
+	<!-- console.log(teachingBar.options); -->
 	if(teachingBar.options.defaultFontColor!=textcolor){
 		teachingBar.options.legend.labels.fontColor=textcolor;
 		teachingBar.options.scales.yAxes[0].ticks.fontColor=textcolor;
@@ -288,6 +338,3 @@ function updateTheme(){
 	teachingBar.update();
 }
 </script>
-
-
-

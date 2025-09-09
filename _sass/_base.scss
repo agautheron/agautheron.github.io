@@ -223,3 +223,12 @@ div.list-group.list-group-light > .list-group-item.active {
 	  transition: background-color $transition-bg-color;
 	}
 }
+
+
+.jumbotron {
+    padding:20px; 
+    padding-bottom:7px; 
+    margin-top:22px; 
+    margin-bottom:22px;
+    background-color: var(--card-color);
+}
