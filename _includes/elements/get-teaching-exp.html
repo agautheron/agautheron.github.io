@@ -224,9 +224,9 @@ var barOptions = {
 		    gridLines: {
 		    	display: false,
 		    },
-			scaleLabel: {
+			title: {
 				display: true,
-				labelString: 'Hours of teaching',
+				text: 'Hours of teaching',
 			}
 		}
 	}
@@ -239,25 +239,25 @@ var ctx = document.getElementById("teaching-canvas").getContext("2d");
 var teachingBar = new Chart(ctx, {
 		type: 'bar',
 		data: mergeDuplicateLabels(chart_data[0]),
-		options: {
-		indexAxis:'y',
-        responsive: true,
-        plugins: {
-            title: {
-                display: true,
-                text: 'Stacked Datasets Example'
-            }
-        },
-        scales: {
-            x: {
-                stacked: true
-            },
-            y: {
-                stacked: true
-            }
-        }
-    }
-		//options: barOptions,
+		<!-- options: { -->
+		<!-- indexAxis:'y', -->
+        <!-- responsive: true, -->
+        <!-- plugins: { -->
+            <!-- title: { -->
+                <!-- display: true, -->
+                <!-- text: 'Stacked Datasets Example' -->
+            <!-- } -->
+        <!-- }, -->
+        <!-- scales: { -->
+            <!-- x: { -->
+                <!-- stacked: true -->
+            <!-- }, -->
+            <!-- y: { -->
+                <!-- stacked: true -->
+            <!-- } -->
+        <!-- } -->
+    <!-- } -->
+		options: barOptions,
 	    });
 
 function mergeDuplicateLabels(data) {
