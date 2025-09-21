@@ -4,6 +4,7 @@
   month: November
   title: Modeling of radiative transfers in the brain for the quantification of biomarkers in neurosurgery
   cosupervisor: Agnès Delmas (CETHIL), Maxime Roger (CETHIL), Mathieu Galtier (CETHIL) and Bruno Montcel
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/sujet_these_CETHIL-CREATIS_1.pdf"
  
 - name: Giorgi Asatiani
   type: phd  
@@ -11,6 +12,7 @@
   month: October
   title: "Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches."
   cosupervisor: Hélène Ratiney and Bruno Montcel
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/site/default/files/Sujet%20Th%C3%A8se-EEA_CREATIS_2024_RATINEY_0.pdf"
 
 - name: Hermine Quardon
   type: phd  
@@ -18,6 +20,7 @@
   month: October
   title: Development of an intraoperative tool in neurosurgery to assist in biopsy site selection based on fluorescence spectroscopy and machine learning to improve diagnostic accuracy in oncology
   cosupervisor: Cédric Ray and Thiébaud Picart
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/PhD_subject_GlioSpectIA_V1.pdf"
 
 - name: Angèle Denis
   type: phd  
@@ -25,6 +28,7 @@
   month: October
   title: Assisting epilepsy neurosurgery with multimodality fluorescence and SpiderMass spectroscopy
   cosupervisor: Bruno Montcel and Isabelle Fournier (PRISM)
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/PhD-Lille-Lyon.pdf"
 
 - name: Luis Martinez-Ceseña
   type: engineer  
@@ -33,6 +37,7 @@
   endYear: 2025
   endMonth: June
   title: Modeling radiative transfer in the brain for biomarker quantification in neurosurgery
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/sujet_these_CETHIL-CREATIS.pdf"
   
 - name: Simon Jollet
   type: internship  
