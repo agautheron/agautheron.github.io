@@ -1,0 +1,54 @@
+<div>
+  <div class="jumbotron">
+    <center>
+      <a href="{{site.url}}{{site.baseurl}}/about">
+        <img src="{{site.url}}{{site.baseurl}}/images/{{ site.data.author.avatar }}" 
+             width="60%" 
+             style="display:block; margin-left:auto; margin-right:auto; margin-bottom:5px;"/>
+      </a>
+      <h4>{{ site.data.author.name }}</h4>
+      <p>{{ site.data.author.bio }}</p>
+      <p>
+        <a href="{{ site.data.author['location-url'] }}" target="_blank">{{ site.data.author.location }}</a>
+        &nbsp;|&nbsp;
+        <a href="{{ site.data.author['location2-url'] }}" target="_blank">{{ site.data.author.location2 }}</a>
+      </p>
+	  <div style="margin-bottom:5px">
+		  {% if site.data.author.email %}
+			<a href="mailto:{{ site.data.author.email }}" target="_blank"><i class="fa-regular fa-envelope fa-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.googlescholar %}
+			<a href="{{ site.data.author.googlescholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.hal %}
+			<a href="https://cv.hal.science/{{ site.data.author.hal }}" target="_blank"><i class="ai ai-hal-square ai-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.orcid %}
+			<a href="https://orcid.org/{{ site.data.author.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.webofscience %}
+			<a href="https://www.webofscience.com/wos/author/record/{{ site.data.author.webofscience }}" target="_blank"><i class="ai ai-clarivate-square ai-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.github %}
+			<a href="https://github.com/{{ site.data.author.github }}" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.gitlab %}
+			<a href="{{ site.data.author.gitlab }}" target="_blank"><i class="fa-brands fa-gitlab fa-3x"></i></a>
+		  {% endif %}
+		  {% if site.data.author.linkedin %}
+			<a href="https://www.linkedin.com/in/{{ site.data.author.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+		  {% endif %}
+      </div>
+    </center>
+  </div>
+</div>
+{% if site.data.news and site.data.news.size > 0 %}
+<div class="jumbotron">
+  <h4>News</h4>
+  {% for article in site.data.news limit:3 %}
+  <b>{{ article.date }}</b>
+    <p>{{ article.headline }}</p>
+  {% endfor %}
+  <h5><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h5>
+</div>
+{% endif %}

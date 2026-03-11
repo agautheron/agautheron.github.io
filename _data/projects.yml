@@ -1,9 +1,9 @@
 # Project template
 - name: PEPR Luma
   acronym: Opticskin
-  link: https://www.pepr-luma.fr/projet/opticskin/
+  link: www.pepr-luma.fr/projet/opticskin/
   pi: Walter Blondel
-  pi_url: https://fr.linkedin.com/in/walter-blondel-20575351
+  pi_url: fr.linkedin.com/in/walter-blondel-20575351
   funding: 200k€
   years : 2026-2029
   website: 
@@ -12,10 +12,10 @@
   
   # Project template
 - name: INSERM Impulsion Chirurgie du futur
-  acronym: FluoFoCoDys + GE-137
+  acronym: FluoFoCoDys + MANIOLIA
   link: 
   pi: Bruno Montcel
-  pi_url: https://fr.linkedin.com/in/bruno-montcel-a58192131
+  pi_url: fr.linkedin.com/in/bruno-montcel-a58192131
   funding: 140k€
   years : 2024-2027 
   website: 
@@ -23,24 +23,25 @@
   done: false
   
 # Project template
-- name: EIC
-  acronym: HyperProbe
-  link: https://hyperprobe.eu/
-  pi: Francesco Pavone
-  pi_url: https://lens.unifi.it/aboutus/profile/francesco-saverio-pavone
-  funding: 3.4M€
-  years : 2022-2028 
-  website: 
-  status: Collaborator
-  done: false
-# Project template
 - name: Graduate School Medical Device Engineering
   acronym: Appel à Allocation Doctorale 
   link: 
   pi: Cedric Ray-Garreau
-  pi_url: https://www.creatis.insa-lyon.fr/site/fr/user/793
+  pi_url: www.creatis.insa-lyon.fr/site/fr/user/793
   funding: 58k€
   years : 2024-2027 
+  website: 
+  status: Collaborator
+  done: false
+  
+# Project template
+- name: EIC Pathfinder
+  acronym: HyperProbe
+  link: hyperprobe.eu/
+  pi: Francesco Pavone
+  pi_url: lens.unifi.it/aboutus/profile/francesco-saverio-pavone
+  funding: 3.4M€
+  years : 2022-2028 
   website: 
   status: Collaborator
   done: false

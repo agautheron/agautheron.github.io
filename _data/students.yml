@@ -1,3 +1,4 @@
+
 - name: Doriane Arzur
   type: phd  
   year: 2025
@@ -10,9 +11,9 @@
   type: phd  
   year: 2024
   month: October
-  title: "Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches."
+  title:  "Biomarkers of cellular energy metabolism in brain tumors: links between pre-operative preoperative MRS and intraoperative optical approaches."
   cosupervisor: Hélène Ratiney and Bruno Montcel
-  subjectOffer: "https://www.creatis.insa-lyon.fr/site/site/default/files/Sujet%20Th%C3%A8se-EEA_CREATIS_2024_RATINEY_0.pdf"
+  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/Sujet Thèse-EEA_CREATIS_2024_RATINEY_0.pdf"
 
 - name: Hermine Quardon
   type: phd  
@@ -37,7 +38,6 @@
   endYear: 2025
   endMonth: June
   title: Modeling radiative transfer in the brain for biomarker quantification in neurosurgery
-  subjectOffer: "https://www.creatis.insa-lyon.fr/site/sites/default/files/sujet_these_CETHIL-CREATIS.pdf"
   
 - name: Simon Jollet
   type: internship  

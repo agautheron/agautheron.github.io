@@ -13,3 +13,7 @@ main:
   
   - title: "Administrative"
     url: /admin
+
+  - title: "Softwares"
+    url: /softwares/
+    

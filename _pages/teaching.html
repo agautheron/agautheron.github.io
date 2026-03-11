@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
@@ -8,10 +8,10 @@ author_profile: true
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.js"></script>
 
-<hr>
+<!-- <hr> -->
+<!-- <h2>Supervision</h2>
+
 <h2>Students</h2>
-
-
 {% assign students = site.data.students | sort: "year" | reverse %}
 
 <h3>PhD students</h3>
@@ -41,14 +41,14 @@ author_profile: true
   <li>{{student.name}} - <em>{{student.title}}</em> ({{student.startMonth}} {{student.startYear}}-{{student.endMonth}} {{student.endYear}})</li>
   {% endif %}
 {% endfor %}
-</ul><br/>
+</ul><br/> -->
 
-
-<h2>Teaching Experience</h2>
+<!-- 
+<h2>Teaching Experience</h2> -->
 
 {% include base_path %}
-{% include elements/get-teaching-exp.html %}
-
+{% include elements/get-teaching-exp2.html %}
+<!-- 
 <h2>Courses</h2>
 
 
@@ -61,7 +61,7 @@ author_profile: true
 {% endcapture %}
 {% include elements/accordion.html id="accordiontest"%}
 
-
+ -->
 <!--
 <h2>Courses</h2>
 {% for post in site.teaching reversed %}

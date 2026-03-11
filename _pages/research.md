@@ -1,41 +1,8 @@
----
-title: "Research"
-layout: default
-sitemap: false
-permalink: /research_/
----
 
-<style>
-img{
-  border-radius: 10px;
-}
-.col-md-3 {
-  margin-top:10px;
-  margin-bottom:10px;
-  padding:0px;
-  display:block;
-  overflow:hidden;
-  text-align:center;
-  display: table-cell;
-  background: white;
-  border-radius: 20px;
-  height: auto;
-}
-iframe {
-  margin:0;
-  padding:0;
-  width: 175px;
-  display: inline;
-  vertical-align: middle;
-}
-</style>
+I integrate **fluorescence spectroscopy, optical modeling, mass spectrometry (MS/SpiderMass)**, and **super-resolution microscopy (SRM)** to improve intraoperative diagnosis and characterization of brain pathologies such as **Focal Cortical Dysplasia (FCD)** and tumors.
 
-## Research
+I focus on combining **multimodal data** — fluorescence, MS, MRI, and SRM — to extract metabolic and structural biomarkers that guide surgical decisions in real-time.
 
-<div class="jumbotron">
-<div class="col-md-12 col-sm-12">
-<h4>Example Research</h4>
+My research addresses key challenges: separating overlapping spectral signals, accurately modeling heterogeneous tissues, aligning multimodal datasets, and translating complex biomarker information into actionable insights for surgeons.
 
-Example description
-</div>
-</div>
+Ultimately, I aim to develop **robust, fast, and clinically implementable tools** that enable **biomarker-guided surgery**, improving patient outcomes while seamlessly integrating into the operating room workflow.

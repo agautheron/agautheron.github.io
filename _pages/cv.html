@@ -6,6 +6,10 @@ permalink: /cv/
 ---
 <h1 style="margin-bottom: 2em;color:#fff;"> Curriculum Vitæ</h1>
 <div class="row">
+{% capture short_cv %}{% include_relative short_cv.md %}{% endcapture %}
+{{ short_cv | markdownify }}
+</div>
+<div class="row">
 {% include elements/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include elements/skills.html title="Research Interests" source=site.data.research-interests %}
 </div>

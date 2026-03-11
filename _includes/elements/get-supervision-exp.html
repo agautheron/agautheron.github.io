@@ -1,0 +1,438 @@
+{%- assign sep_student_name        = "" -%}
+{%- assign sep_student_type        = "" -%}
+{%- assign sep_student_title       = "" -%}
+{%- assign sep_student_offer       = "" -%}
+{%- assign sep_student_cosupervisor = "" -%}
+{%- assign sep_student_startY = "" -%}
+{%- assign sep_student_startM = "" -%}
+{%- assign sep_student_endY   = "" -%}
+{%- assign sep_student_endM   = "" -%}
+
+{%- for s in site.data.students -%}
+  {%- assign sep_student_name  = sep_student_name  | append: "#" | append: s.name -%}
+  {%- assign sep_student_type  = sep_student_type  | append: "#" | append: s.type -%}
+  {%- assign sep_student_title = sep_student_title | append: "#" | append: s.title -%}
+  {%- assign sep_student_offer = sep_student_offer | append: "#" | append: s.subjectOffer -%}
+  {%- assign sep_student_cosupervisor = sep_student_cosupervisor | append: "#" | append: s.cosupervisor -%}
+  {%- if s.startYear -%}
+    {%- assign sep_student_startY = sep_student_startY | append: "#" | append: s.startYear -%}
+    {%- assign sep_student_startM = sep_student_startM | append: "#" | append: s.startMonth | replace: "January","1" | replace: "February","2" | replace: "March","3" | replace: "April","4" | replace: "May","5" | replace: "June","6" | replace: "July","7" | replace: "August","8" | replace: "September","9" | replace: "October","10" | replace: "November","11" | replace: "December","12" -%}
+    {%- assign sep_student_endY   = sep_student_endY   | append: "#" | append: s.endYear -%}
+    {%- assign sep_student_endM   = sep_student_endM   | append: "#" | append: s.endMonth | replace: "January","1" | replace: "February","2" | replace: "March","3" | replace: "April","4" | replace: "May","5" | replace: "June","6" | replace: "July","7" | replace: "August","8" | replace: "September","9" | replace: "October","10" | replace: "November","11" | replace: "December","12" -%}
+  {%- elsif s.type == "phd" -%}
+    {%- assign _endY   = s.year | plus: 3 -%}
+    {%- assign _startM = s.month | replace: "January","1" | replace: "February","2" | replace: "March","3" | replace: "April","4" | replace: "May","5" | replace: "June","6" | replace: "July","7" | replace: "August","8" | replace: "September","9" | replace: "October","10" | replace: "November","11" | replace: "December","12" -%}
+    {%- assign sep_student_startY = sep_student_startY | append: "#" | append: s.year -%}
+    {%- assign sep_student_startM = sep_student_startM | append: "#" | append: _startM -%}
+    {%- assign sep_student_endY   = sep_student_endY   | append: "#" | append: _endY -%}
+    {%- assign sep_student_endM   = sep_student_endM   | append: "#" | append: _startM -%}
+  {%- else -%}
+    {%- assign _monthParts = s.month | split: "-" -%}
+    {%- assign _startM = _monthParts[0] | replace: "January","1" | replace: "February","2" | replace: "March","3" | replace: "April","4" | replace: "May","5" | replace: "June","6" | replace: "July","7" | replace: "August","8" | replace: "September","9" | replace: "October","10" | replace: "November","11" | replace: "December","12" -%}
+    {%- assign _endM   = _monthParts[1] | replace: "January","1" | replace: "February","2" | replace: "March","3" | replace: "April","4" | replace: "May","5" | replace: "June","6" | replace: "July","7" | replace: "August","8" | replace: "September","9" | replace: "October","10" | replace: "November","11" | replace: "December","12" -%}
+    {%- assign sep_student_startY = sep_student_startY | append: "#" | append: s.year -%}
+    {%- assign sep_student_startM = sep_student_startM | append: "#" | append: _startM -%}
+    {%- assign sep_student_endY   = sep_student_endY   | append: "#" | append: s.year -%}
+    {%- assign sep_student_endM   = sep_student_endM   | append: "#" | append: _endM -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign sep_student_name   = sep_student_name   | remove_first: "#" -%}
+{%- assign sep_student_type   = sep_student_type   | remove_first: "#" -%}
+{%- assign sep_student_title  = sep_student_title  | remove_first: "#" -%}
+{%- assign sep_student_offer        = sep_student_offer        | remove_first: "#" -%}
+{%- assign sep_student_cosupervisor = sep_student_cosupervisor | remove_first: "#" -%}
+{%- assign sep_student_startY = sep_student_startY | remove_first: "#" -%}
+{%- assign sep_student_startM = sep_student_startM | remove_first: "#" -%}
+{%- assign sep_student_endY   = sep_student_endY   | remove_first: "#" -%}
+{%- assign sep_student_endM   = sep_student_endM   | remove_first: "#" -%}
+
+<!-- Gantt chart — Supervision — Chart.js 3.x -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+
+<style>
+  #gantt-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+  }
+  #gantt-canvas-wrap {
+    position: relative;
+    min-width: 700px;
+  }
+  /* Tooltip custom */
+  #gantt-tooltip {
+    position: absolute;
+    background: var(--card-color, #1e2533);
+    color: var(--main-text-color, #e0e0e0);
+    border: 1px solid rgba(128,128,128,0.3);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.8em;
+    pointer-events: none;
+    max-width: 320px;
+    line-height: 1.5;
+    z-index: 100;
+    display: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  }
+  #gantt-tooltip a {
+    color: var(--link-color);
+    pointer-events: all;
+  }
+  #gantt-legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+  }
+  .gantt-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .gantt-legend-swatch {
+    width: 28px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid rgba(128,128,128,0.35);
+    flex-shrink: 0;
+  }
+</style>
+<div class="container clearfix">
+	<div id="gantt-legend"></div>
+	<div id="gantt-wrapper">
+	  <div id="gantt-canvas-wrap">
+		<canvas id="gantt-canvas"></canvas>
+		<div id="gantt-tooltip"></div>
+	  </div>
+	</div>
+</div>
+
+<script>
+(function() {
+  // ── DATA (built by Liquid above) ─────────────────────────────────────────
+  var _names   = "{{ sep_student_name   }}".split("#");
+  var _types   = "{{ sep_student_type   }}".split("#");
+  var _titles  = "{{ sep_student_title  }}".split("#");
+  var _offers       = "{{ sep_student_offer  }}".split("#");
+  var _cosupervisors = "{{ sep_student_cosupervisor }}".split("#");
+  var _startYs = "{{ sep_student_startY }}".split("#");
+  var _startMs = "{{ sep_student_startM }}".split("#");
+  var _endYs   = "{{ sep_student_endY   }}".split("#");
+  var _endMs   = "{{ sep_student_endM   }}".split("#");
+
+  // ── Normalise data ────────────────────────────────────────────────────────
+  var people = _names.map(function(name, i) {
+    return {
+      name:  name,
+      type:  _types[i],
+      title: _titles[i],
+      offer:        _offers[i] === '' ? null : _offers[i],
+      cosupervisor: _cosupervisors[i] === '' ? null : _cosupervisors[i],
+      start: [parseInt(_startYs[i]), parseInt(_startMs[i])],
+      end:   [parseInt(_endYs[i]),   parseInt(_endMs[i])],
+    };
+  });
+
+  // ── TIMELINE ──────────────────────────────────────────────────────────────
+  function toTs(ym) { return new Date(ym[0], ym[1]-1, 1).getTime(); }
+  var minTs = toTs([2023, 1]);
+  var maxTs = toTs([2029, 1]);
+
+  // ── ROW PACKING (greedy interval scheduling) ──────────────────────────────
+  // Assign each person a row so non-overlapping bars share a row
+  var rowEnds = []; // rowEnds[r] = last endTs on that row
+  people.forEach(function(p) {
+    var startTs = toTs(p.start);
+    var endTs   = toTs(p.end);
+    var placed  = false;
+    for (var r = 0; r < rowEnds.length; r++) {
+      if (startTs >= rowEnds[r]) {
+        p.row    = r;
+        rowEnds[r] = endTs;
+        placed   = true;
+        break;
+      }
+    }
+    if (!placed) {
+      p.row = rowEnds.length;
+      rowEnds.push(endTs);
+    }
+  });
+  var numRows = rowEnds.length;
+
+  // ── COLORS — Bootstrap classes resolved at runtime ───────────────────────
+  function getBsColor(cls) {
+    var el = document.createElement('span');
+    el.className = cls;
+    el.style.cssText = 'position:absolute;visibility:hidden;display:inline;';
+    document.body.appendChild(el);
+    var rgb = getComputedStyle(el).color;
+    document.body.removeChild(el);
+    var m = rgb.match(/(\d+)/g);
+    return m ? [+m[0], +m[1], +m[2]] : [128, 128, 128];
+  }
+
+  var TYPE_META = {
+    phd:        { label: "PhD",        color: getBsColor('text-primary'),  alpha: 0.85 },
+    engineer:   { label: "Engineer",   color: getBsColor('text-success'),  alpha: 0.85 },
+    internship: { label: "Internship", color: getBsColor('text-warning'),  alpha: 0.85 },
+  };
+
+  // ── PATTERN FACTORY ───────────────────────────────────────────────────────
+  function createPattern(ctx, type) {
+    var meta = TYPE_META[type];
+    var r = meta.color[0], g = meta.color[1], b = meta.color[2];
+    var sz = 12;
+    var pc = document.createElement('canvas');
+    pc.width = sz; pc.height = sz;
+    var lc = pc.getContext('2d');
+    var fill = 'rgba('+r+','+g+','+b+','+meta.alpha+')';
+    var line = 'rgba('+r+','+g+','+b+',1)';
+    // background of striped/dotted patterns: use --timeline-background-color
+    var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--timeline-background-color').trim() || '#f8f9fa';
+    var dark = bgColor;
+
+    if (type === 'phd') {
+      // Solid fill
+      lc.fillStyle = fill;
+      lc.fillRect(0, 0, sz, sz);
+    } else if (type === 'engineer') {
+      // Diagonal stripes //
+      lc.fillStyle = dark;
+      lc.fillRect(0, 0, sz, sz);
+      lc.strokeStyle = line;
+      lc.lineWidth = 2;
+      for (var i = -sz; i < sz*2; i += 4) {
+        lc.beginPath();
+        lc.moveTo(i, 0);
+        lc.lineTo(i + sz, sz);
+        lc.stroke();
+      }
+    } else if (type === 'internship') {
+      // Dot grid
+      lc.fillStyle = dark;
+      lc.fillRect(0, 0, sz, sz);
+      lc.fillStyle = line;
+      [[3,3],[9,3],[3,9],[9,9],[6,6]].forEach(function(xy) {
+        lc.beginPath();
+        lc.arc(xy[0], xy[1], 1.5, 0, Math.PI*2);
+        lc.fill();
+      });
+    }
+    return ctx.createPattern(pc, 'repeat');
+  }
+
+  // ── BUILD CHART ───────────────────────────────────────────────────────────
+  var canvas = document.getElementById('gantt-canvas');
+  var ctx    = canvas.getContext('2d');
+
+  // Build per-person patterns and colors
+  var patterns = people.map(function(p) { return createPattern(ctx, p.type); });
+  var borders  = people.map(function(p) {
+    var c = TYPE_META[p.type].color;
+    return 'rgba('+c[0]+','+c[1]+','+c[2]+',1)';
+  });
+
+  // Single dataset: each bar is {x:[startTs,endTs], y:index}
+  var singleDataset = {
+    data: people.map(function(p) {
+      return { x: [toTs(p.start), toTs(p.end)], y: p.row };
+    }),
+    backgroundColor: patterns,
+    borderColor: borders,
+    borderWidth: 1,
+    barThickness: 22,
+  };
+
+  // ── LABEL-ON-BAR PLUGIN ───────────────────────────────────────────────────
+  function initials(name) {
+    // "Simon Jollet" → "S. Jollet"
+    var parts = name.trim().split(/\s+/);
+    if (parts.length < 2) return name;
+    return parts[0][0] + '. ' + parts.slice(1).join(' ');
+  }
+
+  var labelPlugin = {
+    afterDraw: function(chart) {
+      var lc  = chart.ctx;
+      var ds  = chart.data.datasets[0];
+      var meta = chart.getDatasetMeta(0);
+      lc.save();
+      lc.font = '600 10px ' + (Chart.defaults.font.family || 'sans-serif');
+      // Lire la couleur depuis un élément DOM pour résoudre les variables SCSS compilées
+    var _probe = document.createElement('span');
+    _probe.style.cssText = 'position:absolute;visibility:hidden;color:var(--main-text-color)';
+    document.body.appendChild(_probe);
+    lc.fillStyle = getComputedStyle(_probe).color || '#333333';
+    document.body.removeChild(_probe);
+      lc.textBaseline = 'middle';
+      lc.textAlign = 'left';
+      meta.data.forEach(function(bar, i) {
+        var label = initials(people[i].name);
+        // bar.x = right edge in Chart.js 3 for horizontal bar
+        // bar.base = left edge
+        var barLeft  = Math.min(bar.x, bar.base);
+        var barRight = Math.max(bar.x, bar.base);
+        var barW = barRight - barLeft;
+        var tw   = lc.measureText(label).width;
+        var pad  = 6;
+        if (barW > tw + pad * 2) {
+          lc.fillText(label, barLeft + pad, bar.y);
+        }
+      });
+      lc.restore();
+    }
+  };
+
+  // ── CHART ─────────────────────────────────────────────────────────────────
+  var tc = (function() {
+    var s = getComputedStyle(document.documentElement);
+    var c = s.getPropertyValue('--main-text-color').trim();
+    return c || '#333333';
+  })();
+
+  var ganttChart = new Chart(ctx, {
+    type: 'bar',
+    data: { datasets: [singleDataset] },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend:  { display: false },
+        tooltip: { enabled: false },
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          min: minTs,
+          max: maxTs,
+          ticks: {
+            color: tc,
+            font: { size: 10 },
+            callback: function(val) {
+              var d = new Date(val);
+              if (d.getMonth() === 0) return d.getFullYear();
+              return '';
+            },
+            stepSize: 30 * 24 * 3600 * 1000,
+            maxTicksLimit: 80,
+          },
+          grid: { color: 'rgba(128,128,128,0.15)' },
+        },
+        y: {
+          type: 'linear',
+          min: -0.5,
+          max: numRows - 0.5,
+          ticks: { display: false },
+          grid: { display: false },
+        }
+      },
+    },
+    plugins: [labelPlugin],
+  });
+
+  // Fix canvas height
+  var rowH = 52;
+  var padTop = 20, padBot = 30;
+  canvas.parentElement.style.height = (numRows * rowH + padTop + padBot) + 'px';
+  ganttChart.resize();
+
+  // ── CUSTOM TOOLTIP ────────────────────────────────────────────────────────
+  var tooltip = document.getElementById('gantt-tooltip');
+
+  function getPersonAtEvent(e) {
+    var pts = ganttChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, false);
+    if (!pts.length) return null;
+    return people[pts[0].index];
+  }
+
+  canvas.addEventListener('mousemove', function(e) {
+    var rect = canvas.getBoundingClientRect();
+    var p = getPersonAtEvent(e);
+    if (!p) { tooltip.style.display = 'none'; return; }
+
+    var meta = TYPE_META[p.type];
+    function fmtYM(ym) {
+      return new Date(ym[0], ym[1]-1, 1).toLocaleDateString('en-US', {month:'short', year:'numeric'});
+    }
+
+    var html = '<strong>' + p.name + '</strong><br>'
+      + '<span style="opacity:0.7">' + meta.label + '</span> &bull; '
+      + fmtYM(p.start) + ' → ' + fmtYM(p.end) + '<br>';
+    if (p.cosupervisor) {
+      html += '<span style="font-size:0.85em;opacity:0.75;">Co-supervised with ' + p.cosupervisor + '</span><br>';
+    }
+    html += '<span style="font-size:0.9em;opacity:0.85;">' + p.title + '</span>';
+    if (p.offer) {
+      html += '<br><a href="' + p.offer + '" target="_blank" rel="noopener" style="font-size:0.85em;">📄 Subject offer ↗</a>';
+    }
+
+    tooltip.innerHTML = html;
+    tooltip.style.display = 'block';
+
+    var mouseX  = e.clientX - rect.left;
+    var mouseY  = e.clientY - rect.top;
+    var wrapH   = canvas.parentElement.offsetHeight;
+    var wrapW   = canvas.parentElement.offsetWidth;
+    var tipW    = tooltip.offsetWidth  || 300;
+    var tipH    = tooltip.offsetHeight || 100;
+    var margin  = 10;
+
+    // Horizontal: à droite si ça rentre, sinon à gauche
+    var x = (mouseX + margin + tipW < wrapW)
+      ? mouseX + margin
+      : mouseX - tipW - margin;
+
+    // Vertical: en dessous si ça rentre, sinon au dessus
+    var y = (mouseY + margin + tipH < wrapH)
+      ? mouseY + margin
+      : mouseY - tipH - margin;
+
+    tooltip.style.left = x + 'px';
+    tooltip.style.top  = y + 'px';
+  });
+
+  canvas.addEventListener('mouseleave', function() { tooltip.style.display = 'none'; });
+
+  canvas.addEventListener('click', function(e) {
+    var p = getPersonAtEvent(e);
+    if (p && p.offer) window.open(p.offer, '_blank', 'noopener');
+  });
+
+  canvas.addEventListener('mousemove', function(e) {
+    var p = getPersonAtEvent(e);
+    canvas.style.cursor = (p && p.offer) ? 'pointer' : 'default';
+  });
+
+  // ── LEGEND ────────────────────────────────────────────────────────────────
+  var legendEl = document.getElementById('gantt-legend');
+  Object.keys(TYPE_META).forEach(function(type) {
+    var meta = TYPE_META[type];
+    var r = meta.color[0], g = meta.color[1], b = meta.color[2];
+
+    // Build a small swatch using a tiny canvas with the same pattern
+    var sw = document.createElement('canvas');
+    sw.width = 28; sw.height = 14; sw.className = 'gantt-legend-swatch';
+    var swCtx = sw.getContext('2d');
+    var pat = createPattern(swCtx, type);
+    swCtx.fillStyle = pat;
+    swCtx.fillRect(0, 0, 28, 14);
+    swCtx.strokeStyle = 'rgba('+r+','+g+','+b+',1)';
+    swCtx.lineWidth = 1;
+    swCtx.strokeRect(0.5, 0.5, 27, 13);
+
+    var item = document.createElement('div');
+    item.className = 'gantt-legend-item';
+    var label = document.createElement('span');
+    label.textContent = meta.label;
+    item.appendChild(sw);
+    item.appendChild(label);
+    legendEl.appendChild(item);
+  });
+
+})();
+</script>

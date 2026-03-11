@@ -1,3 +1,15 @@
+- id: 2025-IMI-Canny
+  year: 2025-2026
+  institution: CPE (ETI)
+  title: Image Processing (Canny-Hough) (M1)
+  hours: 2
+  
+- id: 2025-IMI-Canny
+  year: 2025-2026
+  institution: CPE (ETI)
+  title: Image Processing (Canny-Hough) (M1)
+  hours: 4
+  
 - id: 2025-ETI-BSE
   year: 2025-2026
   institution: CPE (ETI)
@@ -20,7 +32,13 @@
   year: 2025-2026
   institution: CPE (IMI)
   title: 3D Reconstruction (M1)
-  hours: 6
+  hours: 4
+  
+- id: 2025-IMI-Reco3D
+  year: 2025-2026
+  institution: CPE (IMI)
+  title: 3D Reconstruction (M1)
+  hours: 2
   
 - id: 2025-PSM-I2
   year: 2025-2026
@@ -32,7 +50,13 @@
   year: 2025-2026
   institution: CPE (PSM)
   title: Physic Fundamentals (L3)
-  hours: 12
+  hours: 4
+  
+- id: 2025-PSM-P0
+  year: 2025-2026
+  institution: CPE (PSM)
+  title: Physic Fundamentals (L3)
+  hours: 8
   
 - id: 2025-PSM-OptoElec
   year: 2025-2026
