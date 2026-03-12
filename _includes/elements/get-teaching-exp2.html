@@ -204,14 +204,68 @@
 <h1> Teaching </h1>
 <h2>Global (<span id="global-total-h3"></span>)</h2>
 <style>
-.pie-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px 8px; margin-bottom:24px; }
+/* ── PIE GRID : 3 colonnes sur PC, 1 colonne sur mobile ── */
+.pie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 8px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .pie-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .gpie-col { display:flex; flex-direction:column; align-items:center; }
 .gpie-title { font-size:0.8em; font-weight:600; margin-bottom:4px; text-align:center; }
 .gpie-canvas-wrap { width:140px; height:140px; flex-shrink:0; }
 .gpie-legend { margin-top:8px; font-size:10px; line-height:1.7; display:flex; flex-wrap:wrap; justify-content:center; gap:2px 8px; }
 .gpie-legend-item { display:flex; align-items:center; gap:4px; white-space:nowrap; }
 .gpie-legend-swatch { width:10px; height:10px; border-radius:2px; flex-shrink:0; }
+
+/* ── DETAILS BY YEAR : row sur PC, colonne sur mobile ── */
+.details-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+.year-selector-wrap {
+  flex: 0 0 auto;
+  min-width: 110px;
+}
+.year-charts-wrap {
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 768px) {
+  .details-layout {
+    flex-direction: column;
+  }
+  .year-selector-wrap {
+    width: 100%;
+  }
+  #year-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  #year-selector a {
+    flex: 0 0 auto;
+  }
+}
+
+/* ── ANNUAL PIE CHARTS ── */
+.apie-flex { display:flex; flex-wrap:wrap; justify-content:center; gap:16px 8px; margin-top:12px; }
+.apie-col { display:flex; flex-direction:column; align-items:center; flex:0 0 calc(33% - 8px); }
+.apie-title { font-size:0.8em; font-weight:600; margin-bottom:4px; text-align:center; }
+.apie-wrap { width:140px; height:140px; flex-shrink:0; }
+.apie-legend { margin-top:6px; font-size:10px; line-height:1.6; display:flex; flex-wrap:wrap; justify-content:center; gap:2px 6px; min-height:28px; }
+.apie-legend-item { display:flex; align-items:center; gap:3px; white-space:nowrap; }
+.apie-legend-swatch { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
 </style>
+
 <div class="pie-grid">
   <div class="gpie-col">
     <div class="gpie-title">By level</div>
@@ -248,9 +302,9 @@
 <!-- ── Details ── -->
 <details open>
 <summary><h2 style="display:inline;">Details by year</h2></summary>
-<div style="display:flex; flex-direction:row; align-items:flex-start; gap:12px;">
+<div class="details-layout">
   <!-- Sélecteur d'année -->
-  <div style="flex:0 0 auto; min-width:110px;">
+  <div class="year-selector-wrap">
     <div id="year-selector" class="list-group list-group-light" role="tablist">
       {% for year in years_list %}
       {% capture year_str %}{{year}}{% endcapture %}
@@ -263,17 +317,8 @@
     </div>
   </div>
   <!-- Bar chart + détails annuels -->
-  <div style="flex:1 1 0; min-width:0;">
+  <div class="year-charts-wrap">
     <canvas id="teaching-canvas" style="display:block; width:100%;" width="1280" height="720"></canvas>
-    <style>
-    .apie-flex { display:flex; flex-wrap:wrap; justify-content:center; gap:16px 8px; margin-top:12px; }
-    .apie-col { display:flex; flex-direction:column; align-items:center; flex:0 0 calc(33% - 8px); }
-    .apie-title { font-size:0.8em; font-weight:600; margin-bottom:4px; text-align:center; }
-    .apie-wrap { width:140px; height:140px; flex-shrink:0; }
-    .apie-legend { margin-top:6px; font-size:10px; line-height:1.6; display:flex; flex-wrap:wrap; justify-content:center; gap:2px 6px; min-height:28px; }
-    .apie-legend-item { display:flex; align-items:center; gap:3px; white-space:nowrap; }
-    .apie-legend-swatch { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
-    </style>
     <div class="apie-flex">
       <div class="apie-col">
         <div class="apie-title">By level</div>
@@ -393,7 +438,6 @@ function createPattern(mainCtx, c, type) {
     p.fillRect(0, 0, sz, sz);
 
   } else if (type === 'TD') {
-    // lignes diagonales / continues — tile 8px pour un raccord parfait
     var sz2 = 8;
     pc.width = pc.height = sz2;
     p.fillStyle = fg + '0.15)';
@@ -401,18 +445,16 @@ function createPattern(mainCtx, c, type) {
     p.strokeStyle = fg + '0.9)';
     p.lineWidth = 1.5;
     p.beginPath();
-    // deux segments qui se raccordent parfaitement en tuilage
     p.moveTo(0, sz2); p.lineTo(sz2, 0);
     p.moveTo(-sz2, sz2); p.lineTo(0, 0);
     p.moveTo(sz2, sz2*2); p.lineTo(sz2*2, sz2);
     p.stroke();
 
   } else if (type === 'TP') {
-    // asterisk — 3 lines through centre at 0°, 60°, 120°
     p.strokeStyle = fg + '0.9)';
     p.lineWidth   = 1;
     p.lineCap     = 'round';
-    var cx = sz/2, cy = sz/2, arm = sz/4;  // réduit de sz/2-1 à sz/4
+    var cx = sz/2, cy = sz/2, arm = sz/4;
     [0, Math.PI/3, 2*Math.PI/3].forEach(function(a) {
       p.beginPath();
       p.moveTo(cx + arm*Math.cos(a), cy + arm*Math.sin(a));
@@ -421,7 +463,6 @@ function createPattern(mainCtx, c, type) {
     });
 
   } else if (type === 'APP') {
-    // 3×3 dot grid
     p.fillStyle = fg + '0.85)';
     var step = sz/3, r = sz/9;
     for (var row = 0; row < 3; row++)
@@ -440,7 +481,7 @@ function createPattern(mainCtx, c, type) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// LEGEND PICTO DRAW  (reused by both legend plugin and future tooltips)
+// LEGEND PICTO DRAW
 // ─────────────────────────────────────────────────────────────────────────────
 function drawTypePicto(ctx2, type, x, y, size, color) {
   ctx2.save();
@@ -485,13 +526,11 @@ function drawTypePicto(ctx2, type, x, y, size, color) {
 // ─────────────────────────────────────────────────────────────────────────────
 // BUILD CHART DATA
 // ─────────────────────────────────────────────────────────────────────────────
-// Génère N couleurs bien distinctes en parcourant la roue HSL
 function generateColors(n) {
   var colors = [];
   for (var i = 0; i < n; i++) {
-    var hue = Math.round((i * 360) / n);          // répartition uniforme
+    var hue = Math.round((i * 360) / n);
     var h = hue / 360, s = 0.65, l = 0.50;
-    // HSL → RGB
     var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     var p = 2 * l - q;
     function hue2rgb(t) {
@@ -510,7 +549,6 @@ function generateColors(n) {
   return colors;
 }
 
-// Collecter toutes les institutions uniques sur toutes les années
 var allInstitutions = [];
 INSTITUTIONS.forEach(function(yearInsts) {
   yearInsts.forEach(function(inst) {
@@ -519,7 +557,6 @@ INSTITUTIONS.forEach(function(yearInsts) {
 });
 var generatedColors = generateColors(allInstitutions.length);
 
-// Table de correspondance institution → couleur (stable quelle que soit l'année)
 var instColorMap = {};
 allInstitutions.forEach(function(inst, idx) {
   instColorMap[inst] = generatedColors[idx];
@@ -536,14 +573,12 @@ for (var yi = 0; yi < {{ years_list | size }}; yi++) {
     var instName = INSTITUTIONS[yi][ji];
     var col      = instColorMap[instName];
 
-    // collect types present for this institution this year
     var typesFound = [];
     TYPES[yi][ji].forEach(function(t) {
       if (t !== 'null' && t !== '' && typesFound.indexOf(t) === -1) typesFound.push(t);
     });
     typesFound.sort(function(a, b) { return TYPE_ORDER.indexOf(a) - TYPE_ORDER.indexOf(b); });
 
-    // one closure per (ji, courseType) to avoid variable leak
     (function(instName, col, ji) {
       typesFound.forEach(function(courseType) {
         var pattern = createPattern(mainCtx, col, courseType);
@@ -568,8 +603,6 @@ for (var yi = 0; yi < {{ years_list | size }}; yi++) {
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CUSTOM LEGEND PLUGIN
-// Row 1: [■] Institution name  (colored square)
-// Row 2: [picto] Type label    (drawn in --main-text-color)
 // ─────────────────────────────────────────────────────────────────────────────
 var customLegendPlugin = {
   id: 'customLegend',
@@ -577,21 +610,18 @@ var customLegendPlugin = {
   afterDraw: function(chart) {
     var lc   = chart.ctx;
     var tc   = getTextColor();
-    // Lire la taille de police réelle utilisée par Chart.js pour les axes
     var fs   = (chart.options.scales && chart.options.scales.y && chart.options.scales.y.ticks && chart.options.scales.y.ticks.font && chart.options.scales.y.ticks.font.size)
                || Chart.defaults.font.size
                || 12;
     var box  = fs;
     var padH = 20, padV = 8;
 
-    // unique institutions
     var seenI = {}, instList = [];
     chart.data.datasets.forEach(function(ds) {
       var inst = ds.label.indexOf('|TYPE|') !== -1 ? ds.label.split('|TYPE|')[0] : ds.label;
       if (!seenI[inst]) { seenI[inst] = true; instList.push({ name: inst, color: ds.borderColor }); }
     });
 
-    // types present
     var seenT = {};
     chart.data.datasets.forEach(function(ds) {
       if (ds.label.indexOf('|TYPE|') !== -1) seenT[ds.label.split('|TYPE|')[1]] = true;
@@ -603,7 +633,6 @@ var customLegendPlugin = {
     lc.textBaseline = 'middle';
     var left = chart.chartArea ? chart.chartArea.left : 20;
 
-    // ligne 1 : institutions
     var y1 = padV + box/2, x = left;
     instList.forEach(function(inst) {
       lc.fillStyle = inst.color;
@@ -615,7 +644,6 @@ var customLegendPlugin = {
       x += box + 5 + lc.measureText(inst.name).width + padH;
     });
 
-    // ligne 2 : types
     var y2 = padV + box + padV + box/2;
     x = left;
     typeList.forEach(function(typ) {
@@ -630,43 +658,74 @@ var customLegendPlugin = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CHART INIT
+// CHART INIT — responsive PC/mobile
 // ─────────────────────────────────────────────────────────────────────────────
-var barOptions = {
-  indexAxis: 'y',
-  responsive: true,
-  interaction: { mode: 'y', intersect: false },
-  layout: { padding: { top: (Chart.defaults.font.size + 8) * 2 + 8 } },  // espace réservé pour la légende (2 lignes)
-  plugins: {
-    legend: { display: false },
-    tooltip: {
-      callbacks: {
-        title: function(items) {
-          return items[0].label;
+function isMobile() { return window.innerWidth <= 768; }
+
+function getBarOptions() {
+  var mobile = isMobile();
+  return {
+    indexAxis: mobile ? 'x' : 'y',
+    responsive: true,
+    interaction: { mode: mobile ? 'x' : 'y', intersect: false },
+    layout: { padding: { top: (Chart.defaults.font.size + 8) * 2 + 8 } },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: function(items) { return items[0].label; },
+          label: function(item) {
+            if (!item.raw || item.raw === 0) return null;
+            var label = item.dataset.label || '';
+            label = label.replace('|TYPE|', ' - ');
+            return label + ': ' + item.raw;
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        grid: { display: false },
+        title: {
+          display: true,
+          text: mobile ? 'Course' : 'Hours of teaching',
+          color: getTextColor()
         },
-        label: function(item) {
-          if (!item.raw || item.raw === 0) return null;
-          var label = item.dataset.label || '';
-          label = label.replace('|TYPE|', ' - ');
-          return label + ': ' + item.raw;
+        ticks: {
+          color: getTextColor(),
+          font: { size: mobile ? 8 : 12 },
+          maxRotation: mobile ? 45 : 0,
+          callback: function(val, idx) {
+            if (!mobile) return val;
+            var lbl = this.getLabelForValue(idx);
+            return lbl && lbl.length > 10 ? lbl.substring(0, 10) + '…' : lbl;
+          }
+        }
+      },
+      y: {
+        stacked: true,
+        grid: { display: false },
+        title: {
+          display: mobile,
+          text: 'Hours',
+          color: getTextColor()
+        },
+        ticks: {
+          color: getTextColor(),
+          font: { size: mobile ? 9 : 12 },
+          callback: function(val, idx) {
+            if (mobile) return val;
+            var lbl = this.getLabelForValue(idx);
+            return lbl && lbl.length > 20 ? lbl.substring(0, 20) + '…' : lbl;
+          }
         }
       }
     }
-  },
-  scales: {
-    x: {
-      stacked: true,
-      grid: { display: false },
-      title: { display: true, text: 'Hours of teaching', color: getTextColor() },
-      ticks: { color: getTextColor() },
-    },
-    y: {
-      stacked: true,
-      grid: { display: false },
-      ticks: { color: getTextColor() },
-    }
-  }
-};
+  };
+}
+
+var barOptions = getBarOptions();
 
 var teachingBar = new Chart(mainCtx, {
   type:    'bar',
@@ -675,41 +734,58 @@ var teachingBar = new Chart(mainCtx, {
   plugins: [customLegendPlugin],
 });
 
+// Recalcule les options au resize (ex: rotation écran)
+var _resizeTimer;
+window.addEventListener('resize', function() {
+  clearTimeout(_resizeTimer);
+  _resizeTimer = setTimeout(function() {
+    var o = getBarOptions();
+    teachingBar.options.indexAxis                       = o.indexAxis;
+    teachingBar.options.interaction.mode                = o.interaction.mode;
+    teachingBar.options.scales.x.title.text             = o.scales.x.title.text;
+    teachingBar.options.scales.x.ticks.font             = o.scales.x.ticks.font;
+    teachingBar.options.scales.x.ticks.maxRotation      = o.scales.x.ticks.maxRotation;
+    teachingBar.options.scales.x.ticks.callback         = o.scales.x.ticks.callback;
+    teachingBar.options.scales.y.title.display          = o.scales.y.title.display;
+    teachingBar.options.scales.y.ticks.font             = o.scales.y.ticks.font;
+    teachingBar.options.scales.y.ticks.callback         = o.scales.y.ticks.callback;
+    teachingBar.update();
+  }, 200);
+});
+
 
 
 // ─────────────────────────────────────────────────────────────────────────────
-// PIE CHART — répartition par niveau pour l'année sélectionnée
+// PIE CHARTS
 // ─────────────────────────────────────────────────────────────────────────────
 var LEVELS      = ['L1', 'L2', 'L3', 'M1', 'M2'];
-// ── SHARED COLOR PALETTE — Bootstrap classes read at runtime ────────────
+
 function getBsColor(cls) {
   var el = document.createElement('span');
   el.className = cls;
   el.style.cssText = 'position:absolute;visibility:hidden;display:inline;';
   document.body.appendChild(el);
-  var rgb = getComputedStyle(el).color; // "rgb(r, g, b)"
+  var rgb = getComputedStyle(el).color;
   document.body.removeChild(el);
   var m = rgb.match(/(\d+)/g);
   return m ? [+m[0], +m[1], +m[2]] : [128, 128, 128];
 }
 
-// One element per Bootstrap semantic color (text-* classes resolve reliably)
 var BS_CLASSES = [
-  'text-danger',    // 0 — L1 / CM
-  'text-warning',   // 1 — L2
-  'text-success',   // 2 — L3
-  'text-info',      // 3 — inst3
-  'text-secondary', // 4 — inst4
-  'text-primary',   // 5 — M1 / TD
-  'text-dark',      // 6 — M2 / TP
-  'text-muted',     // 7 — APP
+  'text-danger',
+  'text-warning',
+  'text-success',
+  'text-info',
+  'text-secondary',
+  'text-primary',
+  'text-dark',
+  'text-muted',
 ];
 var PALETTE_RGB = BS_CLASSES.map(function(c) { return getBsColor(c); });
 
 function palFill(i)   { var c=PALETTE_RGB[i%PALETTE_RGB.length]; return 'rgba('+c[0]+','+c[1]+','+c[2]+',0.78)'; }
 function palBorder(i) { var c=PALETTE_RGB[i%PALETTE_RGB.length]; return 'rgba('+c[0]+','+c[1]+','+c[2]+',1)'; }
 
-// Level → palette index
 var LEVEL_IDX = { L1:0, L2:1, L3:2, M1:5, M2:6 };
 var levelColors = ['L1','L2','L3','M1','M2'].map(function(l){ return palFill(LEVEL_IDX[l]); });
 var levelBorder = ['L1','L2','L3','M1','M2'].map(function(l){ return palBorder(LEVEL_IDX[l]); });
@@ -730,12 +806,9 @@ function buildPieData(yi) {
       sums[level] += (ds.data[idx] || 0);
     });
   });
-  var total   = LEVELS.reduce(function(s, l) { return s + sums[l]; }, 0);
   var active  = LEVELS.filter(function(l) { return sums[l] > 0; });
   return {
-    labels: active.map(function(l) {
-      return l;
-    }),
+    labels: active.map(function(l) { return l; }),
     datasets: [{
       data:            active.map(function(l) { return sums[l]; }),
       backgroundColor: active.map(function(l) { return levelColors[LEVELS.indexOf(l)]; }),
@@ -746,7 +819,6 @@ function buildPieData(yi) {
 
 var pieCtx = document.getElementById('pie-canvas').getContext('2d');
 
-// Camemberts annuels — options communes
 var annualPieOpts = {
   responsive: true,
   maintainAspectRatio: false,
@@ -775,7 +847,6 @@ var pieChart = new Chart(pieCtx, {
 });
 buildAnnualLegend(pieChart, 'aleg-level');
 
-// Helper: build HTML legend for an annual pie
 function buildAnnualLegend(chart, containerId) {
   var el = document.getElementById(containerId);
   if (!el) return;
@@ -813,7 +884,6 @@ function buildYearTypePieData(yi) {
   };
 }
 
-// Regroupe les institutions sous 3 labels canoniques
 function normalizeInst(inst) {
   if (inst.indexOf('IOGS') !== -1) return 'IOGS';
   if (inst.indexOf('CPE')  !== -1) return 'CPE';
@@ -837,8 +907,6 @@ function buildYearInstPieData(yi) {
   };
 }
 
-
-// Student type: institutions → Engineer / University
 var ENGINEER_INSTS = ['CPE', 'IOGS', 'Polytech'];
 function instIsEngineer(inst) {
   return ENGINEER_INSTS.some(function(k){ return inst.indexOf(k) !== -1; });
@@ -858,16 +926,17 @@ function buildYearStudentPieData(yi) {
     borderWidth: 0
   }]};
 }
+
 var yearPieType = new Chart(document.getElementById('year-pie-type').getContext('2d'), {
   type: 'pie', data: buildYearTypePieData(0), options: annualPieOpts
 });
 buildAnnualLegend(yearPieType, 'aleg-type');
+
 var yearPieInst = new Chart(document.getElementById('year-pie-inst').getContext('2d'), {
   type: 'pie', data: buildYearInstPieData(0), options: annualPieOpts
 });
 buildAnnualLegend(yearPieInst, 'aleg-inst');
 
-// ── DOMAIN MAPPING (global scope) ────────────────────────────────────────
 var DOMAIN_KEYWORDS = {
   'Signal':       'Signal & Image Processing',
   'Traitement':   'Signal & Image Processing',
@@ -906,7 +975,6 @@ function extractDomain(title) {
 }
 
 function buildYearDomainPieData(yi) {
-  // Build title→domain map from raw (pre-merge) parallel arrays
   var titleToDomain = {};
   var rawTitles  = TITLES[yi]  || [];
   var rawDomains = DOMAINS[yi] || [];
@@ -915,7 +983,6 @@ function buildYearDomainPieData(yi) {
   });
 
   var domSums = {};
-  // chart_data uses merged titles — look up domain by title label
   chart_data[yi].datasets.forEach(function(ds) {
     ds.data.forEach(function(h, k) {
       if (!h) return;
@@ -938,17 +1005,19 @@ function buildYearDomainPieData(yi) {
     borderWidth: 0
   }]};
 }
+
 var yearPieDomain = new Chart(document.getElementById('year-pie-domain').getContext('2d'), {
   type: 'pie', data: buildYearDomainPieData(0), options: annualPieOpts
 });
 buildAnnualLegend(yearPieDomain, 'aleg-domain');
+
 var yearPieStudent = new Chart(document.getElementById('year-pie-student').getContext('2d'), {
   type: 'pie', data: buildYearStudentPieData(0), options: annualPieOpts
 });
 buildAnnualLegend(yearPieStudent, 'aleg-student');
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 3 CAMEMBERTS GLOBAUX (toutes années confondues)
+// GLOBAL PIES
 // ─────────────────────────────────────────────────────────────────────────────
 function makePieOptions() {
   return {
@@ -989,7 +1058,7 @@ function buildHtmlLegend(chart, containerId) {
   });
 }
 
-// ── EXTERNAL TOOLTIP (shared by all pie charts) ───────────────────────────
+// ── EXTERNAL TOOLTIP ─────────────────────────────────────────────────────────
 function pieExternalTooltip(context) {
   var tooltipEl = document.getElementById('pie-tooltip');
   var tooltip   = context.tooltip;
@@ -999,18 +1068,15 @@ function pieExternalTooltip(context) {
     return;
   }
 
-  // Build content
   var lines = tooltip.body ? tooltip.body.map(function(b){ return b.lines; }).flat() : [];
   tooltipEl.innerHTML = lines.join('<br>');
   tooltipEl.style.display = 'block';
 
-  // Position relative to viewport
   var canvas  = context.chart.canvas;
   var rect    = canvas.getBoundingClientRect();
   var x = rect.left + tooltip.caretX;
   var y = rect.top  + tooltip.caretY;
 
-  // Keep inside viewport
   var tw = tooltipEl.offsetWidth  || 120;
   var th = tooltipEl.offsetHeight || 30;
   var vw = window.innerWidth;
@@ -1026,16 +1092,12 @@ function pieExternalTooltip(context) {
   tooltipEl.style.top  = top  + 'px';
 }
 
-
-
 (function buildGlobalPies() {
-  // Accumulateurs
   var levelSums = {}, typeSums = {}, instSums = {};
   var grandTotal = 0;
 
   for (var yi = 0; yi < HOURS.length; yi++) {
     var titles = TITLES[yi];
-    // Par institution/type — parcourir les datasets construits
     chart_data[yi].datasets.forEach(function(ds) {
       var parts = ds.label.indexOf('|TYPE|') !== -1 ? ds.label.split('|TYPE|') : [ds.label, '?'];
       var inst  = parts[0];
@@ -1043,33 +1105,23 @@ function pieExternalTooltip(context) {
       ds.data.forEach(function(h, k) {
         if (!h) return;
         grandTotal += h;
-        // par institution
         instSums[normalizeInst(inst)] = (instSums[normalizeInst(inst)] || 0) + h;
-        // par type
         typeSums[type] = (typeSums[type] || 0) + h;
-        // par niveau (extrait du titre)
         var lvl = extractLevel(titles[k]);
         if (lvl) levelSums[lvl] = (levelSums[lvl] || 0) + h;
       });
     });
   }
 
-  // Afficher le total global
-  var totalEl = document.getElementById('global-total');
-  if (totalEl) totalEl.textContent = '';
   var h3El = document.getElementById('global-total-h3');
   if (h3El) h3El.textContent = grandTotal + 'h';
 
-  // Palette générique
-  // uses shared PALETTE_RGB via palFill()
   function buildData(sumsObj, orderArr) {
     var keys = orderArr
       ? orderArr.filter(function(k){ return sumsObj[k]; })
       : Object.keys(sumsObj).sort();
     return {
-      labels: keys.map(function(k){
-        return k;
-      }),
+      labels: keys.map(function(k){ return k; }),
       datasets: [{
         data: keys.map(function(k){ return sumsObj[k]; }),
         backgroundColor: keys.map(function(k,i){ return palFill(i); }),
@@ -1093,7 +1145,6 @@ function pieExternalTooltip(context) {
   });
   buildHtmlLegend(gc3, 'gleg-inst');
 
-  // Camembert 4 — par année
   var yearSums = {};
   for (var yi2 = 0; yi2 < HOURS.length; yi2++) {
     var label = YEARS_LIST[yi2];
@@ -1104,7 +1155,6 @@ function pieExternalTooltip(context) {
   });
   buildHtmlLegend(gc4, 'gleg-year');
 
-  // Camembert 5 — par domaine d'enseignement
   var domainSums = {};
   for (var yi3 = 0; yi3 < HOURS.length; yi3++) {
     var rawT = TITLES[yi3]  || [];
@@ -1131,7 +1181,6 @@ function pieExternalTooltip(context) {
   });
   buildHtmlLegend(gc5, 'gleg-domain');
 
-  // Camembert 6 — type d'étudiants (global)
   var globalStudentSums = { 'Engineering students': 0, 'University students': 0 };
   for (var yis = 0; yis < HOURS.length; yis++) {
     chart_data[yis].datasets.forEach(function(ds) {
@@ -1161,7 +1210,6 @@ function totalHoursForYear(yi) {
   return total;
 }
 
-// Initialise les badges dès le chargement
 (function() {
   for (var yi = 0; yi < HOURS.length; yi++) {
     var badge = document.getElementById('total-year-' + yi);
@@ -1172,7 +1220,7 @@ function totalHoursForYear(yi) {
 function refreshChart(id) {
   teachingBar.data = chart_data[id];
   teachingBar.update();
-  // camembert niveau
+
   var pd = buildPieData(id);
   pieChart.data.labels                      = pd.labels;
   pieChart.data.datasets[0].data            = pd.datasets[0].data;
@@ -1180,35 +1228,35 @@ function refreshChart(id) {
   pieChart.data.datasets[0].borderColor     = pd.datasets[0].borderColor;
   pieChart.update();
   buildAnnualLegend(pieChart, 'aleg-level');
-  // camembert type
+
   var ptd = buildYearTypePieData(id);
   yearPieType.data.labels = ptd.labels;
   yearPieType.data.datasets[0].data            = ptd.datasets[0].data;
   yearPieType.data.datasets[0].backgroundColor = ptd.datasets[0].backgroundColor;
   yearPieType.update();
   buildAnnualLegend(yearPieType, 'aleg-type');
-  // camembert institution
+
   var pid = buildYearInstPieData(id);
   yearPieInst.data.labels = pid.labels;
   yearPieInst.data.datasets[0].data            = pid.datasets[0].data;
   yearPieInst.data.datasets[0].backgroundColor = pid.datasets[0].backgroundColor;
   yearPieInst.update();
   buildAnnualLegend(yearPieInst, 'aleg-inst');
-  // camembert domaine
+
   var pdd = buildYearDomainPieData(id);
   yearPieDomain.data.labels = pdd.labels;
   yearPieDomain.data.datasets[0].data            = pdd.datasets[0].data;
   yearPieDomain.data.datasets[0].backgroundColor = pdd.datasets[0].backgroundColor;
   yearPieDomain.update();
   buildAnnualLegend(yearPieDomain, 'aleg-domain');
-  // camembert student type
+
   var psd = buildYearStudentPieData(id);
   yearPieStudent.data.labels = psd.labels;
   yearPieStudent.data.datasets[0].data            = psd.datasets[0].data;
   yearPieStudent.data.datasets[0].backgroundColor = psd.datasets[0].backgroundColor;
   yearPieStudent.update();
   buildAnnualLegend(yearPieStudent, 'aleg-student');
-  // sélecteur actif
+
   var container = document.getElementById('year-selector');
   var active    = container.getElementsByClassName('active');
   if (active.length > 0) active[0].className = active[0].className.replace(' active', '');
@@ -1217,9 +1265,10 @@ function refreshChart(id) {
 
 function updateTheme() {
   var tc = getTextColor();
-  teachingBar.options.scales.x.ticks.color  = tc;
-  teachingBar.options.scales.y.ticks.color  = tc;
-  teachingBar.options.scales.x.title.color  = tc;
+  teachingBar.options.scales.x.ticks.color   = tc;
+  teachingBar.options.scales.y.ticks.color   = tc;
+  teachingBar.options.scales.x.title.color   = tc;
+  teachingBar.options.scales.y.title.color   = tc;
   teachingBar.update();
 }
 

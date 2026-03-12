@@ -8,12 +8,12 @@ permalink: /research/
 <h1>My Research in Multimodal Biomedical Optics</h1>
 <!-- Import Hero Section -->
 <!-- <div class="container clearfix"> -->
-<div class="container clearfix"><div class="row">
-    <div class="col-8">
+<div class="container clearfix"><div class="row flex-column-reverse flex-md-row">
+    <div class="col-12 col-md-8">
       {% capture research %}{% include_relative research.md %}{% endcapture %}
       {{ research | markdownify }}
     </div>
-    <div class="col-4">
+    <div class="col-12 col-md-4">
       {% include elements/skills.html title="Research Interests" source=site.data.research-interests %}
     </div>
   </div>
