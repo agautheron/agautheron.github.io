@@ -805,8 +805,8 @@ function halChartsRenderCitations(canvasId, publications, years) {
       borderRadius:3, borderSkipped:false }]},
     options: { responsive:true, maintainAspectRatio:false,
       plugins:{legend:{display:false}},
-      scales:{ x:{grid:{display:false},color:cssTextColor},
-               y:{beginAtZero:true,color:cssTextColor,grid:{color:cssGridColor || "#f0f0f0"},title:{display:true,text:"Citations reçues / an",color:cssTextColor}}}}
+      scales:{ x:{grid:{display:false},ticks:{color:cssTextColor}},
+               y:{beginAtZero:true,ticks:{color:cssTextColor},grid:{color:cssGridColor || "#f0f0f0"},title:{display:true,text:"Citations reçues / an",color:cssTextColor}}}}
   });
 }
 
