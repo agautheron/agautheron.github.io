@@ -11,4 +11,5 @@ author_profile: true
 {% endif %}
 
 <!-- <div id="hal-wordcloud-integrator"></div> -->
+<div id="hal-charts-integrator"></div>
 <div id="hal-bibliography-integrator"></div>

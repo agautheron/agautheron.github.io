@@ -40,6 +40,7 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal.min.css">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal-wordcloud.min.css">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal-artscore.min.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/assets/hal-bibliography-integrator/hal-charts.min.css">
 
 
 <!-- SCRIPTS -->
@@ -80,7 +81,20 @@
                 "scopus": {
                     "apiKey": "36560fb4d1dd234bc887a88167a99237",
                 }
-            }
+            },
+			"wordcloud": {},
+			"charts": {
+				"show":{{site.data.author.hal-metrics}},
+				"scopus": {
+					"apiKey": "ba28b7b16741bdbc327b34c7b8a8ee24",
+					"authorId": "{{ site.data.author.scopus-id }}"
+				},
+				"semanticScholar": {
+				  "authorId": "{{ site.data.author.semanticscholar-id }}",   // URL : semanticscholar.org/author/Nom/2109238827
+				  "apiKey":   "Io1PNVnOo49Dl6DHwuQ1E1EfVwB1s76S43ASGgI3"     // optionnel — 10 req/s au lieu de 1
+				},
+				"maxCategories": 6
+			}
         }
     }
 </script>
