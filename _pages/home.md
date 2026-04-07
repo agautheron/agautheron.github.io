@@ -12,9 +12,9 @@ permalink: /
 I am an associate professor at [Creatis](https://www.creatis.insa-lyon.fr/site/en) laboratory and  [CPE Lyon](https://www.cpe.fr).
 <br/>
 
-I specialize in multimodal biomedical optics, integrating fluorescence spectroscopy, optical modeling, mass spectrometry (MS/SpiderMass), and super-resolution microscopy (SRM) to improve intraoperative diagnosis and characterization of brain pathologies.<br/>
+I specialize in multimodal biomedical optics, integrating fluorescence spectroscopy (FS), mass spectrometry (MS/SpiderMass), and optical modeling to improve intraoperative diagnosis and characterization of brain pathologies.<br/>
 
-My research focuses on spectral unmixing, radiative transfer modeling, and the development of experimental optical systems, with a strong emphasis on correlating multimodal data (fluorescence, MS, MRI, SRM) for metabolic and structural biomarker extraction in projects such as Opticskin, TRESOR, and Impulsion.
+My research focuses on spectral unmixing, radiative transfer modeling, and the development of experimental optical systems, with a strong emphasis on correlating multimodal data (FS, MS, MRS) for metabolic and structural biomarker extraction in projects such as Opticskin, TRESOR, and Impulsion.
 
 <!-- - Impulsion: Identification of intraoperative biomarkers for Focal Cortical Dysplasia (FCD) using fluorescence spectroscopy and SpiderMass, correlated with preoperative MRI and postoperative histology, starting with resection waste analysis and pilot patient studies.
 
