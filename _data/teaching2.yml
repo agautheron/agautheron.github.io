@@ -1,5 +1,13 @@
 
  #2025-2026
+- id: 2025-ETI-PTC
+  year: 2025-2026
+  institution: CPE (ETI)
+  title: Transverse Project (M1)
+  domain: Electronics
+  type : TP
+  hours: 16
+
 - id: 2025-ETI-TSI
   year: 2025-2026
   institution: CPE (ETI)
