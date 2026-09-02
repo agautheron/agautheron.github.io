@@ -516,7 +516,7 @@
   institution: Univ. Lyon 1 (Polytech)
   title: Sensors and Instrumentation (L3)
   domain: Electronics
-  type: TP
+  type: TD
   hours: 2  
   
 - id: 2019-CIM
@@ -524,7 +524,7 @@
   institution: Univ. Lyon 1 (Polytech)
   title: Sensors and Instrumentation (L3)
   domain: Electronics
-  type: TD
+  type: TP
   hours: 12  
   
 - id: 2019-EN

@@ -1,6 +1,14 @@
-- title: Associate Professor, CPE Lyon, CREATIS
-  from: September 2024
+- title: Associate Professor, Polytech GBM, CREATIS
+  from: September 2026
   to: Now
+  iscurrent: true
+  description: <b>Team:</b> MAGICS<br>
+               <b>Laboratory:</b> Laboratoire CREATIS<br>
+               <b>Teaching institution:</b> Polytech GBM<br>
+
+- title: Teaching Researcher, CPE Lyon, CREATIS
+  from: September 2024
+  to: August 2026
   iscurrent: true
   description: <b>Team:</b> MAGICS<br>
                <b>Laboratory:</b> Laboratoire CREATIS<br>
