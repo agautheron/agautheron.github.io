@@ -17,7 +17,8 @@ He successfully defended his Ph.D thesis on the 8th of December 2022.
 
 In 2023, <span class="semi-bold">AG</span> was appointed as a 18-month post-doctoral fellow in the [BIOSPEC - Research Project](https://manutech-sleight.com/research-innovation/sleight-s-research-projects/biospec-research-project-277559.kjsp) funded by the [Manutech Sleight Graduate School](https://manutech-sleight.com/). He was member of the Image team ([LHC](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html), Saint-Etienne) and the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).<br/>
 
-In September 2024, he started an Assistant Professor position, with teaching at [CPE Lyon](https://www.cpe.fr) and research in the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).
+Between September 2024 and August 2026, <span class="semi-bold">AG</span> was at a Teaching-Researcher position, with teaching at [CPE Lyon](https://www.cpe.fr) and research in the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).
+In September 2026, he started an Assistant Professor position, with teaching at [Polytech Lyon1, GBM](https://polytech.univ-lyon1.fr/formation/cycle-ingenieur/genie-biomedical/genie-biomedical-par-cursus-classique) and research in the MAGICS team ([CREATIS](https://www.creatis.insa-lyon.fr/site7/fr/node/46932), Lyon).
 
 <p style="margin-bottom: 0;"><strong>Content</strong>:</p>
 1. [Short CV](#shortcv)
@@ -31,8 +32,9 @@ In September 2024, he started an Assistant Professor position, with teaching at 
 ## Short CV <a name="shortcv"></a> <!--[<img src="https://tschmoderer.github.io/images/fontawesome/external-link-alt-solid.svg" alt="external-link" width="20"/>](https://tschmoderer.github.io/files/CV/cv_tschmoderer_fr.pdf)-->
 ---
 	
-* 2024 - Now : **Assistant professor**, CPE Lyon, Lyon
+* 2026 - Now : **Assistant professor**, Polytech Lyon1, Lyon
 <br/><br/>
+* 2024 - 2026 : **Teaching-Researcher**, CPE Lyon, Lyon
 * 2023 - 2024 :  **Post-doctoral fellow at LHC**, Jean Monnet Université, Saint-Etienne
   * <u>Subject</u>: Quantitative analysis of biomarkers by spectrometry
   * <u>Collaborators</u>: [Mathieu Hébert](https://fr.linkedin.com/in/mathieu-hebert-76889321), [Raphaël Clerc](https://fr.linkedin.com/in/raphael-clerc-0249741), [Bruno Montcel](https://fr.linkedin.com/in/bruno-montcel-a58192131) and [Jean-Luc Perrot](https://www.chu-st-etienne.fr/Offre_de_Soins/Medecins/PERROT_Jean_Luc/34911052)
