@@ -9,7 +9,7 @@ permalink: /
 
 <br/><br/>
 
-I am an associate professor at [Creatis](https://www.creatis.insa-lyon.fr/site/en) laboratory and  [CPE Lyon](https://www.cpe.fr).
+I am an associate professor at [Creatis](https://www.creatis.insa-lyon.fr/site/en) laboratory and  [Polytech Lyon1, GBM](https://polytech.univ-lyon1.fr/formation/cycle-ingenieur/genie-biomedical/genie-biomedical-par-cursus-classique).
 <br/>
 
 I specialize in multimodal biomedical optics, integrating fluorescence spectroscopy (FS), mass spectrometry (MS/SpiderMass), and optical modeling to improve intraoperative diagnosis and characterization of brain pathologies.<br/>
