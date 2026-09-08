@@ -47,6 +47,16 @@
                               href="https://www.webofscience.com/wos/author/record/{{ site.data.author.webofscience }}" target="_blank">
                               Web Of Science</a></li>
                   {% endif %}
+                  {% if site.data.author.researchgate %}
+                  <li><i class="fa-brands fa-researchgate"></i><a
+                              href="https://www.researchgate.net/profile/{{ site.data.author.researchgate }}" target="_blank">
+                              Research Gate</a></li>
+                  {% endif %}
+                  {% if site.data.author.scopus-id %}
+                  <li><i class="sidebar-img"><img src="{{ base_path }}/assets/img/scopus.png"></i><a
+                              href="https://www.scopus.com/authid/detail.uri?authorId={{ site.data.author.scopus-id }}" target="_blank"> Scopus</a>
+                  </li>
+                  {% endif %}
                   {% if site.data.author.arxiv %}
                   <li><i class="sidebar-img"><img src="{{ base_path }}/assets/img/arxiv.svg"></i><a
                               href="http://arxiv.org/a/{{ site.data.author.arxiv }}" target="_blank"> Arxiv</a></li>
