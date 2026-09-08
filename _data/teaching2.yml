@@ -1,4 +1,53 @@
 
+# 2026-2027
+- id: 2026-DMEC
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Embedded and Connected Medical Devices (M2)
+  domain: Electronics
+  type: TP
+  hours: 12
+
+- id: 2026-CIM_TP
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation (L3)
+  domain: Electronics
+  type: TP
+  hours: 12  
+
+- id: 2026-CIM
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Sensors and Instrumentation (L3)
+  domain: Electronics
+  type: CM
+  hours: 16,5 
+
+- id: 2026-S9
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Biomedical Engineering Project (M2)
+  domain: Electronics, Computer Sciences
+  type: APP
+  hours: 18
+
+- id: 2026-DMOptique
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Optical Medical Devices (M2)
+  domain: Physics
+  type: CM
+  hours: 15
+
+- id: 2026-DMOptique_TP
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Optical Medical Devices (M2)
+  domain: Physics
+  type: TP
+  hours: 13,5
+
  #2025-2026
 - id: 2025-ETI-PTC
   year: 2025-2026
