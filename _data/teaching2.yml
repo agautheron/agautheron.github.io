@@ -22,7 +22,7 @@
   title: Sensors and Instrumentation (L3)
   domain: Electronics
   type: CM
-  hours: 16,5 
+  hours: 16.5 
 
 - id: 2026-S9
   year: 2026-2027
@@ -46,7 +46,7 @@
   title: Optical Medical Devices (M2)
   domain: Physics
   type: TP
-  hours: 13,5
+  hours: 13.5
 
  #2025-2026
 - id: 2025-ETI-PTC
