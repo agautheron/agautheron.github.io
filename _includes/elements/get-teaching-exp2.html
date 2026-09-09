@@ -201,9 +201,250 @@
 
 
 <!-- ── Global ── -->
-<h1> Teaching </h1>
+<div class="teaching-header">
+  <h1>Teaching</h1>
+  <div class="hetd-toggle-wrapper">
+    <input type="checkbox" id="toggle-hetd" class="hetd-toggle-input" checked>
+    <label for="toggle-hetd" class="hetd-toggle-label">
+      <span class="hetd-text-left">h</span>
+      <span class="hetd-toggle-track">
+        <span class="hetd-toggle-circle"></span>
+      </span>
+      <span class="hetd-text-right">hETD</span>
+    </label>
+  </div>
+</div>
 <h2>Global (<span id="global-total-h3"></span>)</h2>
 <style>
+/* ════════════════════════════════════════════════════════════════ */
+/* RESPONSIVE BASE STYLES */
+/* ════════════════════════════════════════════════════════════════ */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
+  outline-offset: 2px;
+}
+
+summary:focus {
+  outline: 2px solid var(--main-text-color);
+}
+
+/* ════════════════════════════════════════════════════════════════ */
+/* TEACHING HEADER WITH TOGGLE SWITCH */
+/* ════════════════════════════════════════════════════════════════ */
+.teaching-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.teaching-header h1 {
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ════════════════════════════════════════════════════════════════ */
+/* TOGGLE SWITCH STYLING - HORIZONTAL */
+/* ════════════════════════════════════════════════════════════════ */
+.hetd-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.hetd-toggle-input {
+  display: none;
+}
+
+.hetd-toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.hetd-text-left {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.35s ease, color 0.35s ease;
+  min-width: 16px;
+  text-align: center;
+}
+
+.hetd-text-right {
+  color: #999;
+  opacity: 0.5;
+  transition: opacity 0.35s ease, color 0.35s ease;
+  min-width: 40px;
+  text-align: left;
+}
+
+.hetd-toggle-track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70px;
+  height: 32px;
+  background-color: #e0e0e0;
+  border: 2px solid #d0d0d0;
+  border-radius: 16px;
+  padding: 2px;
+  transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.hetd-toggle-circle {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 2;
+}
+
+/* CHECKED STATE */
+.hetd-toggle-input:checked + .hetd-toggle-label .hetd-toggle-track {
+  background-color: #2196F3;
+  border-color: #1976D2;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 8px rgba(33, 150, 243, 0.3);
+}
+
+.hetd-toggle-input:checked + .hetd-toggle-label .hetd-toggle-circle {
+  transform: translateX(38px);
+}
+
+.hetd-toggle-input:checked + .hetd-toggle-label .hetd-text-left {
+  color: #999;
+  opacity: 0.5;
+}
+
+.hetd-toggle-input:checked + .hetd-toggle-label .hetd-text-right {
+  color: white;
+  opacity: 1;
+}
+
+/* FOCUS STATE */
+.hetd-toggle-input:focus + .hetd-toggle-label .hetd-toggle-track {
+  outline: 2px solid #2196F3;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .teaching-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .teaching-header h1 {
+    flex: 1;
+    font-size: 1.5rem;
+    min-width: auto;
+  }
+
+  .form-check-input {
+    width: 2.2rem;
+    height: 1.3rem;
+  }
+
+  .toggle-label-off,
+  .toggle-label-on {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .teaching-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .teaching-header h1 {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .form-check-input {
+    width: 2rem;
+    height: 1.2rem;
+  }
+
+  .toggle-label-off,
+  .toggle-label-on {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .teaching-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .form-check-input {
+    width: 1.8rem;
+    height: 1rem;
+  }
+
+  .toggle-label-off,
+  .toggle-label-on {
+    font-size: 9px;
+  }
+}
+
 /* ── PIE GRID : 3 colonnes sur PC, 1 colonne sur mobile ── */
 .pie-grid {
   display: grid;
@@ -211,9 +452,24 @@
   gap: 16px 8px;
   margin-bottom: 24px;
 }
+
+@media (max-width: 1024px) {
+  .pie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .pie-grid {
     grid-template-columns: 1fr;
+    gap: 12px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pie-grid {
+    grid-template-columns: 1fr;
+    gap: 10px 4px;
   }
 }
 
@@ -223,6 +479,37 @@
 .gpie-legend { margin-top:8px; font-size:10px; line-height:1.7; display:flex; flex-wrap:wrap; justify-content:center; gap:2px 8px; }
 .gpie-legend-item { display:flex; align-items:center; gap:4px; white-space:nowrap; }
 .gpie-legend-swatch { width:10px; height:10px; border-radius:2px; flex-shrink:0; }
+
+@media (max-width: 768px) {
+  .gpie-canvas-wrap {
+    width: 120px;
+    height: 120px;
+  }
+  .gpie-title {
+    font-size: 0.75em;
+  }
+  .gpie-legend {
+    font-size: 9px;
+    gap: 1px 6px;
+  }
+  .gpie-legend-swatch {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gpie-canvas-wrap {
+    width: 100px;
+    height: 100px;
+  }
+  .gpie-title {
+    font-size: 0.7em;
+  }
+  .gpie-legend {
+    font-size: 8px;
+  }
+}
 
 /* ── DETAILS BY YEAR : row sur PC, colonne sur mobile ── */
 .details-layout {
@@ -238,13 +525,32 @@
 .year-charts-wrap {
   flex: 1 1 0;
   min-width: 0;
+  overflow-x: auto;
 }
+
+/* ── TEACHING CANVAS RESPONSIVE ── */
+#teaching-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 1024px) {
+  .year-selector-wrap {
+    min-width: 100px;
+  }
+}
+
 @media (max-width: 768px) {
   .details-layout {
     flex-direction: column;
+    gap: 10px;
   }
   .year-selector-wrap {
     width: 100%;
+    min-width: unset;
   }
   #year-selector {
     display: flex;
@@ -253,6 +559,36 @@
   }
   #year-selector a {
     flex: 0 0 auto;
+    padding: 6px 10px !important;
+    font-size: 0.9em;
+  }
+  #teaching-canvas {
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 600px) {
+  #year-selector {
+    gap: 4px;
+  }
+  #year-selector a {
+    padding: 5px 8px !important;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-layout {
+    gap: 8px;
+  }
+  #year-selector {
+    gap: 3px;
+  }
+  #year-selector a {
+    padding: 4px 6px !important;
+    font-size: 0.8em;
   }
 }
 
@@ -264,6 +600,63 @@
 .apie-legend { margin-top:6px; font-size:10px; line-height:1.6; display:flex; flex-wrap:wrap; justify-content:center; gap:2px 6px; min-height:28px; }
 .apie-legend-item { display:flex; align-items:center; gap:3px; white-space:nowrap; }
 .apie-legend-swatch { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
+
+@media (max-width: 1024px) {
+  .apie-col {
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .apie-flex {
+    gap: 12px 6px;
+  }
+  .apie-col {
+    flex: 0 0 calc(50% - 6px);
+  }
+  .apie-wrap {
+    width: 120px;
+    height: 120px;
+  }
+  .apie-title {
+    font-size: 0.75em;
+  }
+  .apie-legend {
+    font-size: 9px;
+    gap: 1px 5px;
+    min-height: 24px;
+  }
+  .apie-legend-swatch {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .apie-col {
+    flex: 0 0 100%;
+  }
+  .apie-wrap {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apie-flex {
+    gap: 10px 4px;
+  }
+  .apie-wrap {
+    width: 90px;
+    height: 90px;
+  }
+  .apie-title {
+    font-size: 0.7em;
+  }
+  .apie-legend {
+    font-size: 8px;
+  }
+}
 </style>
 
 <div class="pie-grid">
@@ -386,6 +779,56 @@ var DOMAINS = [{%- assign domain_split = sep_domain | split: '@' -%}{%- for dom_
 var YEARS_LIST = [{%- for year in years_list -%}"{{year}}"{% unless forloop.last %},{% endunless %}{%- endfor -%}];
 
 // ─────────────────────────────────────────────────────────────────────────────
+// hETD CONFIGURATION & DISPLAY MODE
+// ─────────────────────────────────────────────────────────────────────────────
+const typeRatio = {'CM':1.5, 'TD':1, 'TP':1, 'APP':1, 'ADM':1};
+var displayMode = 'hETD';
+var yearTotals = [];
+
+function calculateYearTotals() {
+  yearTotals = [];
+  for (var yi = 0; yi < HOURS.length; yi++) {
+    var totalH = 0, totalETD = 0;
+    HOURS[yi].forEach(function(instHours, instIdx) {
+      instHours.forEach(function(h, courseIdx) {
+        var type = TYPES[yi][instIdx][courseIdx];
+        var ratio = typeRatio[type] || 1;
+        totalH += h;
+        totalETD += h * ratio;
+      });
+    });
+    yearTotals[yi] = { h: totalH, hETD: totalETD };
+  }
+}
+
+function formatHours(h, etd) {
+  if (displayMode === 'hETD') {
+    return Math.round(etd) + ' hETD';
+  } else {
+    return Math.round(h) + ' h';
+  }
+}
+
+function updateYearBadges() {
+  for (var yi = 0; yi < yearTotals.length; yi++) {
+    var badge = document.getElementById('total-year-' + yi);
+    if (badge) {
+      badge.textContent = formatHours(yearTotals[yi].h, yearTotals[yi].hETD);
+    }
+  }
+}
+
+function updateGlobalTotal() {
+  var grandTotalH = 0, grandTotalETD = 0;
+  for (var yi = 0; yi < yearTotals.length; yi++) {
+    grandTotalH += yearTotals[yi].h;
+    grandTotalETD += yearTotals[yi].hETD;
+  }
+  var h3El = document.getElementById('global-total-h3');
+  if (h3El) h3El.textContent = formatHours(grandTotalH, grandTotalETD);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // HELPERS
 // ─────────────────────────────────────────────────────────────────────────────
 function getTextColor() {
@@ -472,6 +915,16 @@ function createPattern(mainCtx, c, type) {
         p.fill();
       }
 
+  } else if (type === 'ADM') {
+    p.strokeStyle = fg + '0.9)';
+    p.lineWidth = 1;
+    for (var i = 0; i < sz; i += 3) {
+      p.beginPath();
+      p.moveTo(0, i);
+      p.lineTo(sz, i);
+      p.stroke();
+    }
+
   } else {
     p.fillStyle = fg + '0.5)';
     p.fillRect(0, 0, sz, sz);
@@ -519,6 +972,14 @@ function drawTypePicto(ctx2, type, x, y, size, color) {
         ctx2.arc(x + step/2 + col*step, y + step/2 + row*step, r, 0, Math.PI*2);
         ctx2.fill();
       }
+
+  } else if (type === 'ADM') {
+    for (var i = 0; i < size; i += 3) {
+      ctx2.beginPath();
+      ctx2.moveTo(x, y + i);
+      ctx2.lineTo(x + size, y + i);
+      ctx2.stroke();
+    }
   }
   ctx2.restore();
 }
@@ -563,7 +1024,7 @@ allInstitutions.forEach(function(inst, idx) {
 });
 
 var mainCtx    = document.getElementById("teaching-canvas").getContext("2d");
-var TYPE_ORDER = ['CM', 'TD', 'TP', 'APP'];
+var TYPE_ORDER = ['CM', 'TD', 'TP', 'APP', 'ADM'];
 var chart_data = [];
 
 for (var yi = 0; yi < {{ years_list | size }}; yi++) {
@@ -866,7 +1327,7 @@ function buildAnnualLegend(chart, containerId) {
   });
 }
 
-var TYPE_PALETTE = { CM: palFill(0), TD: palFill(5), TP: palFill(6), APP: palFill(7) };
+var TYPE_PALETTE = { CM: palFill(0), TD: palFill(5), TP: palFill(6), APP: palFill(7), ADM: palFill(3) };
 var INST_PALETTE = PALETTE_RGB.map(function(_,i){ return palFill(i); });
 
 function buildYearTypePieData(yi) {
@@ -875,7 +1336,7 @@ function buildYearTypePieData(yi) {
     var type = ds.label.indexOf('|TYPE|') !== -1 ? ds.label.split('|TYPE|')[1] : '?';
     ds.data.forEach(function(h) { if (h) sums[type] = (sums[type]||0) + h; });
   });
-  var keys = ['CM','TD','TP','APP'].filter(function(k){ return sums[k]; });
+  var keys = ['CM','TD','TP','APP','ADM'].filter(function(k){ return sums[k]; });
   return {
     labels: keys,
     datasets: [{ data: keys.map(function(k){return sums[k];}),
@@ -1136,7 +1597,7 @@ function pieExternalTooltip(context) {
   buildHtmlLegend(gc1, 'gleg-level');
 
   var gc2 = new Chart(document.getElementById('global-pie-type').getContext('2d'), {
-    type: 'pie', data: buildData(typeSums, ['CM','TD','TP','APP']), options: makePieOptions()
+    type: 'pie', data: buildData(typeSums, ['CM','TD','TP','APP','ADM']), options: makePieOptions()
   });
   buildHtmlLegend(gc2, 'gleg-type');
 
@@ -1210,11 +1671,14 @@ function totalHoursForYear(yi) {
   return total;
 }
 
+// Initialize hETD values and display them
+calculateYearTotals();
+updateYearBadges();
+updateGlobalTotal();
+
+// Legacy initialization (kept for reference)
 (function() {
-  for (var yi = 0; yi < HOURS.length; yi++) {
-    var badge = document.getElementById('total-year-' + yi);
-    if (badge) badge.textContent = totalHoursForYear(yi) + 'h';
-  }
+  // Year badges are now updated by updateYearBadges() above
 })();
 
 function refreshChart(id) {
@@ -1270,6 +1734,28 @@ function updateTheme() {
   teachingBar.options.scales.x.title.color   = tc;
   teachingBar.options.scales.y.title.color   = tc;
   teachingBar.update();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TOGGLE SWITCH EVENT LISTENER
+// ─────────────────────────────────────────────────────────────────────────────
+var toggleInput = document.getElementById('toggle-hetd');
+if (toggleInput) {
+  toggleInput.addEventListener('change', function(e) {
+    displayMode = this.checked ? 'hETD' : 'h';
+
+    updateYearBadges();
+    updateGlobalTotal();
+  });
+
+  // Optional: keyboard support (Space or Enter)
+  toggleInput.addEventListener('keydown', function(e) {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      this.checked = !this.checked;
+      this.dispatchEvent(new Event('change'));
+    }
+  });
 }
 
 </script>

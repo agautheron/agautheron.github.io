@@ -1,5 +1,29 @@
 
 # 2026-2027
+- id: 2026-stagiaires
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Internships monitoring (M2)
+  domain: Educational Tutor
+  type: ADM
+  hours: 9
+  
+- id: 2026-stagiaires
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Internships monitoring (M1)
+  domain: Educational Tutor
+  type: ADM
+  hours: 1.5
+  
+- id: 2026-alternants
+  year: 2026-2027
+  institution: Univ. Lyon 1 (Polytech)
+  title: Work-student monitoring (M2)
+  domain: Educational Tutor
+  type: ADM
+  hours: 20
+  
 - id: 2026-DMEC
   year: 2026-2027
   institution: Univ. Lyon 1 (Polytech)
@@ -49,6 +73,46 @@
   hours: 13.5
 
  #2025-2026
+- id: 2025-alternants-ICS
+  year: 2025-2026
+  institution: CPE (ICS)
+  title: Work-student monitoring (M2)
+  domain: Educational Tutor
+  type: ADM
+  hours: 8
+  
+- id: 2025-alternants-IRC
+  year: 2025-2026
+  institution: CPE (IRC)
+  title: Work-student monitoring (M1)
+  domain: Educational Tutor
+  type: ADM
+  hours: 8
+  
+- id: 2025-alternants-PSM
+  year: 2025-2026
+  institution: CPE (PSM)
+  title: Work-student monitoring (M2)
+  domain: Educational Tutor
+  type: ADM
+  hours: 8
+  
+- id: 2025-alternants-PSM
+  year: 2025-2026
+  institution: CPE (PSM)
+  title: Work-student monitoring (M1)
+  domain: Educational Tutor
+  type: ADM
+  hours: 16
+  
+- id: 2025-alternants-PSM
+  year: 2025-2026
+  institution: CPE (PSM)
+  title: Work-student monitoring (L3)
+  domain: Educational Tutor
+  type: ADM
+  hours: 32
+  
 - id: 2025-ETI-PTC
   year: 2025-2026
   institution: CPE (ETI)
@@ -267,6 +331,45 @@
   hours: 16
   
  #2024-2025
+- id: 2024-alternants-ICS
+  year: 2024-2025
+  institution: CPE (ICS)
+  title: Work-student monitoring (M1)
+  domain: Educational Tutor
+  type: ADM
+  hours: 8
+  
+- id: 2024-alternants-IRC
+  year: 2024-2025
+  institution: CPE (IRC)
+  title: Work-student monitoring (L3)
+  domain: Educational Tutor
+  type: ADM
+  hours: 8
+  
+- id: 2024-alternants-PSM
+  year: 2024-2025
+  institution: CPE (PSM)
+  title: Work-student monitoring (M2)
+  domain: Educational Tutor
+  type: ADM
+  hours: 8
+  
+- id: 2025-alternants-PSM
+  year: 2025-2026
+  institution: CPE (PSM)
+  title: Work-student monitoring (M1)
+  domain: Educational Tutor
+  type: ADM
+  hours: 16
+  
+- id: 2025-alternants-PSM
+  year: 2025-2026
+  institution: CPE (PSM)
+  title: Work-student monitoring (L3)
+  domain: Educational Tutor
+  type: ADM
+  hours: 32
   
 - id: 2024-ETI-TSI
   year: 2024-2025
